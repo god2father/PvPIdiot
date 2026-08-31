@@ -70,6 +70,7 @@ PvPIdiot.locale.enUS = {
     HERO_ID = "Hero ID",
     TALENT_SIMPLE_NOTE = "v0.1 uses a simplified list view for stable data/UI validation.",
     STATS_NOTE = "Aggregated distribution from the selected PvP sample.",
+    STATS_UNAVAILABLE = "Secondary-stat percentages are not converted in this Murlok validation snapshot yet.",
     ENCHANT_WEAPON = "Weapon",
     ENCHANT_RING = "Ring",
 }
