@@ -70,6 +70,7 @@ PvPIdiot.locale.zhCN = {
     HERO_ID = "英雄天赋 ID",
     TALENT_SIMPLE_NOTE = "v0.1 先使用稳定的列表视图验证数据与 UI。",
     STATS_NOTE = "展示当前 PvP 样本聚合后的副属性分布。",
+    STATS_UNAVAILABLE = "本次 Murlok 验证快照暂未转换副属性百分比。",
     ENCHANT_WEAPON = "武器",
     ENCHANT_RING = "戒指",
 }
