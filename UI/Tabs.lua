@@ -60,7 +60,8 @@ end
 
 function PvPIdiot:ShowTab(tabID)
     if not self.ui.pages or not self.ui.pages[tabID] then tabID = "overview" end
-    local hasData = self.DB:GetCurrentSpecData() ~= nil
+    local data = self.DB:GetCurrentSpecData()
+    local hasData = data ~= nil and (not data.meta or data.meta.dataAvailable ~= false)
 
     for id, page in pairs(self.ui.pages) do
         page:SetShown(hasData and id == tabID)
