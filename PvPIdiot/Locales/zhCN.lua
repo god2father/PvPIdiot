@@ -54,6 +54,7 @@ PvPIdiot.locale.zhCN = {
     RECOMMENDED = "推荐",
     NOT_TOP3 = "不在 Top 3",
     ITEM_LOADING = "物品信息正在加载……",
+    CHAT_LINK_HINT = "Shift + 左键点击：插入聊天链接",
     VERSATILITY = "全能",
     HASTE = "急速",
     MASTERY = "精通",

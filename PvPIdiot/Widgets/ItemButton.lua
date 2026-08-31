@@ -10,6 +10,7 @@ function PvPIdiot:CreateItemButton(parent, width, height)
     })
     button:SetBackdropColor(0.06, 0.075, 0.10, 0.92)
     button:SetBackdropBorderColor(0.22, 0.24, 0.28, 1)
+    button:RegisterForClicks("LeftButtonUp")
 
     local icon = button:CreateTexture(nil, "ARTWORK")
     icon:SetSize(32, 32)
@@ -41,12 +42,20 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         elseif self.spellID and GameTooltip.SetSpellByID then
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             pcall(GameTooltip.SetSpellByID, GameTooltip, self.spellID)
+            GameTooltip:AddLine(PvPIdiot:L("CHAT_LINK_HINT"), 0.55, 0.58, 0.64)
             GameTooltip:Show()
         end
     end)
     button:SetScript("OnLeave", function(self)
         self:SetBackdropBorderColor(0.22, 0.24, 0.28, 1)
         PvPIdiot.Utils:HideTooltip()
+    end)
+    button:SetScript("OnClick", function(self)
+        if self.itemID then
+            PvPIdiot.Utils:InsertModifiedItemLink(self.itemID)
+        elseif self.spellID then
+            PvPIdiot.Utils:InsertModifiedSpellLink(self.spellID)
+        end
     end)
 
     function button:SetItem(itemID, usageValue, badgeText)

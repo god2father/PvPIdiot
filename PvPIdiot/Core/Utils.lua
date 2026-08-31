@@ -39,12 +39,61 @@ function Utils:SafeItemIcon(itemID)
     return 134400
 end
 
+function Utils:GetItemLink(itemID)
+    if not itemID then return nil end
+    if C_Item and C_Item.GetItemLinkByID then
+        local link = C_Item.GetItemLinkByID(itemID)
+        if link then return link end
+    end
+    return GetItemInfo and select(2, GetItemInfo(itemID)) or nil
+end
+
+function Utils:InsertModifiedLink(link)
+    if not link or not IsModifiedClick or not IsModifiedClick("CHATLINK") then return false end
+    if HandleModifiedItemClick then
+        HandleModifiedItemClick(link)
+        return true
+    end
+    if ChatEdit_InsertLink then
+        ChatEdit_InsertLink(link)
+        return true
+    end
+    return false
+end
+
+function Utils:InsertModifiedItemLink(itemID)
+    if not itemID or not IsModifiedClick or not IsModifiedClick("CHATLINK") then return false end
+
+    local link = self:GetItemLink(itemID)
+    if link then return self:InsertModifiedLink(link) end
+
+    if Item and Item.CreateFromItemID then
+        local item = Item:CreateFromItemID(itemID)
+        item:ContinueOnItemLoad(function()
+            self:InsertModifiedLink(self:GetItemLink(itemID))
+        end)
+    end
+    return false
+end
+
+function Utils:InsertModifiedSpellLink(spellID)
+    if not spellID or not IsModifiedClick or not IsModifiedClick("CHATLINK") then return false end
+    local link
+    if C_Spell and C_Spell.GetSpellLink then
+        link = C_Spell.GetSpellLink(spellID)
+    elseif GetSpellLink then
+        link = GetSpellLink(spellID)
+    end
+    return self:InsertModifiedLink(link)
+end
+
 function Utils:ShowItemTooltip(owner, itemID)
     if not owner or not itemID then return end
     GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
-    local link = select(2, GetItemInfo(itemID))
+    local link = self:GetItemLink(itemID)
     if link then
         GameTooltip:SetHyperlink(link)
+        GameTooltip:AddLine(PvPIdiot:L("CHAT_LINK_HINT"), 0.55, 0.58, 0.64)
     else
         GameTooltip:SetText(self:SafeItemName(itemID))
         GameTooltip:AddLine(PvPIdiot:L("ITEM_LOADING"), 0.7, 0.7, 0.7)

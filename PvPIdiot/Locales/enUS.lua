@@ -54,6 +54,7 @@ PvPIdiot.locale.enUS = {
     RECOMMENDED = "Recommended",
     NOT_TOP3 = "Not in Top 3",
     ITEM_LOADING = "Item information is loading...",
+    CHAT_LINK_HINT = "Shift + Left Click: Insert chat link",
     VERSATILITY = "Versatility",
     HASTE = "Haste",
     MASTERY = "Mastery",
