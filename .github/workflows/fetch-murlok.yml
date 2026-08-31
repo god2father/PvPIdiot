@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch all 40 Solo Shuffle specs from Murlok
-        run: python tools/fetch_murlok.py --mode solo --output Data/MurlokData.lua
+        run: python tools/fetch_murlok.py --mode solo --output Data/MurlokData.lua --allow-partial --delay 0.8
 
       - name: Add generated data to TOC
         run: |
@@ -50,5 +50,6 @@ jobs:
             echo "No snapshot changes"
           else
             git commit -m "data: add Murlok all-spec Solo Shuffle snapshot [skip ci]"
+            git pull --rebase origin main
             git push
           fi
