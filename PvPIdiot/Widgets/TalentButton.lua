@@ -20,8 +20,9 @@ function PvPIdiot:CreateTalentButton(parent, width, height)
 
     local name = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     name:SetPoint("TOPLEFT", icon, "TOPRIGHT", 8, -1)
-    name:SetPoint("RIGHT", -62, 0)
+    name:SetPoint("RIGHT", -72, 0)
     name:SetJustifyH("LEFT")
+    name:SetWordWrap(false)
     row.name = name
 
     local usage = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -36,6 +37,7 @@ function PvPIdiot:CreateTalentButton(parent, width, height)
 
     function row:SetTalent(talent, kind)
         talent = talent or {}
+        self.talent = talent
         self.talentID = talent.id
         self.kind = kind
         self.spellID = nil
@@ -69,32 +71,64 @@ function PvPIdiot:CreateTalentButton(parent, width, height)
         self.onActivate = callback
     end
 
+    local function AppendRecommendationTooltip(self)
+        if self.talent and self.talent.usage ~= nil then
+            GameTooltip:AddLine(" ")
+            GameTooltip:AddDoubleLine(
+                PvPIdiot:L("RECOMMEND_USAGE"),
+                PvPIdiot.Utils:FormatPercent(self.talent.usage, 1),
+                0.95, 0.71, 0.25,
+                1, 1, 1
+            )
+        end
+        if self.talent and self.talent.count ~= nil then
+            GameTooltip:AddDoubleLine(
+                PvPIdiot:L("COUNT"),
+                tostring(self.talent.count),
+                0.62, 0.65, 0.70,
+                1, 1, 1
+            )
+        end
+        if self.spellID then
+            GameTooltip:AddLine(PvPIdiot:L("CHAT_LINK_HINT"), 0.55, 0.58, 0.64)
+        end
+    end
+
     row:SetScript("OnEnter", function(self)
+        self:SetBackdropColor(0.075, 0.09, 0.12, 0.96)
         self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
+
+        local shown = false
         if self.kind == "pvp" and self.talentID and GameTooltip.SetPvpTalent then
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            pcall(GameTooltip.SetPvpTalent, GameTooltip, self.talentID)
-            GameTooltip:AddLine(PvPIdiot:L("CHAT_LINK_HINT"), 0.55, 0.58, 0.64)
-            GameTooltip:Show()
+            shown = pcall(GameTooltip.SetPvpTalent, GameTooltip, self.talentID)
         elseif self.spellID and GameTooltip.SetSpellByID then
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            pcall(GameTooltip.SetSpellByID, GameTooltip, self.spellID)
-            GameTooltip:AddLine(PvPIdiot:L("CHAT_LINK_HINT"), 0.55, 0.58, 0.64)
+            shown = pcall(GameTooltip.SetSpellByID, GameTooltip, self.spellID)
+        end
+
+        if shown then
+            AppendRecommendationTooltip(self)
+            GameTooltip:Show()
+        elseif self.name and self.name:GetText() then
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:SetText(self.name:GetText())
+            AppendRecommendationTooltip(self)
             GameTooltip:Show()
         end
     end)
 
     row:SetScript("OnLeave", function(self)
+        self:SetBackdropColor(0.055, 0.07, 0.095, 0.8)
         self:SetBackdropBorderColor(0.12, 0.14, 0.18, 1)
         GameTooltip:Hide()
     end)
 
     row:SetScript("OnClick", function(self)
-        local handled = false
-        if self.spellID then
-            handled = PvPIdiot.Utils:InsertModifiedSpellLink(self.spellID)
+        if self.spellID and PvPIdiot.Utils:InsertModifiedSpellLink(self.spellID) then
+            return
         end
-        if not handled and self.onActivate then
+        if self.onActivate then
             self.onActivate(self)
         end
     end)

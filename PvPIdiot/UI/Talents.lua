@@ -47,9 +47,11 @@ function PvPIdiot:CreateTalentsPage(parent)
         button.text = text
         button.buildIndex = i
         button:SetScript("OnEnter", function(self)
+            self:SetBackdropColor(0.075, 0.09, 0.12, 0.96)
             self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
         end)
         button:SetScript("OnLeave", function(self)
+            self:SetBackdropColor(0.055, 0.07, 0.095, 0.96)
             self:SetBackdropBorderColor(0.28, 0.30, 0.33, 1)
         end)
         button:SetScript("OnClick", function(self)
@@ -81,7 +83,11 @@ function PvPIdiot:CreateTalentsPage(parent)
         else
             button:SetPoint("TOPLEFT", 18, -112)
         end
-        button:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8X8", edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
+        button:SetBackdrop({
+            bgFile = "Interface\\Buttons\\WHITE8X8",
+            edgeFile = "Interface\\Buttons\\WHITE8X8",
+            edgeSize = 1,
+        })
         local text = button:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         text:SetPoint("CENTER")
         text:SetText(self:L(def.label))
@@ -94,19 +100,27 @@ function PvPIdiot:CreateTalentsPage(parent)
         previous = button
     end
 
+    local recommendationTitle = page:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    recommendationTitle:SetPoint("TOPLEFT", 18, -151)
+    recommendationTitle:SetTextColor(0.95, 0.71, 0.25)
+    page.recommendationTitle = recommendationTitle
+
     local note = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    note:SetPoint("TOPLEFT", 18, -150)
-    note:SetText(self:L("TALENT_SIMPLE_NOTE"))
+    note:SetPoint("TOPLEFT", 18, -172)
+    note:SetText(self:L("TALENT_RECOMMENDATION_HINT"))
     note:SetTextColor(0.55, 0.58, 0.64)
 
     for i = 1, 10 do
         local row = self:CreateTalentButton(page, 620, 44)
-        row:SetPoint("TOPLEFT", 18, -178 - (i - 1) * 48)
+        row:SetPoint("TOPLEFT", 18, -198 - (i - 1) * 48)
         row:SetPoint("RIGHT", -18, 0)
-        row:SetAction(function()
-            PvPIdiot:OpenTalentPanel()
-        end)
         page.rows[i] = row
+    end
+
+    function page:SetTalentTab(kind)
+        if not self.buttons[kind] then kind = "class" end
+        self.selectedTalentTab = kind
+        self:Refresh()
     end
 
     function page:Refresh()
@@ -148,6 +162,15 @@ function PvPIdiot:CreateTalentsPage(parent)
             end
         end
 
+        local labelKey = selected == "class" and "CLASS_TALENTS"
+            or selected == "spec" and "SPEC_TALENTS"
+            or selected == "hero" and "HERO_TALENTS"
+            or "PVP"
+        self.recommendationTitle:SetText(string.format(
+            PvPIdiot:L("TALENT_RECOMMENDATION_TITLE"),
+            PvPIdiot:L(labelKey)
+        ))
+
         for i, row in ipairs(self.rows) do
             local talent = list and list[i]
             row:SetShown(talent ~= nil)
@@ -156,4 +179,11 @@ function PvPIdiot:CreateTalentsPage(parent)
     end
 
     return page
+end
+
+function PvPIdiot:OpenTalentRecommendations(kind)
+    if not self.ui or not self.ui.pages or not self.ui.pages.talents then return end
+    local page = self.ui.pages.talents
+    page.selectedTalentTab = (page.buttons and page.buttons[kind]) and kind or "class"
+    self:ShowTab("talents")
 end

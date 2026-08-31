@@ -38,6 +38,11 @@ function PvPIdiot:CreateBuildDetails(parent)
     import:SetText(PvPIdiot:L("IMPORT"))
     modal.import = import
 
+    local hint = modal:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    hint:SetPoint("TOPRIGHT", import, "TOPLEFT", -12, -4)
+    hint:SetText(PvPIdiot:L("TALENT_HOVER_HINT"))
+    hint:SetTextColor(0.55, 0.58, 0.64)
+
     local scroll, content = self:CreateScrollableContainer(modal, 620)
     scroll:ClearAllPoints()
     scroll:SetPoint("TOPLEFT", 12, -54)
@@ -80,9 +85,6 @@ function PvPIdiot:CreateBuildDetails(parent)
                     local row = self.rows[rowIndex]
                     if not row then
                         row = PvPIdiot:CreateTalentButton(content, 620, 44)
-                        row:SetAction(function()
-                            PvPIdiot:OpenTalentPanel()
-                        end)
                         self.rows[rowIndex] = row
                     end
                     row:ClearAllPoints()

@@ -1,7 +1,7 @@
 local ADDON_NAME, PvPIdiot = ...
 
 PvPIdiot.name = ADDON_NAME
-PvPIdiot.version = "0.1.1"
+PvPIdiot.version = "0.1.2"
 PvPIdiot.modules = PvPIdiot.modules or {}
 PvPIdiot.widgets = PvPIdiot.widgets or {}
 PvPIdiot.ui = PvPIdiot.ui or {}
