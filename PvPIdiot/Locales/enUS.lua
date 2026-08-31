@@ -83,4 +83,5 @@ PvPIdiot.locale.enUS = {
     STATS_UNAVAILABLE = "Secondary-stat percentages are not converted in this Murlok validation snapshot yet.",
     ENCHANT_WEAPON = "Weapon",
     ENCHANT_RING = "Ring",
+    ENCHANT = "Enchant",
 }

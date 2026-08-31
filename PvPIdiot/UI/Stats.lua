@@ -51,7 +51,7 @@ function PvPIdiot:CreateStatsPage(parent)
 
     function page:Refresh()
         local data = PvPIdiot.DB:GetCurrentSpecData()
-        local stats = data and data.stats or {}
+        local stats = PvPIdiot.DB:GetCurrentStats()
         local hasStats = next(stats) ~= nil
         self.unavailable:SetShown(not hasStats)
         for _, row in ipairs(self.rows) do

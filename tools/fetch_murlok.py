@@ -326,6 +326,11 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
     ]
 
     avg_stats = {k: round(v / n, 2) if n else 0 for k, v in stat_totals.items()}
+    stat_total = sum(max(0, value) for value in avg_stats.values())
+    stats = {
+        key: round(max(0, value) / stat_total, 4)
+        for key, value in avg_stats.items()
+    } if stat_total else {}
     stat_priority = sorted(avg_stats.keys(), key=lambda k: avg_stats[k], reverse=True)
 
     return {
@@ -348,7 +353,7 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
         "gear": gear,
         "gems": gems,
         "enchants": enchants,
-        "stats": {},
+        "stats": stats,
         "statsRaw": avg_stats,
         "statPriority": stat_priority,
     }, updated_at

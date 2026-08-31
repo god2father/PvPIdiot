@@ -149,7 +149,7 @@ function PvPIdiot:CreateOverviewPage(parent)
             if gem then self.sections.gems.rows[i]:SetItem(gem.itemID, gem.usage) end
         end
 
-        local statData = data.stats or {}
+        local statData = PvPIdiot.DB:GetCurrentStats()
         local hasStats = next(statData) ~= nil
         self.sections.stats.unavailable:SetShown(not hasStats)
         for _, row in ipairs(self.sections.stats.rows) do
@@ -168,8 +168,17 @@ function PvPIdiot:CreateOverviewPage(parent)
         for i = 1, 3 do
             local info = flattened[i]
             self.sections.enchants.rows[i]:SetShown(info ~= nil)
-            if info and info.entry.source and info.entry.source.type == "item" then
-                self.sections.enchants.rows[i]:SetItem(info.entry.source.id, info.entry.usage, info.slot)
+            if info and info.entry.source then
+                if info.entry.source.type == "item" then
+                    self.sections.enchants.rows[i]:SetItem(info.entry.source.id, info.entry.usage, info.slot)
+                else
+                    self.sections.enchants.rows[i]:SetSpell(
+                        info.entry.source.id or info.entry.enchantID,
+                        info.entry.usage,
+                        info.slot,
+                        self:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-")
+                    )
+                end
             end
         end
     end

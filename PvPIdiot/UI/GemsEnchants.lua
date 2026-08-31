@@ -68,11 +68,12 @@ function PvPIdiot:CreateGemsEnchantsPage(parent)
                 if source.type == "item" then
                     row:SetItem(source.id, info.entry.usage, (info.slot == "WEAPON" and PvPIdiot:L("ENCHANT_WEAPON") or info.slot == "RING" and PvPIdiot:L("ENCHANT_RING") or info.slot) .. " #" .. tostring(i))
                 else
-                    row.itemID = nil
-                    row.icon:SetTexture(134400)
-                    row.name:SetText("Spell " .. tostring(source.id or info.entry.enchantID or "-"))
-                    row.usage:SetText(PvPIdiot:L("USAGE") .. " " .. PvPIdiot.Utils:FormatPercent(info.entry.usage or 0, 1))
-                    row.badge:SetText(info.slot == "WEAPON" and PvPIdiot:L("ENCHANT_WEAPON") or info.slot == "RING" and PvPIdiot:L("ENCHANT_RING") or info.slot)
+                    row:SetSpell(
+                        source.id or info.entry.enchantID,
+                        info.entry.usage,
+                        info.slot == "WEAPON" and PvPIdiot:L("ENCHANT_WEAPON") or info.slot == "RING" and PvPIdiot:L("ENCHANT_RING") or info.slot,
+                        PvPIdiot:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-")
+                    )
                 end
             end
         end

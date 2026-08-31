@@ -83,4 +83,5 @@ PvPIdiot.locale.zhCN = {
     STATS_UNAVAILABLE = "本次 Murlok 验证快照暂未转换副属性百分比。",
     ENCHANT_WEAPON = "武器",
     ENCHANT_RING = "戒指",
+    ENCHANT = "附魔",
 }

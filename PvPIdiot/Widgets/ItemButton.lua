@@ -38,6 +38,10 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
         if self.itemID then
             PvPIdiot.Utils:ShowItemTooltip(self, self.itemID)
+        elseif self.spellID and GameTooltip.SetSpellByID then
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            pcall(GameTooltip.SetSpellByID, GameTooltip, self.spellID)
+            GameTooltip:Show()
         end
     end)
     button:SetScript("OnLeave", function(self)
@@ -47,6 +51,7 @@ function PvPIdiot:CreateItemButton(parent, width, height)
 
     function button:SetItem(itemID, usageValue, badgeText)
         self.itemID = itemID
+        self.spellID = nil
         self.icon:SetTexture(PvPIdiot.Utils:SafeItemIcon(itemID))
         self.name:SetText(PvPIdiot.Utils:SafeItemName(itemID))
         if usageValue == nil then
@@ -66,8 +71,25 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         end
     end
 
+    function button:SetSpell(spellID, usageValue, badgeText, fallbackName)
+        self.itemID = nil
+        self.spellID = spellID
+        local spellInfo = C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(spellID)
+        local spellName = spellInfo and spellInfo.name or fallbackName or ("Spell " .. tostring(spellID or "-"))
+        local spellIcon = spellInfo and spellInfo.iconID or 134400
+        self.icon:SetTexture(spellIcon)
+        self.name:SetText(spellName)
+        if usageValue == nil then
+            self.usage:SetText("")
+        else
+            self.usage:SetText(PvPIdiot:L("USAGE") .. " " .. PvPIdiot.Utils:FormatPercent(usageValue, 1))
+        end
+        self.badge:SetText(badgeText or "")
+    end
+
     function button:SetEmpty(badgeText)
         self.itemID = nil
+        self.spellID = nil
         self.icon:SetTexture(134400)
         self.name:SetText("-")
         self.usage:SetText("")

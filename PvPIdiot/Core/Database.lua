@@ -93,6 +93,25 @@ function DB:GetCurrentSpecMeta()
     return self:GetSpecMeta(config.selectedSpecID or 71)
 end
 
+function DB:GetCurrentStats()
+    local data = self:GetCurrentSpecData()
+    local stats = data and data.stats or {}
+    if next(stats) ~= nil then return stats end
+
+    local raw = data and data.statsRaw or {}
+    local total = 0
+    for _, key in ipairs({ "versatility", "haste", "mastery", "crit" }) do
+        total = total + math.max(0, tonumber(raw[key]) or 0)
+    end
+    if total <= 0 then return {} end
+
+    local normalized = {}
+    for _, key in ipairs({ "versatility", "haste", "mastery", "crit" }) do
+        normalized[key] = math.max(0, tonumber(raw[key]) or 0) / total
+    end
+    return normalized
+end
+
 function DB:GetGearSlot(slotKey)
     local data = self:GetCurrentSpecData()
     return data and data.gear and data.gear[slotKey] or {}
