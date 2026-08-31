@@ -3,9 +3,9 @@ import argparse
 import collections
 import datetime as dt
 import json
-import math
 import os
-import sys
+import random
+import time
 import urllib.error
 import urllib.request
 
@@ -60,6 +60,7 @@ SLOT_MAP = {
     "trinket-1": "TRINKET", "trinket-2": "TRINKET",
     "main-hand": "MAIN_HAND", "off-hand": "OFF_HAND",
 }
+ALL_SLOTS = list(dict.fromkeys(SLOT_MAP.values()))
 
 
 def pick(obj, *names, default=None):
@@ -84,52 +85,127 @@ def to_int(value, default=0):
         return default
 
 
-def fetch_json(url):
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "PvPIdiot/0.1 (+https://github.com/god2father/PvPIdiot)",
-            "Accept": "application/json,text/plain,*/*",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+def fetch_json(url, attempts=6):
+    retry_codes = {401, 408, 425, 429, 500, 502, 503, 504}
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 PvPIdiot/0.1 (+https://github.com/god2father/PvPIdiot)",
+                "Accept": "application/json,text/plain,*/*",
+                "Referer": "https://murlok.io/",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:
+                return None
+            last_error = exc
+            if exc.code not in retry_codes or attempt == attempts:
+                raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+            if attempt == attempts:
+                raise
+        delay = min(10.0, 1.2 * (2 ** (attempt - 1))) + random.uniform(0.2, 0.8)
+        print(f"  retry {attempt}/{attempts} after {last_error}; sleeping {delay:.1f}s", flush=True)
+        time.sleep(delay)
+    raise last_error
+
+
+def extract_id(entry):
+    if isinstance(entry, (int, float, str)):
+        return to_int(entry)
+    if not isinstance(entry, dict):
+        return 0
+    return to_int(pick(entry, "PvPTalentID", "TalentID", "TraitNodeID", "SpellID", "ID", "Id", default=0))
 
 
 def extract_pvp_talent_ids(char):
-    candidates = [
-        pick(char, "PvPTalents", "PvpTalents", "PVPTalents", "PvpTalentIDs", default=None),
-        pick(char, "PvPTalent", "PvpTalent", default=None),
-    ]
-    result = set()
-    for value in candidates:
-        if not value:
-            continue
-        if not isinstance(value, list):
-            value = [value]
-        for entry in value:
-            if isinstance(entry, (int, float, str)):
-                tid = to_int(entry)
-            elif isinstance(entry, dict):
-                tid = to_int(pick(entry, "PvPTalentID", "TalentID", "SpellID", "ID", "Id", default=0))
-            else:
-                tid = 0
-            if tid:
-                result.add(tid)
-    return result
+    value = pick(char, "PvPTalents", "PvpTalents", "PVPTalents", "PvpTalentIDs", default=[]) or []
+    if not isinstance(value, list):
+        value = [value]
+    return {tid for tid in (extract_id(entry) for entry in value) if tid}
+
+
+def extract_talent_ids(char, field):
+    value = pick(char, field, default=[]) or []
+    if isinstance(value, dict):
+        for key in ("Talents", "Nodes", "Entries", "Items"):
+            nested = pick(value, key, default=None)
+            if nested is not None:
+                value = nested
+                break
+        else:
+            value = list(value.values())
+    if not isinstance(value, list):
+        value = [value]
+    return {tid for tid in (extract_id(entry) for entry in value) if tid}
+
+
+def empty_spec(class_slug, spec_slug, class_name, spec_name, reason="no-data"):
+    return {
+        "meta": {
+            "sampleSize": 0,
+            "maxRating": 0,
+            "minRating": 0,
+            "avgRating": 0,
+            "classSlug": class_slug,
+            "specSlug": spec_slug,
+            "className": class_name,
+            "specName": spec_name,
+            "sourceUpdatedAt": "",
+            "dataAvailable": False,
+            "unavailableReason": reason,
+        },
+        "builds": [],
+        "talents": {"class": [], "spec": [], "hero": []},
+        "pvpTalents": [],
+        "pvpTalentCombos": [],
+        "gear": {slot: [] for slot in ALL_SLOTS},
+        "gems": [],
+        "enchants": {},
+        "stats": {},
+        "statsRaw": {},
+        "statPriority": [],
+    }
 
 
 def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_name, debug=False):
     chars = pick(payload, "Characters", "characters", default=[]) or []
     updated_at = pick(payload, "UpdatedAt", "updatedAt", "updated_at", default=None)
-    if debug and chars:
-        print("Sample character keys:", sorted(chars[0].keys()))
-
-    ratings = [to_int(pick(c, "RatingMM", "ratingMM", "Rating", default=0)) for c in chars]
-    ratings = [r for r in ratings if r > 0]
     n = len(chars)
+    if not n:
+        return empty_spec(class_slug, spec_slug, class_name, spec_name), updated_at
+
+    if debug:
+        first = chars[0]
+        print("Sample character keys:", sorted(first.keys()), flush=True)
+        for key in ("PvPTalents", "ClassTalents", "SpecializationTalents", "HeroTalents"):
+            value = pick(first, key, default=None)
+            print(f"Sample {key}: type={type(value).__name__} value={repr(value)[:1200]}", flush=True)
+        print("Sample stats:", {
+            k: pick(first, k, default=None) for k in (
+                "Haste", "HasteValue", "HasteBonus", "CritValue", "Mastery", "MasteryValue",
+                "MasteryBonus", "Versatility", "VersatilityBonus", "RatingSoloShuffle"
+            )
+        }, flush=True)
+
+    ratings = [
+        to_int(pick(c, "RatingSoloShuffle", "ratingSoloShuffle", "RatingSolo", "Rating", default=0))
+        for c in chars
+    ]
+    ratings = [r for r in ratings if r > 0]
 
     build_counts = collections.Counter()
+    talent_counts = {
+        "class": collections.Counter(),
+        "spec": collections.Counter(),
+        "hero": collections.Counter(),
+    }
     gear_counts = collections.defaultdict(collections.Counter)
     gear_bonus = collections.defaultdict(dict)
     gem_players = collections.Counter()
@@ -143,11 +219,20 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
         if code:
             build_counts[str(code)] += 1
 
+        for tid in extract_talent_ids(char, "ClassTalents"):
+            talent_counts["class"][tid] += 1
+        for tid in extract_talent_ids(char, "SpecializationTalents"):
+            talent_counts["spec"][tid] += 1
+        for tid in extract_talent_ids(char, "HeroTalents"):
+            talent_counts["hero"][tid] += 1
+        for tid in extract_pvp_talent_ids(char):
+            pvp_talent_players[tid] += 1
+
         for stat_key, api_names in {
-            "haste": ("Haste", "haste"),
-            "crit": ("Crit", "crit", "CriticalStrike"),
-            "mastery": ("Mastery", "mastery"),
-            "versatility": ("Versatility", "versatility"),
+            "haste": ("Haste", "HasteBonus", "haste"),
+            "crit": ("Crit", "CritBonus", "crit"),
+            "mastery": ("Mastery", "MasteryBonus", "mastery"),
+            "versatility": ("Versatility", "VersatilityBonus", "versatility"),
         }.items():
             stat_totals[stat_key] += to_int(pick(char, *api_names, default=0))
 
@@ -186,8 +271,6 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
         for slot, ids in char_enchants.items():
             for eid in ids:
                 enchant_players[slot][eid] += 1
-        for tid in extract_pvp_talent_ids(char):
-            pvp_talent_players[tid] += 1
 
     def usage(count):
         return round(count / n, 4) if n else 0
@@ -197,9 +280,14 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
         for code, count in build_counts.most_common(3)
     ]
 
-    gear = {}
-    for slot in SLOT_MAP.values():
-        gear.setdefault(slot, [])
+    talents = {}
+    for group, counter in talent_counts.items():
+        talents[group] = [
+            {"id": talent_id, "count": count, "usage": usage(count)}
+            for talent_id, count in counter.most_common()
+        ]
+
+    gear = {slot: [] for slot in ALL_SLOTS}
     for slot, counter in gear_counts.items():
         for item_id, count in counter.most_common(5):
             gear[slot].append({
@@ -251,9 +339,10 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
             "className": class_name,
             "specName": spec_name,
             "sourceUpdatedAt": updated_at or "",
+            "dataAvailable": True,
         },
         "builds": builds,
-        "talents": {"class": [], "spec": [], "hero": []},
+        "talents": talents,
         "pvpTalents": pvp_talents,
         "pvpTalentCombos": [],
         "gear": gear,
@@ -309,6 +398,7 @@ def main():
     parser.add_argument("--mode", default="solo")
     parser.add_argument("--output", default="Data/MurlokData.lua")
     parser.add_argument("--allow-partial", action="store_true")
+    parser.add_argument("--delay", type=float, default=0.8)
     args = parser.parse_args()
 
     specs_data = {}
@@ -319,25 +409,35 @@ def main():
     for i, (class_slug, spec_slug, spec_id, class_name, spec_name) in enumerate(SPECS, 1):
         url = f"https://murlok.io/api/guides/{class_slug}/{spec_slug}/{args.mode}"
         print(f"[{i:02d}/{len(SPECS)}] {class_name} {spec_name}: {url}", flush=True)
+        spec_index[spec_id] = {
+            "classSlug": class_slug,
+            "specSlug": spec_slug,
+            "className": class_name,
+            "specName": spec_name,
+        }
         try:
             payload = fetch_json(url)
-            data, updated = aggregate_spec(
-                payload, class_slug, spec_slug, spec_id, class_name, spec_name,
-                debug=(class_slug == "warrior" and spec_slug == "arms"),
-            )
+            if payload is None:
+                data = empty_spec(class_slug, spec_slug, class_name, spec_name, reason="murlok-404")
+                updated = None
+                print("  -> no current Murlok Solo data (404); stored empty spec", flush=True)
+            else:
+                data, updated = aggregate_spec(
+                    payload, class_slug, spec_slug, spec_id, class_name, spec_name,
+                    debug=(class_slug == "warrior" and spec_slug == "arms"),
+                )
             specs_data[spec_id] = data
-            spec_index[spec_id] = {
-                "classSlug": class_slug,
-                "specSlug": spec_slug,
-                "className": class_name,
-                "specName": spec_name,
-            }
             if updated:
                 timestamps.append(str(updated))
             print(f"  -> {data['meta']['sampleSize']} characters, {len(data['builds'])} builds, {sum(len(v) for v in data['gear'].values())} gear rows", flush=True)
         except Exception as exc:
             failures.append((class_name, spec_name, str(exc)))
-            print(f"  !! FAILED: {exc}", flush=True)
+            if args.allow_partial:
+                specs_data[spec_id] = empty_spec(class_slug, spec_slug, class_name, spec_name, reason=f"fetch-failed: {exc}")
+                print(f"  !! FAILED after retries; stored empty spec: {exc}", flush=True)
+            else:
+                print(f"  !! FAILED: {exc}", flush=True)
+        time.sleep(args.delay + random.uniform(0.0, 0.35))
 
     if failures and not args.allow_partial:
         print("\nFailures:")
@@ -355,6 +455,7 @@ def main():
         "updatedAt": max(timestamps) if timestamps else generated_at,
         "generatedAt": generated_at,
         "specIndex": spec_index,
+        "fetchFailures": [f"{c} {s}: {e}" for c, s, e in failures],
         "seasons": [{
             "id": 1,
             "name": "Midnight Season 2",
@@ -367,16 +468,21 @@ def main():
     }
 
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
-    header = "-- Generated snapshot from Murlok.io JSON API.\n-- One-time validation data; not the long-term official PvPIdiot data source.\n-- Do not edit manually.\n"
+    header = (
+        "-- Generated snapshot from Murlok.io JSON API.\n"
+        "-- One-time validation data; not the long-term official PvPIdiot data source.\n"
+        "-- Scope: Solo Shuffle, Top 50 per specialization, US/EU/KR/TW.\n"
+        "-- Do not edit manually.\n"
+    )
     with open(args.output, "w", encoding="utf-8") as f:
         f.write(header)
         f.write("_G.PvPIdiotData = ")
         f.write(lua_dump(root))
         f.write("\n")
 
-    print(f"\nWrote {args.output} with {len(specs_data)}/{len(SPECS)} specs")
+    print(f"\nWrote {args.output} with {len(specs_data)}/{len(SPECS)} spec entries")
     if failures:
-        print(f"Partial snapshot: {len(failures)} failures")
+        print(f"Snapshot contains {len(failures)} fetch-failure placeholders")
 
 
 if __name__ == "__main__":
