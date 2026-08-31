@@ -2,6 +2,8 @@ name: Fetch Murlok PvP snapshot
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
   push:
     branches: [main]
     paths:
@@ -13,6 +15,7 @@ permissions:
 
 jobs:
   fetch:
+    if: github.event_name != 'issues' || github.event.issue.title == 'Run Murlok snapshot'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
