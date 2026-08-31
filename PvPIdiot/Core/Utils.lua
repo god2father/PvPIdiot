@@ -116,3 +116,18 @@ function Utils:GetPvpTalentInfo(id)
     end
     return "PvP Talent " .. tostring(id), 134400
 end
+
+function Utils:GetTraitTalentInfo(nodeID, fallbackKind)
+    local configID = C_ClassTalents and C_ClassTalents.GetActiveConfigID and C_ClassTalents.GetActiveConfigID()
+    local node = configID and C_Traits and C_Traits.GetNodeInfo and C_Traits.GetNodeInfo(configID, nodeID)
+    local entryID = node and (node.activeEntry or node.activeEntryID or (node.entries and node.entries[1]))
+    local entry = entryID and C_Traits and C_Traits.GetEntryInfo and C_Traits.GetEntryInfo(configID, entryID)
+    local definition = entry and entry.definitionID and C_Traits and C_Traits.GetDefinitionInfo and C_Traits.GetDefinitionInfo(entry.definitionID)
+    local spellInfo = definition and definition.spellID and C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(definition.spellID)
+
+    if spellInfo and spellInfo.name and spellInfo.name ~= "?" then
+        return spellInfo.name, spellInfo.iconID or 134400
+    end
+
+    return (fallbackKind or "Talent") .. " #" .. tostring(nodeID or "-"), 134400
+end

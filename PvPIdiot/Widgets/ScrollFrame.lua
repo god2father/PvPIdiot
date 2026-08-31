@@ -19,6 +19,10 @@ function PvPIdiot:CreateScrollableContainer(parent, minimumHeight)
     end
 
     scrollFrame:SetScript("OnSizeChanged", UpdateContentSize)
+    function scrollFrame:SetMinimumHeight(value)
+        minimumHeight = value or 1
+        UpdateContentSize()
+    end
     scrollFrame:SetScript("OnMouseWheel", function(self, delta)
         local step = 40
         local maxScroll = math.max(0, content:GetHeight() - self:GetHeight())

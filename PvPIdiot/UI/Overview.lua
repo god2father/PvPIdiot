@@ -176,7 +176,7 @@ function PvPIdiot:CreateOverviewPage(parent)
                         info.entry.source.id or info.entry.enchantID,
                         info.entry.usage,
                         info.slot,
-                        self:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-")
+                        info.entry.source.name or (self:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-"))
                     )
                 end
             end

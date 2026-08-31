@@ -1,20 +1,22 @@
 local ADDON_NAME, PvPIdiot = ...
 
 local SLOTS = {
-    { key = "HEAD", labelKey = "SLOT_HEAD", inventory = 1 },
-    { key = "NECK", labelKey = "SLOT_NECK", inventory = 2 },
-    { key = "SHOULDER", labelKey = "SLOT_SHOULDER", inventory = 3 },
-    { key = "BACK", labelKey = "SLOT_BACK", inventory = 15 },
-    { key = "CHEST", labelKey = "SLOT_CHEST", inventory = 5 },
-    { key = "WRIST", labelKey = "SLOT_WRIST", inventory = 9 },
-    { key = "HANDS", labelKey = "SLOT_HANDS", inventory = 10 },
-    { key = "WAIST", labelKey = "SLOT_WAIST", inventory = 6 },
-    { key = "LEGS", labelKey = "SLOT_LEGS", inventory = 7 },
-    { key = "FEET", labelKey = "SLOT_FEET", inventory = 8 },
-    { key = "FINGER", labelKey = "SLOT_FINGER", inventory = 11 },
-    { key = "TRINKET", labelKey = "SLOT_TRINKET", inventory = 13 },
-    { key = "MAIN_HAND", labelKey = "SLOT_MAIN_HAND", inventory = 16 },
-    { key = "OFF_HAND", labelKey = "SLOT_OFF_HAND", inventory = 17 },
+    { id = "HEAD", dataKey = "HEAD", labelKey = "SLOT_HEAD", inventory = 1 },
+    { id = "NECK", dataKey = "NECK", labelKey = "SLOT_NECK", inventory = 2 },
+    { id = "SHOULDER", dataKey = "SHOULDER", labelKey = "SLOT_SHOULDER", inventory = 3 },
+    { id = "BACK", dataKey = "BACK", labelKey = "SLOT_BACK", inventory = 15 },
+    { id = "CHEST", dataKey = "CHEST", labelKey = "SLOT_CHEST", inventory = 5 },
+    { id = "WRIST", dataKey = "WRIST", labelKey = "SLOT_WRIST", inventory = 9 },
+    { id = "HANDS", dataKey = "HANDS", labelKey = "SLOT_HANDS", inventory = 10 },
+    { id = "WAIST", dataKey = "WAIST", labelKey = "SLOT_WAIST", inventory = 6 },
+    { id = "LEGS", dataKey = "LEGS", labelKey = "SLOT_LEGS", inventory = 7 },
+    { id = "FEET", dataKey = "FEET", labelKey = "SLOT_FEET", inventory = 8 },
+    { id = "FINGER_1", dataKey = "FINGER", labelKey = "SLOT_FINGER_1", inventory = 11 },
+    { id = "FINGER_2", dataKey = "FINGER", labelKey = "SLOT_FINGER_2", inventory = 12 },
+    { id = "TRINKET_1", dataKey = "TRINKET", labelKey = "SLOT_TRINKET_1", inventory = 13 },
+    { id = "TRINKET_2", dataKey = "TRINKET", labelKey = "SLOT_TRINKET_2", inventory = 14 },
+    { id = "MAIN_HAND", dataKey = "MAIN_HAND", labelKey = "SLOT_MAIN_HAND", inventory = 16 },
+    { id = "OFF_HAND", dataKey = "OFF_HAND", labelKey = "SLOT_OFF_HAND", inventory = 17 },
 }
 
 local function GetItemIDFromLink(link)
@@ -34,7 +36,7 @@ function PvPIdiot:CreateGearPage(parent)
     local left = CreateFrame("Frame", nil, page, "BackdropTemplate")
     left:SetPoint("TOPLEFT", 10, -10)
     left:SetPoint("BOTTOMLEFT", 10, 10)
-    left:SetWidth(160)
+    left:SetWidth(240)
     left:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8X8", edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
     left:SetBackdropColor(0.035, 0.045, 0.065, 0.95)
     left:SetBackdropBorderColor(0.16, 0.18, 0.22, 1)
@@ -48,24 +50,18 @@ function PvPIdiot:CreateGearPage(parent)
 
     local title = left:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     title:SetPoint("TOPLEFT", 10, -10)
-    title:SetText(self:L("GEAR"))
+    title:SetText(self:L("YOUR_GEAR"))
     title:SetTextColor(0.95, 0.71, 0.25)
 
     for i, slot in ipairs(SLOTS) do
-        local button = CreateFrame("Button", nil, left, "BackdropTemplate")
-        button:SetSize(138, 28)
-        button:SetPoint("TOPLEFT", 10, -34 - (i - 1) * 31)
-        button:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8X8", edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
-        local text = button:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        text:SetPoint("LEFT", 8, 0)
-        text:SetText(self:L(slot.labelKey))
-        button.text = text
+        local button = self:CreateItemButton(left, 218, 28)
+        button:SetPoint("TOPLEFT", 10, -34 - (i - 1) * 30)
         button.slotInfo = slot
-        button:SetScript("OnClick", function()
-            page.selectedSlot = slot.key
+        button:SetAction(function()
+            page.selectedSlot = slot.id
             page:Refresh()
         end)
-        page.slotButtons[slot.key] = button
+        page.slotButtons[slot.id] = button
     end
 
     local selectedTitle = right:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
@@ -113,26 +109,26 @@ function PvPIdiot:CreateGearPage(parent)
     function page:Refresh()
         local selectedInfo
         for _, slot in ipairs(SLOTS) do
-            if slot.key == self.selectedSlot then selectedInfo = slot break end
+            if slot.id == self.selectedSlot then selectedInfo = slot break end
         end
         selectedInfo = selectedInfo or SLOTS[1]
         self.selectedTitle:SetText(PvPIdiot:L(selectedInfo.labelKey))
 
         for key, button in pairs(self.slotButtons) do
-            if key == self.selectedSlot then
-                button:SetBackdropColor(0.10, 0.085, 0.055, 1)
-                button:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
-                button.text:SetTextColor(0.95, 0.71, 0.25)
+            local slot = button.slotInfo
+            local itemLink = GetInventoryItemLink and GetInventoryItemLink("player", slot.inventory)
+            local itemID = GetItemIDFromLink(itemLink)
+            if itemID then
+                button:SetItem(itemID, nil, PvPIdiot:L(slot.labelKey))
             else
-                button:SetBackdropColor(0.05, 0.06, 0.08, 1)
-                button:SetBackdropBorderColor(0.20, 0.22, 0.25, 1)
-                button.text:SetTextColor(0.72, 0.74, 0.78)
+                button:SetEmpty(PvPIdiot:L(slot.labelKey))
             end
+            button:SetSelected(key == self.selectedSlot)
         end
 
         local currentLink = GetInventoryItemLink and GetInventoryItemLink("player", selectedInfo.inventory)
         local currentID = GetItemIDFromLink(currentLink)
-        local comparison = PvPIdiot.DB:GetGearComparison(self.selectedSlot, currentID)
+        local comparison = PvPIdiot.DB:GetGearComparison(selectedInfo.dataKey, currentID)
         local recommendations = comparison.recommendations
 
         if currentID then

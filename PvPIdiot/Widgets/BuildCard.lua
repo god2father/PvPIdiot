@@ -32,16 +32,10 @@ function PvPIdiot:CreateBuildCard(parent, width, height)
     card.hero = hero
 
     local preview = card:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    preview:SetPoint("BOTTOMLEFT", 10, 11)
-    preview:SetText(PvPIdiot:L("VIEW_TALENTS"))
+    preview:SetPoint("BOTTOM", 0, 11)
+    preview:SetText(PvPIdiot:L("VIEW_BUILD"))
     preview:SetTextColor(0.58, 0.62, 0.70)
     card.preview = preview
-
-    local import = CreateFrame("Button", nil, card, "UIPanelButtonTemplate")
-    import:SetSize(72, 24)
-    import:SetPoint("BOTTOMRIGHT", -8, 8)
-    import:SetText(PvPIdiot:L("IMPORT"))
-    card.import = import
 
     function card:SetBuild(build, index)
         self.build = build
@@ -49,11 +43,8 @@ function PvPIdiot:CreateBuildCard(parent, width, height)
         self.usage:SetText(PvPIdiot.Utils:FormatPercent(build and build.usage or 0, 1))
         self.count:SetText(PvPIdiot:L("COUNT") .. ": " .. tostring(build and build.count or 0))
         self.hero:SetText(PvPIdiot:L("HERO_ID") .. ": " .. tostring(build and build.heroTalentID or "-"))
-        self.import:SetScript("OnClick", function()
-            PvPIdiot:ImportBuild(build)
-        end)
         self:SetScript("OnClick", function()
-            PvPIdiot:ImportBuild(build)
+            PvPIdiot:OpenBuildDetails(build, index)
         end)
         self:SetScript("OnEnter", function(self)
             self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)

@@ -28,6 +28,7 @@ UI/Sidebar.lua
 UI/Tabs.lua
 UI/Overview.lua
 UI/Talents.lua
+UI/BuildDetails.lua
 UI/Gear.lua
 UI/GemsEnchants.lua
 UI/Stats.lua

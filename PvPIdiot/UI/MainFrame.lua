@@ -161,6 +161,7 @@ function PvPIdiot:CreateMainFrame()
     self:RestoreFrameState(frame)
     self:CreateSidebar(sidebar)
     self:CreateTabs(frame)
+    self.ui.buildDetails = self:CreateBuildDetails(frame)
     return frame
 end
 

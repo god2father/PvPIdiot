@@ -40,13 +40,18 @@ function PvPIdiot:CreateTalentButton(parent, width, height)
                 spec = PvPIdiot:L("SPEC_TALENTS"),
                 hero = PvPIdiot:L("HERO_TALENTS"),
             }
-            talentName = (kindLabels[kind] or "Talent") .. " #" .. tostring(talent.id or "-")
-            talentIcon = 134400
+            talentName, talentIcon = PvPIdiot.Utils:GetTraitTalentInfo(talent.id, kindLabels[kind] or "Talent")
         end
         self.icon:SetTexture(talentIcon or 134400)
         self.name:SetText(talentName)
-        self.usage:SetText(PvPIdiot.Utils:FormatPercent(talent.usage or 0, 1))
-        self.bar:SetPercent(talent.usage or 0)
+        if talent.usage == nil then
+            self.usage:SetText("")
+            self.bar:Hide()
+        else
+            self.usage:SetText(PvPIdiot.Utils:FormatPercent(talent.usage, 1))
+            self.bar:SetPercent(talent.usage)
+            self.bar:Show()
+        end
     end
 
     row:EnableMouse(true)

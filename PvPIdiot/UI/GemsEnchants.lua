@@ -72,7 +72,7 @@ function PvPIdiot:CreateGemsEnchantsPage(parent)
                         source.id or info.entry.enchantID,
                         info.entry.usage,
                         info.slot == "WEAPON" and PvPIdiot:L("ENCHANT_WEAPON") or info.slot == "RING" and PvPIdiot:L("ENCHANT_RING") or info.slot,
-                        PvPIdiot:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-")
+                        source.name or (PvPIdiot:L("ENCHANT") .. " #" .. tostring(info.entry.enchantID or "-"))
                     )
                 end
             end

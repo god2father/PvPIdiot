@@ -201,6 +201,7 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
     ratings = [r for r in ratings if r > 0]
 
     build_counts = collections.Counter()
+    build_details = {}
     talent_counts = {
         "class": collections.Counter(),
         "spec": collections.Counter(),
@@ -217,7 +218,17 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
     for char in chars:
         code = pick(char, "TalentsCode", "talentsCode", "TalentCode", default="") or ""
         if code:
-            build_counts[str(code)] += 1
+            code = str(code)
+            build_counts[code] += 1
+            if code not in build_details:
+                build_details[code] = {
+                    "talents": {
+                        "class": [{"id": tid} for tid in sorted(extract_talent_ids(char, "ClassTalents"))],
+                        "spec": [{"id": tid} for tid in sorted(extract_talent_ids(char, "SpecializationTalents"))],
+                        "hero": [{"id": tid} for tid in sorted(extract_talent_ids(char, "HeroTalents"))],
+                    },
+                    "pvpTalents": [{"id": tid} for tid in sorted(extract_pvp_talent_ids(char))],
+                }
 
         for tid in extract_talent_ids(char, "ClassTalents"):
             talent_counts["class"][tid] += 1
@@ -257,14 +268,16 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
                 if not isinstance(ench, dict) or not slot:
                     continue
                 enchant_id = to_int(pick(ench, "ID", "Id", "EnchantID", default=0))
-                source_item = to_int(pick(ench, "ItemID", "itemID", default=0))
-                key = enchant_id or source_item
-                if key:
-                    char_enchants[slot].add(key)
-                    enchant_source[slot][key] = {
-                        "enchantID": enchant_id or key,
-                        "sourceItemID": source_item,
-                    }
+            source_item = to_int(pick(ench, "ItemID", "itemID", default=0))
+            source_name = pick(ench, "Name", "name", "SpellName", "spellName", default=None)
+            key = enchant_id or source_item
+            if key:
+                char_enchants[slot].add(key)
+                enchant_source[slot][key] = {
+                    "enchantID": enchant_id or key,
+                    "sourceItemID": source_item,
+                    "name": source_name,
+                }
 
         for gem_id in char_gems:
             gem_players[gem_id] += 1
@@ -275,10 +288,11 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
     def usage(count):
         return round(count / n, 4) if n else 0
 
-    builds = [
-        {"talentString": code, "count": count, "usage": usage(count)}
-        for code, count in build_counts.most_common(3)
-    ]
+    builds = []
+    for code, count in build_counts.most_common(3):
+        build = {"talentString": code, "count": count, "usage": usage(count)}
+        build.update(build_details.get(code, {}))
+        builds.append(build)
 
     talents = {}
     for group, counter in talent_counts.items():
@@ -316,7 +330,11 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
             if source_item:
                 row["source"] = {"type": "item", "id": source_item}
             else:
-                row["source"] = {"type": "enchant", "id": row["enchantID"]}
+                row["source"] = {
+                    "type": "enchant",
+                    "id": row["enchantID"],
+                    "name": src.get("name"),
+                }
             rows.append(row)
         enchants[slot] = rows
 

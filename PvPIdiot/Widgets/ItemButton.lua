@@ -47,16 +47,39 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         end
     end)
     button:SetScript("OnLeave", function(self)
-        self:SetBackdropBorderColor(0.22, 0.24, 0.28, 1)
+        if self.selected then
+            self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
+        else
+            self:SetBackdropBorderColor(0.22, 0.24, 0.28, 1)
+        end
         PvPIdiot.Utils:HideTooltip()
     end)
     button:SetScript("OnClick", function(self)
+        local handled = false
         if self.itemID then
-            PvPIdiot.Utils:InsertModifiedItemLink(self.itemID)
+            handled = PvPIdiot.Utils:InsertModifiedItemLink(self.itemID)
         elseif self.spellID then
-            PvPIdiot.Utils:InsertModifiedSpellLink(self.spellID)
+            handled = PvPIdiot.Utils:InsertModifiedSpellLink(self.spellID)
+        end
+        if not handled and self.onActivate then
+            self.onActivate(self)
         end
     end)
+
+    function button:SetAction(callback)
+        self.onActivate = callback
+    end
+
+    function button:SetSelected(selected)
+        self.selected = selected == true
+        if self.selected then
+            self:SetBackdropColor(0.10, 0.085, 0.055, 1)
+            self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
+        else
+            self:SetBackdropColor(0.06, 0.075, 0.10, 0.92)
+            self:SetBackdropBorderColor(0.22, 0.24, 0.28, 1)
+        end
+    end
 
     function button:SetItem(itemID, usageValue, badgeText)
         self.itemID = itemID
@@ -84,7 +107,10 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         self.itemID = nil
         self.spellID = spellID
         local spellInfo = C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(spellID)
-        local spellName = spellInfo and spellInfo.name or fallbackName or ("Spell " .. tostring(spellID or "-"))
+        local spellName = spellInfo and spellInfo.name
+        if not spellName or spellName == "?" then
+            spellName = fallbackName or ("Spell " .. tostring(spellID or "-"))
+        end
         local spellIcon = spellInfo and spellInfo.iconID or 134400
         self.icon:SetTexture(spellIcon)
         self.name:SetText(spellName)
