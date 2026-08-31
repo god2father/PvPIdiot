@@ -26,6 +26,8 @@ function PvPIdiot:ImportBuild(build)
         return
     end
 
+    local specMeta = self.DB:GetCurrentSpecMeta()
+    local specName = specMeta and specMeta.specName or "PvP"
     local ok = pcall(function()
         if C_AddOns and C_AddOns.LoadAddOn and not PlayerSpellsFrame then
             C_AddOns.LoadAddOn("Blizzard_PlayerSpells")
@@ -41,7 +43,7 @@ function PvPIdiot:ImportBuild(build)
             if PlayerSpellsFrame.TalentsFrame and PlayerSpellsFrame.TalentsFrame.ImportLoadout then
                 PlayerSpellsFrame.TalentsFrame:ImportLoadout(
                     build.talentString,
-                    "PvP Idiot - Arms - Solo"
+                    "PvP Idiot - " .. specName .. " - Solo"
                 )
                 return
             end
@@ -102,11 +104,19 @@ function PvPIdiot:CreateMainFrame()
     dataText:SetTextColor(0.68, 0.70, 0.76)
     frame.dataText = dataText
 
-    local mockBadge = header:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    mockBadge:SetPoint("RIGHT", dataText, "LEFT", -12, 0)
-    mockBadge:SetText(metadata.isMock and self:L("MOCK_DATA") or "")
-    mockBadge:SetTextColor(1, 0.55, 0.15)
-    frame.mockBadge = mockBadge
+    local sourceBadge = header:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    sourceBadge:SetPoint("RIGHT", dataText, "LEFT", -12, 0)
+    if metadata.isMock then
+        sourceBadge:SetText(self:L("MOCK_DATA"))
+        sourceBadge:SetTextColor(1, 0.55, 0.15)
+    elseif metadata.source == "murlok.io" then
+        sourceBadge:SetText("Murlok Snapshot")
+        sourceBadge:SetTextColor(0.95, 0.71, 0.25)
+    else
+        sourceBadge:SetText("")
+    end
+    frame.sourceBadge = sourceBadge
+    frame.mockBadge = sourceBadge -- compatibility with the original v0.1 field name
 
     local close = CreateFrame("Button", nil, header, "UIPanelCloseButton")
     close:SetPoint("RIGHT", -4, 0)
