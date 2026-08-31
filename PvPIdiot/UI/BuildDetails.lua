@@ -11,6 +11,9 @@ function PvPIdiot:CreateBuildDetails(parent)
     local modal = CreateFrame("Frame", nil, parent, "BackdropTemplate")
     modal:SetAllPoints()
     modal:SetFrameStrata("DIALOG")
+    modal:SetFrameLevel((parent:GetFrameLevel() or 0) + 30)
+    modal:EnableMouse(true)
+    if modal.SetToplevel then modal:SetToplevel(true) end
     modal:SetBackdrop({
         bgFile = "Interface\\Buttons\\WHITE8X8",
         edgeFile = "Interface\\Buttons\\WHITE8X8",
@@ -36,6 +39,7 @@ function PvPIdiot:CreateBuildDetails(parent)
     modal.import = import
 
     local scroll, content = self:CreateScrollableContainer(modal, 620)
+    scroll:ClearAllPoints()
     scroll:SetPoint("TOPLEFT", 12, -54)
     scroll:SetPoint("BOTTOMRIGHT", -12, 12)
     modal.scroll = scroll
@@ -65,6 +69,7 @@ function PvPIdiot:CreateBuildDetails(parent)
                     header:SetTextColor(0.95, 0.71, 0.25)
                     self.headers[headerIndex] = header
                 end
+                header:ClearAllPoints()
                 header:SetPoint("TOPLEFT", 12, y)
                 header:SetText(PvPIdiot:L(group.label))
                 header:Show()
@@ -75,11 +80,14 @@ function PvPIdiot:CreateBuildDetails(parent)
                     local row = self.rows[rowIndex]
                     if not row then
                         row = PvPIdiot:CreateTalentButton(content, 620, 44)
+                        row:SetAction(function()
+                            PvPIdiot:OpenTalentPanel()
+                        end)
                         self.rows[rowIndex] = row
                     end
+                    row:ClearAllPoints()
                     row:SetPoint("TOPLEFT", 12, y)
                     row:SetPoint("TOPRIGHT", content, "TOPRIGHT", -12, y)
-                    row.kind = group.key
                     row:SetTalent(talent, group.key)
                     row:Show()
                     rowIndex = rowIndex + 1
@@ -98,6 +106,7 @@ function PvPIdiot:CreateBuildDetails(parent)
                 header = content:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
                 self.headers[1] = header
             end
+            header:ClearAllPoints()
             header:SetPoint("TOPLEFT", 12, -8)
             header:SetText(PvPIdiot:L("BUILD_DETAILS_UNAVAILABLE"))
             header:SetTextColor(0.72, 0.74, 0.78)
@@ -107,12 +116,14 @@ function PvPIdiot:CreateBuildDetails(parent)
 
         self.scroll:SetMinimumHeight(math.max(620, -y + 20))
         self:Show()
+        self:Raise()
     end
 
     return modal
 end
 
 function PvPIdiot:OpenBuildDetails(build, index)
+    if not build then return end
     local modal = self.ui.buildDetails or self:CreateBuildDetails(self.ui.mainFrame)
     self.ui.buildDetails = modal
     modal:ShowBuild(build, index)

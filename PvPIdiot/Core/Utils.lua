@@ -3,6 +3,8 @@ local ADDON_NAME, PvPIdiot = ...
 local Utils = {}
 PvPIdiot.Utils = Utils
 
+local traitLookupCache = {}
+
 function Utils:Clamp(value, minValue, maxValue)
     return math.max(minValue, math.min(maxValue, value))
 end
@@ -109,25 +111,126 @@ function Utils:GetPvpTalentInfo(id)
     if C_SpecializationInfo and C_SpecializationInfo.GetPvpTalentInfo then
         local a, b = C_SpecializationInfo.GetPvpTalentInfo(id)
         if type(a) == "table" then
-            return a.name or ("PvP Talent " .. id), a.icon or 134400
+            return a.name or ("PvP Talent " .. id), a.icon or 134400, a.spellID
         elseif type(a) == "string" then
-            return a, b or 134400
+            return a, b or 134400, nil
         end
     end
-    return "PvP Talent " .. tostring(id), 134400
+    return "PvP Talent " .. tostring(id), 134400, nil
 end
 
-function Utils:GetTraitTalentInfo(nodeID, fallbackKind)
-    local configID = C_ClassTalents and C_ClassTalents.GetActiveConfigID and C_ClassTalents.GetActiveConfigID()
-    local node = configID and C_Traits and C_Traits.GetNodeInfo and C_Traits.GetNodeInfo(configID, nodeID)
-    local entryID = node and (node.activeEntry or node.activeEntryID or (node.entries and node.entries[1]))
-    local entry = entryID and C_Traits and C_Traits.GetEntryInfo and C_Traits.GetEntryInfo(configID, entryID)
-    local definition = entry and entry.definitionID and C_Traits and C_Traits.GetDefinitionInfo and C_Traits.GetDefinitionInfo(entry.definitionID)
-    local spellInfo = definition and definition.spellID and C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(definition.spellID)
+local function GetCurrentSpecID()
+    if PlayerUtil and PlayerUtil.GetCurrentSpecID then
+        return PlayerUtil.GetCurrentSpecID()
+    end
+    if GetSpecialization and GetSpecializationInfo then
+        local index = GetSpecialization()
+        if index then return select(1, GetSpecializationInfo(index)) end
+    end
+end
 
-    if spellInfo and spellInfo.name and spellInfo.name ~= "?" then
-        return spellInfo.name, spellInfo.iconID or 134400
+local function GetActiveEntryID(node)
+    if not node then return nil end
+    if type(node.activeEntry) == "table" then
+        return node.activeEntry.entryID or node.activeEntry.ID
+    end
+    return node.activeEntry or node.activeEntryID
+end
+
+local function AddTraitLookupEntry(lookup, configID, nodeID, entryID, mapNode)
+    if not entryID or not C_Traits or not C_Traits.GetEntryInfo then return end
+    local entry = C_Traits.GetEntryInfo(configID, entryID)
+    if not entry then return end
+
+    local definitionID = entry.definitionID
+    local definition = definitionID and C_Traits.GetDefinitionInfo and C_Traits.GetDefinitionInfo(definitionID)
+    local spellID = definition and definition.spellID
+    local spellInfo = spellID and C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(spellID)
+    local name = spellInfo and spellInfo.name
+    local icon = spellInfo and spellInfo.iconID
+    if not name or name == "?" then return end
+
+    local info = {
+        name = name,
+        icon = icon or 134400,
+        spellID = spellID,
+        nodeID = nodeID,
+        entryID = entryID,
+        definitionID = definitionID,
+    }
+
+    if mapNode and nodeID then lookup[nodeID] = lookup[nodeID] or info end
+    lookup[entryID] = lookup[entryID] or info
+    if definitionID then lookup[definitionID] = lookup[definitionID] or info end
+    if spellID then lookup[spellID] = lookup[spellID] or info end
+end
+
+local function BuildTraitLookup()
+    local specID = (PvPIdiot.config and PvPIdiot.config.selectedSpecID) or GetCurrentSpecID()
+    local configID = C_ClassTalents and C_ClassTalents.GetActiveConfigID and C_ClassTalents.GetActiveConfigID()
+    local treeID = specID and C_ClassTalents and C_ClassTalents.GetTraitTreeForSpec and C_ClassTalents.GetTraitTreeForSpec(specID)
+    if not specID or not configID or not treeID or not C_Traits or not C_Traits.GetTreeNodes then
+        return {}
     end
 
-    return (fallbackKind or "Talent") .. " #" .. tostring(nodeID or "-"), 134400
+    local cacheKey = tostring(specID) .. ":" .. tostring(configID) .. ":" .. tostring(treeID)
+    if traitLookupCache[cacheKey] then return traitLookupCache[cacheKey] end
+
+    local lookup = {}
+    for _, nodeID in ipairs(C_Traits.GetTreeNodes(treeID) or {}) do
+        local node = C_Traits.GetNodeInfo and C_Traits.GetNodeInfo(configID, nodeID)
+        if node then
+            local activeEntryID = GetActiveEntryID(node)
+            if activeEntryID then
+                AddTraitLookupEntry(lookup, configID, nodeID, activeEntryID, true)
+            end
+
+            local entryIDs = node.entryIDs or node.entries or {}
+            for index, entryID in ipairs(entryIDs) do
+                AddTraitLookupEntry(lookup, configID, nodeID, entryID, not activeEntryID and index == 1)
+            end
+        end
+    end
+
+    traitLookupCache[cacheKey] = lookup
+    return lookup
+end
+
+function Utils:ClearTraitLookupCache()
+    traitLookupCache = {}
+end
+
+function Utils:GetTraitTalentInfo(id, fallbackKind)
+    if not id then return (fallbackKind or "Talent") .. " #-", 134400, nil end
+
+    local configID = C_ClassTalents and C_ClassTalents.GetActiveConfigID and C_ClassTalents.GetActiveConfigID()
+    local node = configID and C_Traits and C_Traits.GetNodeInfo and C_Traits.GetNodeInfo(configID, id)
+    if node then
+        local entryID = GetActiveEntryID(node)
+        if not entryID then
+            local entryIDs = node.entryIDs or node.entries
+            entryID = entryIDs and entryIDs[1]
+        end
+        local entry = entryID and C_Traits.GetEntryInfo and C_Traits.GetEntryInfo(configID, entryID)
+        local definition = entry and entry.definitionID and C_Traits.GetDefinitionInfo and C_Traits.GetDefinitionInfo(entry.definitionID)
+        local spellInfo = definition and definition.spellID and C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(definition.spellID)
+        if spellInfo and spellInfo.name and spellInfo.name ~= "?" then
+            return spellInfo.name, spellInfo.iconID or 134400, definition.spellID
+        end
+    end
+
+    -- Murlok has used different talent identifiers over time (node, entry,
+    -- definition and spell IDs). Build a lookup from the live Blizzard tree so
+    -- snapshots remain readable even when the upstream identifier shape changes.
+    local info = BuildTraitLookup()[tonumber(id) or id]
+    if info then
+        return info.name, info.icon, info.spellID
+    end
+
+    local spellInfo = C_Spell and C_Spell.GetSpellInfo and C_Spell.GetSpellInfo(id)
+    if spellInfo and spellInfo.name and spellInfo.name ~= "?" then
+        return spellInfo.name, spellInfo.iconID or 134400, tonumber(id)
+    end
+
+    return (fallbackKind or "Talent") .. " #" .. tostring(id), 134400, nil
 end

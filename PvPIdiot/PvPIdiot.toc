@@ -2,7 +2,7 @@
 ## Title: PvP Idiot
 ## Notes: PvP talent, gear and build recommendations.
 ## Author: PvP Idiot Contributors
-## Version: 0.1.0
+## Version: 0.1.1
 ## SavedVariables: PvPIdiotConfig
 
 Locales/enUS.lua
@@ -25,6 +25,7 @@ Widgets/Dropdown.lua
 Widgets/ScrollFrame.lua
 
 UI/MainFrame.lua
+UI/TalentImport.lua
 UI/Sidebar.lua
 UI/Tabs.lua
 UI/Overview.lua
