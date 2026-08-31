@@ -10,7 +10,7 @@ local TAB_DEFS = {
 
 local PAGE_MIN_HEIGHTS = {
     overview = 560,
-    talents = 680,
+    talents = 720,
     gear = 560,
     gems = 390,
     stats = 340,
