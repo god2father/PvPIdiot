@@ -1,7 +1,14 @@
 local ADDON_NAME, PvPIdiot = ...
 
-local NODE_SIZE = 42
-local TREE_PADDING = 34
+local NODE_SIZE = 36
+local TREE_SIDE_PADDING = 28
+local TREE_TOP_PADDING = 24
+local TREE_BOTTOM_PADDING = 28
+local NODE_LABEL_HEIGHT = 13
+-- Blizzard's retail talent nodes are laid out on an approximately 600-unit grid.
+-- Rendering at 0.095 keeps the native tree proportions instead of stretching it
+-- to the entire addon width (which made the first v0.2 tree look very wide).
+local NATIVE_COORD_SCALE = 0.095
 
 local function CurrentSpecID()
     if PlayerUtil and PlayerUtil.GetCurrentSpecID then
@@ -398,8 +405,8 @@ function PvPIdiot:CreateTalentTreeView(parent)
         button:RegisterForClicks("LeftButtonUp")
 
         local icon = button:CreateTexture(nil, "ARTWORK")
-        icon:SetPoint("TOPLEFT", 4, -4)
-        icon:SetPoint("BOTTOMRIGHT", -4, 4)
+        icon:SetPoint("TOPLEFT", 3, -3)
+        icon:SetPoint("BOTTOMRIGHT", -3, 3)
         icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
         button.icon = icon
 
@@ -410,8 +417,11 @@ function PvPIdiot:CreateTalentTreeView(parent)
         choice:Hide()
         button.choice = choice
 
+        -- MurlokExport prints the number of sampled players using the node
+        -- (50, 49, 33...) rather than a wide percentage string. Keep the same
+        -- compact interaction and leave the exact percentage in the tooltip.
         local usage = button:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        usage:SetPoint("TOP", button, "BOTTOM", 0, -2)
+        usage:SetPoint("TOP", button, "BOTTOM", 0, -1)
         usage:SetTextColor(0.78, 0.80, 0.84)
         button.usage = usage
 
@@ -420,7 +430,7 @@ function PvPIdiot:CreateTalentTreeView(parent)
         selectedGlow:SetPoint("BOTTOMRIGHT", 3, -3)
         selectedGlow:SetTexture("Interface\\Buttons\\UI-ActionButton-Border")
         selectedGlow:SetBlendMode("ADD")
-        selectedGlow:SetAlpha(0.72)
+        selectedGlow:SetAlpha(0.62)
         selectedGlow:Hide()
         button.selectedGlow = selectedGlow
 
@@ -462,7 +472,7 @@ function PvPIdiot:CreateTalentTreeView(parent)
         if not view.CreateLine then return nil end
 
         line = view:CreateLine(nil, "BACKGROUND")
-        line:SetThickness(2)
+        line:SetThickness(1.25)
         view.linePool[index] = line
         return line
     end
@@ -531,25 +541,47 @@ function PvPIdiot:CreateTalentTreeView(parent)
 
         local width = math.max(280, self:GetWidth())
         local height = math.max(360, self:GetHeight())
-        local usableWidth = math.max(1, width - TREE_PADDING * 2)
-        local usableHeight = math.max(1, height - TREE_PADDING * 2 - 18)
         local spanX = math.max(1, (maxX or 1) - (minX or 0))
         local spanY = math.max(1, (maxY or 1) - (minY or 0))
+
+        -- Preserve Blizzard's native aspect ratio. v0.2.0 independently scaled X
+        -- and Y, which stretched the class tree across the whole window and made
+        -- connections much longer than MurlokExport's compact tree.
+        local centerWidth = math.max(1, width - (TREE_SIDE_PADDING * 2) - NODE_SIZE)
+        local centerHeight = math.max(
+            1,
+            height - TREE_TOP_PADDING - TREE_BOTTOM_PADDING - NODE_SIZE - NODE_LABEL_HEIGHT
+        )
+        local scale = math.min(
+            NATIVE_COORD_SCALE,
+            centerWidth / spanX,
+            centerHeight / spanY
+        )
+        local treeWidth = spanX * scale
+        local treeHeight = spanY * scale
+        local originX = TREE_SIDE_PADDING + (NODE_SIZE / 2) + ((centerWidth - treeWidth) / 2)
+        local originY = TREE_TOP_PADDING + (NODE_SIZE / 2) + ((centerHeight - treeHeight) / 2)
+        local sampleSize = data.meta and tonumber(data.meta.sampleSize) or nil
 
         for index, node in ipairs(model.nodes) do
             local button = AcquireNode(index)
             button.node = node
             node.button = button
 
-            local x = TREE_PADDING + (((node.info.posX or minX) - minX) / spanX) * usableWidth
-            local y = TREE_PADDING + 18 + (((node.info.posY or minY) - minY) / spanY) * usableHeight
+            local x = originX + (((node.info.posX or minX) - minX) * scale)
+            local y = originY + (((node.info.posY or minY) - minY) * scale)
             button:ClearAllPoints()
             button:SetPoint("CENTER", self, "TOPLEFT", x, -y)
 
             local entry = node.displayEntry
             button.icon:SetTexture(entry and entry.icon or 134400)
             button.choice:SetShown((node.info.type == 2) or (#node.entries > 1))
-            button.usage:SetText(node.usage ~= nil and string.format("%.0f%%", node.usage * 100) or "")
+
+            local count = tonumber(node.count)
+            if not count and node.usage ~= nil and sampleSize then
+                count = math.floor((tonumber(node.usage) or 0) * sampleSize + 0.5)
+            end
+            button.usage:SetText(count and tostring(count) or "")
 
             if node.selected then
                 button:SetBackdropColor(0.13, 0.095, 0.035, 0.98)
@@ -562,7 +594,7 @@ function PvPIdiot:CreateTalentTreeView(parent)
                 button:SetBackdropColor(0.045, 0.055, 0.07, 0.96)
                 button:SetBackdropBorderColor(0.24, 0.27, 0.31, 1)
                 button.icon:SetDesaturated(true)
-                button.icon:SetAlpha(0.52)
+                button.icon:SetAlpha(0.48)
                 button.selectedGlow:Hide()
                 button.usage:SetTextColor(0.56, 0.59, 0.64)
             end
@@ -570,24 +602,31 @@ function PvPIdiot:CreateTalentTreeView(parent)
         end
 
         local lineIndex = 1
+        local renderedEdges = {}
         for _, node in ipairs(model.nodes) do
             for _, edge in ipairs(node.info.visibleEdges or {}) do
                 local target = model.byID[edge.targetNode]
                 if target and node.button and target.button then
-                    local line = AcquireLine(lineIndex)
-                    if line then
-                        line:ClearAllPoints()
-                        line:SetStartPoint("CENTER", node.button, 0, 0)
-                        line:SetEndPoint("CENTER", target.button, 0, 0)
-                        if node.selected and target.selected then
-                            line:SetColorTexture(0.82, 0.56, 0.18, 0.88)
-                            line:SetThickness(2.5)
-                        else
-                            line:SetColorTexture(0.20, 0.23, 0.28, 0.72)
-                            line:SetThickness(2)
+                    local first = math.min(node.nodeID, target.nodeID)
+                    local second = math.max(node.nodeID, target.nodeID)
+                    local edgeKey = tostring(first) .. ":" .. tostring(second)
+                    if not renderedEdges[edgeKey] then
+                        renderedEdges[edgeKey] = true
+                        local line = AcquireLine(lineIndex)
+                        if line then
+                            line:ClearAllPoints()
+                            line:SetStartPoint("CENTER", node.button, 0, 0)
+                            line:SetEndPoint("CENTER", target.button, 0, 0)
+                            if node.selected and target.selected then
+                                line:SetColorTexture(0.82, 0.56, 0.18, 0.82)
+                                line:SetThickness(1.75)
+                            else
+                                line:SetColorTexture(0.20, 0.23, 0.28, 0.66)
+                                line:SetThickness(1.25)
+                            end
+                            line:Show()
+                            lineIndex = lineIndex + 1
                         end
-                        line:Show()
-                        lineIndex = lineIndex + 1
                     end
                 end
             end
