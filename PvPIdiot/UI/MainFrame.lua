@@ -184,3 +184,22 @@ PvPIdiot:RegisterEvent("ADDON_LOADED", function(self, loadedName)
     self:InitializeConfig()
     self:CreateMainFrame()
 end)
+
+PvPIdiot:RegisterEvent("PLAYER_LOGIN", function(self)
+    if self:SyncSelectedSpecToPlayer() then
+        self:RefreshUI()
+    end
+end)
+
+PvPIdiot:RegisterEvent("PLAYER_ENTERING_WORLD", function(self)
+    if self:SyncSelectedSpecToPlayer() then
+        self:RefreshUI()
+    end
+end)
+
+PvPIdiot:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED", function(self, unit)
+    if unit ~= "player" then return end
+    if self:SyncSelectedSpecToPlayer() then
+        self:RefreshUI()
+    end
+end)

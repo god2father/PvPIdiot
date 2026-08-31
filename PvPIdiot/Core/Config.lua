@@ -7,6 +7,7 @@ local defaults = {
     selectedSeason = 1,
     region = "global",
     topRange = 50,
+    autoDetectSpec = true,
     selectedTab = "overview",
     width = 1060,
     height = 680,
@@ -30,6 +31,28 @@ function PvPIdiot:InitializeConfig()
     PvPIdiotConfig = PvPIdiotConfig or {}
     CopyDefaults(defaults, PvPIdiotConfig)
     self.config = PvPIdiotConfig
+end
+
+function PvPIdiot:SyncSelectedSpecToPlayer()
+    if not self.config or self.config.autoDetectSpec == false then return false end
+    if not GetSpecialization or not GetSpecializationInfo then return false end
+
+    local specializationIndex = GetSpecialization()
+    if not specializationIndex then return false end
+
+    local specID = GetSpecializationInfo(specializationIndex)
+    if not specID then return false end
+
+    local _, classFile = UnitClass("player")
+    local changed = self.config.selectedSpecID ~= specID
+        or (classFile and self.config.selectedClass ~= classFile)
+
+    self.config.selectedSpecID = specID
+    if classFile then
+        self.config.selectedClass = classFile
+    end
+
+    return changed
 end
 
 function PvPIdiot:SaveFrameState(frame)
