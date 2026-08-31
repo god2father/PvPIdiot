@@ -8,8 +8,8 @@ _G.PvPIdiotData = {
     source = "murlok.io",
     sourceMode = "solo",
     sourceScope = "Top 50 across US/EU/KR/TW",
-    updatedAt = "2026-08-31T10:01:09.227453Z",
-    generatedAt = "2026-08-31T12:22:31Z",
+    updatedAt = "2026-08-31T10:01:10.173264Z",
+    generatedAt = "2026-08-31T13:18:22Z",
     specIndex = {
         [250] = {
             classSlug = "death-knight",
@@ -253,19 +253,18 @@ _G.PvPIdiotData = {
         },
     },
     fetchFailures = {
-        "Death Knight Blood: HTTP Error 401: Unauthorized",
-        "Druid Restoration: HTTP Error 401: Unauthorized",
-        "Evoker Preservation: HTTP Error 401: Unauthorized",
+        "Demon Hunter Vengeance: HTTP Error 401: Unauthorized",
+        "Druid Guardian: HTTP Error 401: Unauthorized",
         "Evoker Augmentation: HTTP Error 401: Unauthorized",
-        "Hunter Beast Mastery: HTTP Error 401: Unauthorized",
-        "Hunter Marksmanship: HTTP Error 401: Unauthorized",
+        "Mage Arcane: HTTP Error 401: Unauthorized",
+        "Mage Frost: HTTP Error 401: Unauthorized",
         "Monk Brewmaster: HTTP Error 401: Unauthorized",
+        "Paladin Holy: HTTP Error 401: Unauthorized",
         "Paladin Protection: HTTP Error 401: Unauthorized",
-        "Priest Holy: HTTP Error 401: Unauthorized",
-        "Shaman Elemental: HTTP Error 401: Unauthorized",
+        "Rogue Outlaw: HTTP Error 401: Unauthorized",
+        "Rogue Subtlety: HTTP Error 401: Unauthorized",
         "Shaman Enhancement: HTTP Error 401: Unauthorized",
         "Shaman Restoration: HTTP Error 401: Unauthorized",
-        "Warrior Fury: HTTP Error 401: Unauthorized",
         "Warrior Protection: HTTP Error 401: Unauthorized",
     },
     seasons = {
@@ -277,47 +276,1083 @@ _G.PvPIdiotData = {
                     specs = {
                         [250] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 7,
+                                maxRating = 2025,
+                                minRating = 1216,
+                                avgRating = 1569,
                                 classSlug = "death-knight",
                                 specSlug = "blood",
                                 className = "Death Knight",
                                 specName = "Blood",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:00:04.647577Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "CoPAkXBWxkyfx9CbGaHonEAhLhZWmZGmxYmhZZMz0MbzYMmxMAAAAghZmZmZmZmZMDAjZmZGAAADMwMW0YZDktBsNAzAAAwMDYMA",
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                                {
+                                    talentString = "CoPAkXBWxkyfx9CbGaHonEAhLhZWmZGmxMzMYZMz0MbzYMmxMAAAAghZmZmZmZmZMDAjZmZGAAADMwMW0YZDktBsNAzAAAwMDYMA",
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                                {
+                                    talentString = "CoPAkXBWxkyfx9CbGaHonEAhLxYWmZGmxMzMMLzMz0MbmZMzMAAAAAmZmZmZmZGzMDAYMzMzAAAMzsNGGzYbpxy2ywkthhlBYGGAAmZmZAMA",
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 130438,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 130846,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 130847,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101174,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101175,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101176,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101181,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101184,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101188,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101189,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101195,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101196,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101198,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101199,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101200,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101202,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101207,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101210,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101212,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101215,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101216,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 138304,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101186,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101192,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101203,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101204,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101185,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101182,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101214,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101206,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101218,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101219,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 141298,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101209,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101183,
+                                        count = 3,
+                                        usage = 0.4286,
+                                    },
+                                    {
+                                        id = 101197,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 101205,
+                                        count = 1,
+                                        usage = 0.1429,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 101259,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101262,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101263,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101264,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101268,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101270,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101271,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101275,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101276,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101279,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101171,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101172,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101173,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101303,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101305,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101306,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101307,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101308,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101309,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101310,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141680,
+                                        count = 7,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 101278,
+                                        count = 6,
+                                        usage = 0.8571,
+                                    },
+                                    {
+                                        id = 101265,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101266,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101258,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101260,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101261,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101169,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 131124,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 101273,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101281,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 131122,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 101282,
+                                        count = 3,
+                                        usage = 0.4286,
+                                    },
+                                    {
+                                        id = 101274,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 101170,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 101311,
+                                        count = 1,
+                                        usage = 0.1429,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122660,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122662,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122664,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 140749,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 140750,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 140751,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122642,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122674,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122904,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122649,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122654,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122655,
+                                        count = 5,
+                                        usage = 0.7143,
+                                    },
+                                    {
+                                        id = 122903,
+                                        count = 4,
+                                        usage = 0.5714,
+                                    },
+                                    {
+                                        id = 122657,
+                                        count = 3,
+                                        usage = 0.4286,
+                                    },
+                                    {
+                                        id = 128258,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122658,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122666,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122667,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 140748,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 140747,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122670,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122671,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 140746,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122641,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122643,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122645,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122677,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122652,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 141599,
+                                        count = 2,
+                                        usage = 0.2857,
+                                    },
+                                    {
+                                        id = 122665,
+                                        count = 1,
+                                        usage = 0.1429,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 608,
+                                    count = 7,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 3441,
+                                    count = 6,
+                                    usage = 0.8571,
+                                },
+                                {
+                                    id = 5592,
+                                    count = 4,
+                                    usage = 0.5714,
+                                },
+                                {
+                                    id = 5587,
+                                    count = 2,
+                                    usage = 0.2857,
+                                },
+                                {
+                                    id = 609,
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                                {
+                                    id = 206,
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 249970,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237904,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270477,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271474,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270378,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 240952,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270534,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270532,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255610,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 270472,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249968,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237906,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270784,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271472,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270539,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270540,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255566,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 270482,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249973,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271477,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270483,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 255564,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270468,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237908,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270469,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 270478,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249971,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271475,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270778,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 270470,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255562,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237907,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270471,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270475,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255557,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270474,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237905,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270481,
+                                        count = 4,
+                                        usage = 0.5714,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255551,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237902,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 10,
+                                        usage = 1.4286,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270558,
+                                        count = 4,
+                                        usage = 0.5714,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270556,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255616,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255614,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270447,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237915,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 265601,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270451,
+                                        count = 1,
+                                        usage = 0.1429,
+                                        bonusList = {},
+                                    },
+                                },
                                 OFF_HAND = {},
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241144,
+                                    count = 5,
+                                    usage = 0.7143,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 3,
+                                    usage = 0.4286,
+                                },
+                                {
+                                    itemID = 240894,
+                                    count = 3,
+                                    usage = 0.4286,
+                                },
+                                {
+                                    itemID = 240916,
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                                {
+                                    itemID = 240912,
+                                    count = 1,
+                                    usage = 0.1429,
+                                },
+                            },
+                            enchants = {
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 6,
+                                        usage = 0.8571,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 7957,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7957,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7987,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 8159,
+                                        count = 6,
+                                        usage = 0.8571,
+                                        source = {
+                                            type = "item",
+                                            id = 244641,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 7,
+                                        usage = 1,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 7969,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8027,
+                                        count = 3,
+                                        usage = 0.4286,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8025,
+                                        count = 2,
+                                        usage = 0.2857,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8025,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 6241,
+                                        count = 7,
+                                        usage = 1,
+                                        source = {
+                                            type = "enchant",
+                                            id = 6241,
+                                        },
+                                    },
+                                },
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 5,
+                                        usage = 0.7143,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 755.43,
+                                crit = 10.86,
+                                mastery = 338.86,
+                                versatility = 1100.29,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "haste",
+                                "mastery",
+                                "crit",
+                            },
                         },
                         [251] = {
                             meta = {
@@ -3969,7 +5004,7 @@ _G.PvPIdiotData = {
                                 specName = "Vengeance",
                                 sourceUpdatedAt = "",
                                 dataAvailable = false,
-                                unavailableReason = "murlok-404",
+                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
                             },
                             builds = {},
                             talents = {
@@ -7766,946 +8801,14 @@ _G.PvPIdiotData = {
                         },
                         [104] = {
                             meta = {
-                                sampleSize = 3,
-                                maxRating = 1310,
-                                minRating = 1219,
-                                avgRating = 1260,
-                                classSlug = "druid",
-                                specSlug = "guardian",
-                                className = "Druid",
-                                specName = "Guardian",
-                                sourceUpdatedAt = "2026-08-31T10:00:28.651491Z",
-                                dataAvailable = true,
-                            },
-                            builds = {
-                                {
-                                    talentString = "CgGADBD3hSPCL9Y9gz68WcKvMAAAAAAAAAAAAgZmZwwYmtZ2mxMjlBmNzY0EZMbjZmZ2mZGAAAAAAmZYALLzMYMbDgpMmlZMDAgNMzAsZGMYYsNAzMzsAD",
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    talentString = "CgGADBD3hSPCL9Y9gz68WcKvMAAAAAAAAAAAAgZmZmNzYM2MbmZMWGYWMjRTkxsNmZmZZMDAAAAAAjZZGwy2MDGzyAYqZWmlZmZAAsZMzAsZGMYGzyGgZmZ2gPA",
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    talentString = "CgGADBD3hSPCL9Y9gz68WcKvMAAAAAAAAAAAAgZmhl5BGzMzyMwMzyyAzmZMaiMzsNmZmZZMzDAAAAAAALGwy2MDGzyAYqZWmlxYAAsZmZGAYYwMLjNAzMAG",
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                            },
-                            talents = {
-                                class = {
-                                    {
-                                        id = 108289,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108292,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108293,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133384,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108297,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108301,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108302,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108303,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133390,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108306,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133394,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108308,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 128633,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 128634,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108311,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108313,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108316,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108317,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108318,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108319,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108323,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108325,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108327,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 128632,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108281,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108282,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133382,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 119305,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 133387,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 133388,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 133392,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108321,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 128630,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108320,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108324,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108290,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 133389,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108310,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108328,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 128631,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 141824,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 119706,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108195,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108196,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140323,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108198,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140326,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108200,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108208,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108210,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108215,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108217,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108221,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108231,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108234,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 108203,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108213,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108218,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108220,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108225,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108228,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 140103,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108233,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 119704,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108211,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 140245,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 108223,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108227,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 140247,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 119705,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108204,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108205,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108230,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 140248,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 140324,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108206,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108207,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108216,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108219,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 108236,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 122216,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122217,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122188,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122781,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122191,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122193,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122195,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122202,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140731,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140732,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122205,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140733,
-                                        count = 3,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122189,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 122204,
-                                        count = 2,
-                                        usage = 0.6667,
-                                    },
-                                    {
-                                        id = 122190,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                    {
-                                        id = 128177,
-                                        count = 1,
-                                        usage = 0.3333,
-                                    },
-                                },
-                            },
-                            pvpTalents = {
-                                {
-                                    id = 51,
-                                    count = 3,
-                                    usage = 1,
-                                },
-                                {
-                                    id = 196,
-                                    count = 2,
-                                    usage = 0.6667,
-                                },
-                                {
-                                    id = 52,
-                                    count = 2,
-                                    usage = 0.6667,
-                                },
-                                {
-                                    id = 194,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    id = 5410,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                            },
-                            pvpTalentCombos = {},
-                            gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270508,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270683,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271528,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 270532,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270534,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 271526,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244556,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 239678,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270538,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270539,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 270677,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244554,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270515,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 270501,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270366,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270500,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 270681,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244559,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 270502,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244557,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270503,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270506,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270507,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 244553,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270512,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 270537,
-                                        count = 3,
-                                        usage = 1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240951,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270559,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270557,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280097,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270558,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 270452,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 245868,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {},
-                            },
-                            gems = {
-                                {
-                                    itemID = 241144,
-                                    count = 2,
-                                    usage = 0.6667,
-                                },
-                                {
-                                    itemID = 240894,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    itemID = 240918,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    itemID = 240893,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                                {
-                                    itemID = 240917,
-                                    count = 1,
-                                    usage = 0.3333,
-                                },
-                            },
-                            enchants = {
-                                FINGER = {
-                                    {
-                                        enchantID = 8027,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8021,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8021,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8011,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8011,
-                                        },
-                                    },
-                                },
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7989,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7989,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 2,
-                                        usage = 0.6667,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 7987,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 8159,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "item",
-                                            id = 244641,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 1,
-                                        usage = 0.3333,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                },
-                            },
-                            stats = {},
-                            statsRaw = {
-                                haste = 557.67,
-                                crit = 39.33,
-                                mastery = 400.33,
-                                versatility = 1228,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "haste",
-                                "mastery",
-                                "crit",
-                            },
-                        },
-                        [105] = {
-                            meta = {
                                 sampleSize = 0,
                                 maxRating = 0,
                                 minRating = 0,
                                 avgRating = 0,
                                 classSlug = "druid",
-                                specSlug = "restoration",
+                                specSlug = "guardian",
                                 className = "Druid",
-                                specName = "Restoration",
+                                specName = "Guardian",
                                 sourceUpdatedAt = "",
                                 dataAvailable = false,
                                 unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
@@ -8739,6 +8842,1328 @@ _G.PvPIdiotData = {
                             stats = {},
                             statsRaw = {},
                             statPriority = {},
+                        },
+                        [105] = {
+                            meta = {
+                                sampleSize = 50,
+                                maxRating = 2763,
+                                minRating = 2251,
+                                avgRating = 2398,
+                                classSlug = "druid",
+                                specSlug = "restoration",
+                                className = "Druid",
+                                specName = "Restoration",
+                                sourceUpdatedAt = "2026-08-31T10:00:31.65725Z",
+                                dataAvailable = true,
+                            },
+                            builds = {
+                                {
+                                    talentString = "CkGADBD3hSPCL9Y9gz68WcKvMMMmZDjZmZmlxMDmNmNbDAAAAAAAAAAsMDZjx0MzMDmNzMzYzgZAAAAAMAgxA22GLYamZZAAMbzs0sNziFGzMDzYD0MAYmZmBgB",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    talentString = "CkGADBD3hSPCL9Y9gz68WcKvMMMmZbYMzMzsMMjxsxsZZGAAAAAAAAAAsYoZzMmmZgxsxMzMbGmBAAAAgBAAw22YBTzMLDAgZZmlmtZ2sxYmHYYGbgmBAzMzMAMA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "CkGADBD3hSPCL9Y9gz68WcKvMMMmZhZMm5BmlxMjxsxsZbAAAAAAAAAAglZIbmx0MzMwsZmZmZzgZAAAAAMAgxA22GLYamZZAAMLzs0sNziFYmZYGbgmBAzMzMAMA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                            },
+                            talents = {
+                                class = {
+                                    {
+                                        id = 108288,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133382,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133384,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108297,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108300,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108301,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108302,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108303,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133393,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133394,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108311,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 128633,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108316,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108317,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108318,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108325,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117972,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 128632,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108324,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108281,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108283,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 128706,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108293,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 133390,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 108314,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 108329,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 108282,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 108305,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 108304,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 128634,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 108292,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 133392,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 108319,
+                                        count = 35,
+                                        usage = 0.7,
+                                    },
+                                    {
+                                        id = 108320,
+                                        count = 30,
+                                        usage = 0.6,
+                                    },
+                                    {
+                                        id = 128630,
+                                        count = 27,
+                                        usage = 0.54,
+                                    },
+                                    {
+                                        id = 108331,
+                                        count = 24,
+                                        usage = 0.48,
+                                    },
+                                    {
+                                        id = 108289,
+                                        count = 21,
+                                        usage = 0.42,
+                                    },
+                                    {
+                                        id = 108321,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 108306,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 108328,
+                                        count = 16,
+                                        usage = 0.32,
+                                    },
+                                    {
+                                        id = 108290,
+                                        count = 10,
+                                        usage = 0.2,
+                                    },
+                                    {
+                                        id = 128631,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 133389,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 108308,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 108291,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 133387,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 108312,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 119305,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 121114,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 108280,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 122116,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133509,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133510,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108103,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108105,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108106,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108114,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108116,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108118,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108119,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108123,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108126,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108129,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141803,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108146,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108134,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108139,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108122,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 108125,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 142267,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 108130,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 133081,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 119816,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 108132,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122117,
+                                        count = 39,
+                                        usage = 0.78,
+                                    },
+                                    {
+                                        id = 108128,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 108144,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 108147,
+                                        count = 28,
+                                        usage = 0.56,
+                                    },
+                                    {
+                                        id = 108107,
+                                        count = 28,
+                                        usage = 0.56,
+                                    },
+                                    {
+                                        id = 119815,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 108117,
+                                        count = 21,
+                                        usage = 0.42,
+                                    },
+                                    {
+                                        id = 108108,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 108110,
+                                        count = 14,
+                                        usage = 0.28,
+                                    },
+                                    {
+                                        id = 108113,
+                                        count = 14,
+                                        usage = 0.28,
+                                    },
+                                    {
+                                        id = 108145,
+                                        count = 11,
+                                        usage = 0.22,
+                                    },
+                                    {
+                                        id = 108135,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 108115,
+                                        count = 6,
+                                        usage = 0.12,
+                                    },
+                                    {
+                                        id = 142268,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 108124,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 133084,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 108104,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 108127,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 108133,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 108102,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122208,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122209,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122211,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122213,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122215,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 140725,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122198,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 140727,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 140726,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122206,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122207,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 122906,
+                                        count = 32,
+                                        usage = 0.64,
+                                    },
+                                    {
+                                        id = 122907,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122201,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 122241,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122243,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122244,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 140729,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 140728,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122233,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 140730,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122235,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122236,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122238,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122239,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 122237,
+                                        count = 13,
+                                        usage = 0.26,
+                                    },
+                                    {
+                                        id = 122246,
+                                        count = 10,
+                                        usage = 0.2,
+                                    },
+                                    {
+                                        id = 122234,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 124755,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122200,
+                                        count = 7,
+                                        usage = 0.14,
+                                    },
+                                    {
+                                        id = 122245,
+                                        count = 7,
+                                        usage = 0.14,
+                                    },
+                                    {
+                                        id = 124754,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 122196,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 122197,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                            },
+                            pvpTalents = {
+                                {
+                                    id = 1215,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 5687,
+                                    count = 49,
+                                    usage = 0.98,
+                                },
+                                {
+                                    id = 5668,
+                                    count = 39,
+                                    usage = 0.78,
+                                },
+                                {
+                                    id = 59,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    id = 838,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    id = 5649,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                                {
+                                    id = 5739,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
+                            pvpTalentCombos = {},
+                            gear = {
+                                HEAD = {
+                                    {
+                                        itemID = 271528,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270509,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244555,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270683,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244736,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 240952,
+                                        count = 36,
+                                        usage = 0.72,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270532,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251173,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 241139,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271526,
+                                        count = 26,
+                                        usage = 0.52,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244556,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270688,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270505,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 250022,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270539,
+                                        count = 25,
+                                        usage = 0.5,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251190,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 193712,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 244554,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271531,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270515,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 270500,
+                                        count = 27,
+                                        usage = 0.54,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244560,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244740,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244576,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270366,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 271529,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270681,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270511,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244559,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 244557,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270503,
+                                        count = 20,
+                                        usage = 0.4,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270690,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270506,
+                                        count = 27,
+                                        usage = 0.54,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271527,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244558,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270686,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251198,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 244553,
+                                        count = 39,
+                                        usage = 0.78,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270512,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244764,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 79,
+                                        usage = 1.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 158366,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251115,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270558,
+                                        count = 42,
+                                        usage = 0.84,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270556,
+                                        count = 41,
+                                        usage = 0.82,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 250255,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 268365,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270450,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270460,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237914,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237911,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        itemID = 245870,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270446,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 245769,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271681,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                            },
+                            gems = {
+                                {
+                                    itemID = 241143,
+                                    count = 40,
+                                    usage = 0.8,
+                                },
+                                {
+                                    itemID = 240900,
+                                    count = 30,
+                                    usage = 0.6,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 27,
+                                    usage = 0.54,
+                                },
+                                {
+                                    itemID = 241144,
+                                    count = 8,
+                                    usage = 0.16,
+                                },
+                                {
+                                    itemID = 240892,
+                                    count = 8,
+                                    usage = 0.16,
+                                },
+                            },
+                            enchants = {
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 34,
+                                        usage = 0.68,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8031,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8031,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8029,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8029,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 8013,
+                                        count = 43,
+                                        usage = 0.86,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8013,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7987,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 7937,
+                                        count = 46,
+                                        usage = 0.92,
+                                        source = {
+                                            type = "item",
+                                            id = 240155,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7935,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "item",
+                                            id = 240133,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 40,
+                                        usage = 0.8,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 7969,
+                                        count = 47,
+                                        usage = 0.94,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8025,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8025,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7965,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7965,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 45,
+                                        usage = 0.9,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                },
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 29,
+                                        usage = 0.58,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7961,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7961,
+                                        },
+                                    },
+                                },
+                            },
+                            stats = {},
+                            statsRaw = {
+                                haste = 553.7,
+                                crit = 15.5,
+                                mastery = 988.1,
+                                versatility = 735.12,
+                            },
+                            statPriority = {
+                                "mastery",
+                                "versatility",
+                                "haste",
+                                "crit",
+                            },
                         },
                         [1467] = {
                             meta = {
@@ -10055,47 +11480,1238 @@ _G.PvPIdiotData = {
                         },
                         [1468] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 50,
+                                maxRating = 2637,
+                                minRating = 2036,
+                                avgRating = 2223,
                                 classSlug = "evoker",
                                 specSlug = "preservation",
                                 className = "Evoker",
                                 specName = "Preservation",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:00:37.650583Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "CwbBPJc41CfcseY0baneJ1IHrBAAAAAmZmZ22GYYmZYmBmthBAAzMjZmxYMzEMDAAAsNzMTzgZmZZMDAMmZMzyGLWYYmZmGa2MsZYAMzwA",
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    talentString = "CwbBPJc41CfcseY0baneJ1IHrBAAAAAMzMz22ADzMDzYGsNjBAAmhZmZGDzEzDMDAAAsNzMTzYMzMLjZAgxMjZW2YxCDzMz0QzmhNDjZGMzwA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "CwbBPJc41CfcseY0baneJ1IHrBAAAAAmZmZ22GYYmZYGGsNMAAwMMzMGDzEzMDAAAsNzMTzYMzMbjZAgxMjZW2YxCDzMz0QzmhNDjZGMzwA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 133023,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120608,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120609,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120612,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120614,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120615,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120621,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 92718,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120625,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120627,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120632,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120667,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120674,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120675,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120677,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120679,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120681,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120613,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120626,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120633,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120669,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120676,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120682,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120589,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 120666,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 120619,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 120668,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 120678,
+                                        count = 39,
+                                        usage = 0.78,
+                                    },
+                                    {
+                                        id = 120631,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 120672,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 120607,
+                                        count = 22,
+                                        usage = 0.44,
+                                    },
+                                    {
+                                        id = 120630,
+                                        count = 21,
+                                        usage = 0.42,
+                                    },
+                                    {
+                                        id = 120610,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 120623,
+                                        count = 14,
+                                        usage = 0.28,
+                                    },
+                                    {
+                                        id = 120618,
+                                        count = 12,
+                                        usage = 0.24,
+                                    },
+                                    {
+                                        id = 130442,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 120629,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 120611,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 120620,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120622,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 133024,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120588,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120628,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120606,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 141332,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 121115,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120670,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120673,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120680,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 120577,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120586,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141770,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120662,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120663,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120664,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120665,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120552,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120553,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120554,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120555,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120566,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120570,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120571,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 120556,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120561,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120569,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120572,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 138289,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 138313,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 120660,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 120551,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 128171,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 120550,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 120576,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 120578,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 120580,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 120584,
+                                        count = 20,
+                                        usage = 0.4,
+                                    },
+                                    {
+                                        id = 128172,
+                                        count = 15,
+                                        usage = 0.3,
+                                    },
+                                    {
+                                        id = 120587,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 120579,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 120585,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 120568,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 120562,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 120558,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120661,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120583,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120563,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120564,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120573,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 120574,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122529,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122531,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122532,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 140809,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 140810,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122558,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 140811,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122540,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122546,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122554,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122555,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 128254,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 122559,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 133515,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 122560,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 131136,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122563,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122564,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122534,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122538,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122798,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122544,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 140497,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 140498,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 140496,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122551,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122556,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122557,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 122565,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 5468,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 5718,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 5461,
+                                    count = 33,
+                                    usage = 0.66,
+                                },
+                                {
+                                    id = 5459,
+                                    count = 12,
+                                    usage = 0.24,
+                                },
+                                {
+                                    id = 5470,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    id = 5463,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
-                                OFF_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 271501,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270492,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270732,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244563,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 270534,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240952,
+                                        count = 19,
+                                        usage = 0.38,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271499,
+                                        count = 33,
+                                        usage = 0.66,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270489,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270735,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270540,
+                                        count = 42,
+                                        usage = 0.84,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 235499,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 244562,
+                                        count = 28,
+                                        usage = 0.56,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270498,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270367,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271504,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 270484,
+                                        count = 34,
+                                        usage = 0.68,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244568,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270485,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270740,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 271502,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270494,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270730,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270495,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244567,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 244565,
+                                        count = 25,
+                                        usage = 0.5,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270487,
+                                        count = 23,
+                                        usage = 0.46,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270486,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270373,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270490,
+                                        count = 32,
+                                        usage = 0.64,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271500,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244566,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270734,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270497,
+                                        count = 49,
+                                        usage = 0.98,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244561,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 55,
+                                        usage = 1.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 33,
+                                        usage = 0.66,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270556,
+                                        count = 36,
+                                        usage = 0.72,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270558,
+                                        count = 33,
+                                        usage = 0.66,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270559,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270449,
+                                        count = 32,
+                                        usage = 0.64,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270450,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270554,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270460,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        itemID = 270446,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 245870,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241143,
+                                    count = 47,
+                                    usage = 0.94,
+                                },
+                                {
+                                    itemID = 240894,
+                                    count = 24,
+                                    usage = 0.48,
+                                },
+                                {
+                                    itemID = 240916,
+                                    count = 14,
+                                    usage = 0.28,
+                                },
+                                {
+                                    itemID = 240892,
+                                    count = 8,
+                                    usage = 0.16,
+                                },
+                                {
+                                    itemID = 240900,
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 29,
+                                        usage = 0.58,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7961,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7961,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 32,
+                                        usage = 0.64,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8031,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8031,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7972,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7972,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 8013,
+                                        count = 38,
+                                        usage = 0.76,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8013,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7987,
+                                        count = 8,
+                                        usage = 0.16,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 7937,
+                                        count = 44,
+                                        usage = 0.88,
+                                        source = {
+                                            type = "item",
+                                            id = 240155,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7939,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 240157,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7935,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 240133,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 26,
+                                        usage = 0.52,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 8025,
+                                        count = 27,
+                                        usage = 0.54,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8025,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8027,
+                                        count = 10,
+                                        usage = 0.2,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7969,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 43,
+                                        usage = 0.86,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8011,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8011,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8038,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8038,
+                                        },
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        enchantID = 6604,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 6604,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 971.24,
+                                crit = 4.6,
+                                mastery = 89.88,
+                                versatility = 1190.98,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "haste",
+                                "mastery",
+                                "crit",
+                            },
                         },
                         [1473] = {
                             meta = {
@@ -10143,91 +12759,2390 @@ _G.PvPIdiotData = {
                         },
                         [253] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 50,
+                                maxRating = 2725,
+                                minRating = 2228,
+                                avgRating = 2331,
                                 classSlug = "hunter",
                                 specSlug = "beast-mastery",
                                 className = "Hunter",
                                 specName = "Beast Mastery",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:00:43.646849Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "C0PAD57yiELKEty14ekTDtZEqAMmxwCsAzwQDbAAYGzYmFzwMmZY8AzMGmxMzMGzYxMjZmZMMaGAAAAwMAAAMDzMgZ2ILYmFw2AwA",
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    talentString = "C0PAD57yiELKEty14ekTDtZEqAMmxwCsAzwQDbAAYGzYmFzwMmZY8AzMGmxMzMGzYxMjZmZMMaGAAAAwMAAAMDzMgZ2ILYmFwyAwA",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    talentString = "C0PAD57yiELKEty14ekTDtZEqYzsMjZmhFDLMzMbGaGbAAYGzYmFzwMmZY8AzMGmxMzMGzssMzMMzMwoZAAAAAzAAAwMMzwMzMbkFMzCYbAYA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 141449,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140461,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140465,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140467,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131269,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131270,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131279,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131286,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131287,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131291,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131296,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131301,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131178,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131314,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131316,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141448,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 140460,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 140466,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131276,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131280,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131315,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131284,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 141443,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 131297,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 131309,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 131294,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 131299,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 131272,
+                                        count = 38,
+                                        usage = 0.76,
+                                    },
+                                    {
+                                        id = 141458,
+                                        count = 32,
+                                        usage = 0.64,
+                                    },
+                                    {
+                                        id = 131304,
+                                        count = 20,
+                                        usage = 0.4,
+                                    },
+                                    {
+                                        id = 141457,
+                                        count = 18,
+                                        usage = 0.36,
+                                    },
+                                    {
+                                        id = 131306,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 131307,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 131285,
+                                        count = 12,
+                                        usage = 0.24,
+                                    },
+                                    {
+                                        id = 131278,
+                                        count = 11,
+                                        usage = 0.22,
+                                    },
+                                    {
+                                        id = 131283,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 140463,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 131273,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 141444,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 141447,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 131310,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 131302,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 140459,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 141451,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131223,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131225,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131228,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131230,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131231,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131232,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131234,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131235,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131241,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131242,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131244,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131245,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131246,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131250,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131257,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131259,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131262,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131263,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131266,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141815,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 136989,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 136990,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131253,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131256,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131265,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131226,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 131252,
+                                        count = 45,
+                                        usage = 0.9,
+                                    },
+                                    {
+                                        id = 131248,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 131238,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131224,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131229,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131239,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131243,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131251,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131258,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131261,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122593,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122594,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122597,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122600,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122601,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122571,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140815,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140816,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122576,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122578,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122575,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122581,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141009,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 122588,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 128619,
+                                        count = 13,
+                                        usage = 0.26,
+                                    },
+                                    {
+                                        id = 140817,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 3599,
+                                    count = 48,
+                                    usage = 0.96,
+                                },
+                                {
+                                    id = 5746,
+                                    count = 40,
+                                    usage = 0.8,
+                                },
+                                {
+                                    id = 5444,
+                                    count = 27,
+                                    usage = 0.54,
+                                },
+                                {
+                                    id = 3604,
+                                    count = 27,
+                                    usage = 0.54,
+                                },
+                                {
+                                    id = 693,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    id = 5534,
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    id = 1214,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 271492,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270492,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244737,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270747,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244563,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 270532,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240952,
+                                        count = 21,
+                                        usage = 0.42,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271490,
+                                        count = 38,
+                                        usage = 0.76,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270489,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244564,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270488,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270372,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270539,
+                                        count = 19,
+                                        usage = 0.38,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270349,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 270498,
+                                        count = 37,
+                                        usage = 0.74,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271495,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244562,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 270485,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244568,
+                                        count = 20,
+                                        usage = 0.4,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244741,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270374,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 270495,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271493,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244567,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270746,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270494,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 244565,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270486,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251155,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270490,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244566,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271491,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270491,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270749,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270496,
+                                        count = 46,
+                                        usage = 0.92,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244765,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244561,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 59,
+                                        usage = 1.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270577,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270558,
+                                        count = 37,
+                                        usage = 0.74,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270556,
+                                        count = 36,
+                                        usage = 0.72,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270559,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270453,
+                                        count = 32,
+                                        usage = 0.64,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 245869,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 268479,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270396,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
                                 OFF_HAND = {},
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241144,
+                                    count = 44,
+                                    usage = 0.88,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 42,
+                                    usage = 0.84,
+                                },
+                                {
+                                    itemID = 240918,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    itemID = 240901,
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    itemID = 240894,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 32,
+                                        usage = 0.64,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7961,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7961,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 37,
+                                        usage = 0.74,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7971,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7971,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8001,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8001,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 7987,
+                                        count = 35,
+                                        usage = 0.7,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7985,
+                                        count = 7,
+                                        usage = 0.14,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7985,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7984,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7984,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 8159,
+                                        count = 45,
+                                        usage = 0.9,
+                                        source = {
+                                            type = "item",
+                                            id = 244641,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8161,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 244645,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8163,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 244643,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 35,
+                                        usage = 0.7,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7963,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7963,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 38,
+                                        usage = 0.76,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8613,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "item",
+                                            id = 257748,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 7969,
+                                        count = 33,
+                                        usage = 0.66,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8027,
+                                        count = 7,
+                                        usage = 0.14,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7965,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7965,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 269.24,
+                                crit = 5.32,
+                                mastery = 826.84,
+                                versatility = 1195.38,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "mastery",
+                                "haste",
+                                "crit",
+                            },
                         },
                         [254] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 50,
+                                maxRating = 2538,
+                                minRating = 2137,
+                                avgRating = 2290,
                                 classSlug = "hunter",
                                 specSlug = "marksmanship",
                                 className = "Hunter",
                                 specName = "Marksmanship",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:00:46.652004Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "C4PAD57yiELKEty14ekTDtZEqYbZWGDjZMTjlZG2yMMbAAAAAAAAgZYMjFjZmZmhFjmxMzYbZxMYmZmxyYmlhZAAAmZMzMzMDmx2CmBYhZWMG",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    talentString = "C4PAD57yiELKEty14ekTDtZEqYbZWGDjZMTjlZG2yMMbAAAAAAAAgZgZsYMzMzMYGNjZmZ2W2mZYmhZmtxYZYmBAAMzYmhZGMjtFMDwCzsMjB",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "C4PAD57yiELKEty14ekTDtZEqYbZWGDjZMTjlZG2yMMbAAAAAAAAgZYMjFjZmZmxwoZMzYYbGjZmZmx2YmlBDAAwMjZmZmZwM2WwMALMzyMG",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 141443,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141448,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141449,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140460,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140461,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140465,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140466,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140467,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131269,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131270,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131279,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131280,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131284,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131286,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131291,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131292,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131296,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133219,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131301,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131314,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131316,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131315,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 131309,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 131276,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 131294,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 141458,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 140463,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 131299,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 131297,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 131307,
+                                        count = 21,
+                                        usage = 0.42,
+                                    },
+                                    {
+                                        id = 131306,
+                                        count = 21,
+                                        usage = 0.42,
+                                    },
+                                    {
+                                        id = 131304,
+                                        count = 18,
+                                        usage = 0.36,
+                                    },
+                                    {
+                                        id = 131285,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 141457,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 131278,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 131317,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 131283,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 141447,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 131272,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 141446,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 131273,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 133519,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 136994,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133173,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 142135,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 142136,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 142138,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 142266,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133189,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133203,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133205,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133210,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141821,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133176,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 133518,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 133178,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 133512,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 133183,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 133206,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 133212,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 133207,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 136993,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 133412,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 133181,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 133190,
+                                        count = 32,
+                                        usage = 0.64,
+                                    },
+                                    {
+                                        id = 133182,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 133185,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 133187,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 142137,
+                                        count = 27,
+                                        usage = 0.54,
+                                    },
+                                    {
+                                        id = 133217,
+                                        count = 27,
+                                        usage = 0.54,
+                                    },
+                                    {
+                                        id = 140468,
+                                        count = 27,
+                                        usage = 0.54,
+                                    },
+                                    {
+                                        id = 133186,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 133202,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 133213,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 133214,
+                                        count = 23,
+                                        usage = 0.46,
+                                    },
+                                    {
+                                        id = 140469,
+                                        count = 23,
+                                        usage = 0.46,
+                                    },
+                                    {
+                                        id = 133516,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 133192,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 136996,
+                                        count = 7,
+                                        usage = 0.14,
+                                    },
+                                    {
+                                        id = 134420,
+                                        count = 6,
+                                        usage = 0.12,
+                                    },
+                                    {
+                                        id = 133194,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 133517,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122598,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122599,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 141294,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122574,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 140818,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122579,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 140820,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122580,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122582,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122585,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122587,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122589,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122590,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 122567,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 122596,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 128617,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 122570,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 140813,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 140814,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 141004,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 137674,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 122577,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 140812,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 122602,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 133045,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 122583,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 141514,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 140345,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 122569,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 133026,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 122595,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 651,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 5745,
+                                    count = 47,
+                                    usage = 0.94,
+                                },
+                                {
+                                    id = 653,
+                                    count = 39,
+                                    usage = 0.78,
+                                },
+                                {
+                                    id = 659,
+                                    count = 8,
+                                    usage = 0.16,
+                                },
+                                {
+                                    id = 3729,
+                                    count = 5,
+                                    usage = 0.1,
+                                },
+                                {
+                                    id = 5533,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 271492,
+                                        count = 28,
+                                        usage = 0.56,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244563,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270492,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244737,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270747,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 270532,
+                                        count = 33,
+                                        usage = 0.66,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240952,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271490,
+                                        count = 30,
+                                        usage = 0.6,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244564,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270751,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270372,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270489,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270539,
+                                        count = 30,
+                                        usage = 0.6,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270349,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270540,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 270498,
+                                        count = 32,
+                                        usage = 0.64,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271495,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244562,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270742,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 244568,
+                                        count = 26,
+                                        usage = 0.52,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270485,
+                                        count = 20,
+                                        usage = 0.4,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270484,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244741,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270755,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 270495,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271493,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270746,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244567,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270494,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 244565,
+                                        count = 39,
+                                        usage = 0.78,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270486,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270754,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 244566,
+                                        count = 26,
+                                        usage = 0.52,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270490,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271491,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270371,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270491,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270496,
+                                        count = 44,
+                                        usage = 0.88,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244765,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244561,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270497,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270744,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 57,
+                                        usage = 1.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270577,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 255609,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270556,
+                                        count = 38,
+                                        usage = 0.76,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270558,
+                                        count = 33,
+                                        usage = 0.66,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270559,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270453,
+                                        count = 32,
+                                        usage = 0.64,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 245869,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 268479,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
                                 OFF_HAND = {},
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241144,
+                                    count = 49,
+                                    usage = 0.98,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 35,
+                                    usage = 0.7,
+                                },
+                                {
+                                    itemID = 240918,
+                                    count = 11,
+                                    usage = 0.22,
+                                },
+                                {
+                                    itemID = 240896,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    itemID = 240885,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 33,
+                                        usage = 0.66,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8017,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8017,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 7987,
+                                        count = 30,
+                                        usage = 0.6,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7985,
+                                        count = 11,
+                                        usage = 0.22,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7985,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 8159,
+                                        count = 45,
+                                        usage = 0.9,
+                                        source = {
+                                            type = "item",
+                                            id = 244641,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8163,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 244643,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8161,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 244645,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 33,
+                                        usage = 0.66,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7963,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7963,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 7969,
+                                        count = 37,
+                                        usage = 0.74,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7965,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7965,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8027,
+                                        count = 5,
+                                        usage = 0.1,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 37,
+                                        usage = 0.74,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8613,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "item",
+                                            id = 257748,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 37,
+                                        usage = 0.74,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7971,
+                                        count = 5,
+                                        usage = 0.1,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7971,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8001,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8001,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 238.32,
+                                crit = 15,
+                                mastery = 836.16,
+                                versatility = 1175.64,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "mastery",
+                                "haste",
+                                "crit",
+                            },
                         },
                         [255] = {
                             meta = {
@@ -11426,1203 +16341,47 @@ _G.PvPIdiotData = {
                         },
                         [62] = {
                             meta = {
-                                sampleSize = 50,
-                                maxRating = 2562,
-                                minRating = 2018,
-                                avgRating = 2173,
+                                sampleSize = 0,
+                                maxRating = 0,
+                                minRating = 0,
+                                avgRating = 0,
                                 classSlug = "mage",
                                 specSlug = "arcane",
                                 className = "Mage",
                                 specName = "Arcane",
-                                sourceUpdatedAt = "2026-08-31T10:00:51.001523Z",
-                                dataAvailable = true,
+                                sourceUpdatedAt = "",
+                                dataAvailable = false,
+                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
                             },
-                            builds = {
-                                {
-                                    talentString = "C4DAche08tHz49KSVf7iKFnyuNstMzyMzMbDzM0YMDAAgBAMzMNLLLzMzMzyyMTsBAwCMzMsZZmZmlZMmHYmZGWYGzMzAAMAAAzMLYmBGDAGGzA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "C4DAche08tHz49KSVf7iKFnyuNstMzyMzMbYmhmZMDAAgBAMzMNLLLzMzMzyyMTsBAwCmZmhNLzMzsMjx8AmZGWYmZGzAAMAAAzMLYmBGDAGGzA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "C4DAche08tHz49KSVf7iKFnyuNstMzyMzDMbYG0MjZAAAMAgZmpZZZZmZmZWWmZiNAAWgZmhNLzMzsYMmxMzMWYGzMzAAMAAAzMLYmBGzAwwYG",
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
+                            builds = {},
                             talents = {
-                                class = {
-                                    {
-                                        id = 85143,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85156,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85176,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 120889,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85177,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85183,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85184,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 130892,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138963,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138967,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138968,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138970,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138974,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85158,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85160,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85164,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85186,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 130651,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85147,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 85190,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 85162,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 85150,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 141352,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 138979,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 120890,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 141350,
-                                        count = 44,
-                                        usage = 0.88,
-                                    },
-                                    {
-                                        id = 85192,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 138972,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 138971,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 138977,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 85185,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 138969,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 85178,
-                                        count = 26,
-                                        usage = 0.52,
-                                    },
-                                    {
-                                        id = 141239,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 85168,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 85166,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 85145,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 142170,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                    {
-                                        id = 141354,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 85171,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 138964,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 85146,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 85144,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 85173,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 130650,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 142595,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 142596,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131341,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131342,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131345,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131363,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131364,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131366,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131367,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131368,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131371,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 131376,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138803,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138806,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138808,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138809,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138810,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138811,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138813,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139602,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141791,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138976,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133492,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141848,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 140453,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 131347,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 131370,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 131365,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 138807,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 131337,
-                                        count = 15,
-                                        usage = 0.3,
-                                    },
-                                    {
-                                        id = 131334,
-                                        count = 9,
-                                        usage = 0.18,
-                                    },
-                                    {
-                                        id = 138830,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 131336,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 140679,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 140680,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 140681,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122258,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122259,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122260,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122261,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122262,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122263,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122267,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122268,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 122265,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122266,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 122264,
-                                        count = 37,
-                                        usage = 0.74,
-                                    },
-                                    {
-                                        id = 122273,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122276,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122277,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122278,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122279,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 140674,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 140673,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 133074,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122269,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122270,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 122271,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 140354,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 122274,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 140675,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                    {
-                                        id = 122275,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                    {
-                                        id = 139025,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 128255,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 140701,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 128256,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 128705,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
+                                class = {},
+                                spec = {},
+                                hero = {},
                             },
-                            pvpTalents = {
-                                {
-                                    id = 5707,
-                                    count = 47,
-                                    usage = 0.94,
-                                },
-                                {
-                                    id = 637,
-                                    count = 43,
-                                    usage = 0.86,
-                                },
-                                {
-                                    id = 5661,
-                                    count = 40,
-                                    usage = 0.8,
-                                },
-                                {
-                                    id = 5589,
-                                    count = 8,
-                                    usage = 0.16,
-                                },
-                                {
-                                    id = 3529,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                                {
-                                    id = 5397,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                                {
-                                    id = 5488,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                            },
+                            pvpTalents = {},
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270524,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244735,
-                                        count = 11,
-                                        usage = 0.22,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271564,
-                                        count = 11,
-                                        usage = 0.22,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270354,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 270534,
-                                        count = 31,
-                                        usage = 0.62,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240952,
-                                        count = 18,
-                                        usage = 0.36,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 273781,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 271562,
-                                        count = 39,
-                                        usage = 0.78,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270521,
-                                        count = 9,
-                                        usage = 0.18,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270520,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270623,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 270540,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239678,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270539,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270538,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 255338,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 270531,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271567,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239685,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270613,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 239677,
-                                        count = 29,
-                                        usage = 0.58,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270516,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244739,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 271565,
-                                        count = 30,
-                                        usage = 0.6,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270617,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270527,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 270519,
-                                        count = 41,
-                                        usage = 0.82,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239682,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 193691,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270625,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270523,
-                                        count = 42,
-                                        usage = 0.84,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271563,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239681,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270621,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 193750,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 239684,
-                                        count = 37,
-                                        usage = 0.74,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270528,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244763,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270352,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 159259,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 240951,
-                                        count = 62,
-                                        usage = 1.24,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270537,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 9,
-                                        usage = 0.18,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 171622,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 268249,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270556,
-                                        count = 32,
-                                        usage = 0.64,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270558,
-                                        count = 28,
-                                        usage = 0.56,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280097,
-                                        count = 12,
-                                        usage = 0.24,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270603,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 270450,
-                                        count = 48,
-                                        usage = 0.96,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 245770,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270455,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        itemID = 270446,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
+                                HEAD = {},
+                                NECK = {},
+                                SHOULDER = {},
+                                BACK = {},
+                                CHEST = {},
+                                WRIST = {},
+                                HANDS = {},
+                                WAIST = {},
+                                LEGS = {},
+                                FEET = {},
+                                FINGER = {},
+                                TRINKET = {},
+                                MAIN_HAND = {},
+                                OFF_HAND = {},
                             },
-                            gems = {
-                                {
-                                    itemID = 241143,
-                                    count = 49,
-                                    usage = 0.98,
-                                },
-                                {
-                                    itemID = 240894,
-                                    count = 29,
-                                    usage = 0.58,
-                                },
-                                {
-                                    itemID = 240916,
-                                    count = 23,
-                                    usage = 0.46,
-                                },
-                                {
-                                    itemID = 240892,
-                                    count = 5,
-                                    usage = 0.1,
-                                },
-                                {
-                                    itemID = 240902,
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
-                            enchants = {
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 31,
-                                        usage = 0.62,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7989,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7989,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 39,
-                                        usage = 0.78,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7971,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7971,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 7987,
-                                        count = 43,
-                                        usage = 0.86,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8013,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8013,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 7935,
-                                        count = 37,
-                                        usage = 0.74,
-                                        source = {
-                                            type = "item",
-                                            id = 240133,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7937,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "item",
-                                            id = 240155,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7938,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "item",
-                                            id = 240156,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 40,
-                                        usage = 0.8,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7963,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7963,
-                                        },
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        enchantID = 8027,
-                                        count = 21,
-                                        usage = 0.42,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8025,
-                                        count = 20,
-                                        usage = 0.4,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8025,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7969,
-                                        count = 4,
-                                        usage = 0.08,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7969,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 35,
-                                        usage = 0.7,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7983,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7983,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8008,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8008,
-                                        },
-                                    },
-                                },
-                            },
+                            gems = {},
+                            enchants = {},
                             stats = {},
-                            statsRaw = {
-                                haste = 1026.62,
-                                crit = 15.02,
-                                mastery = 74.44,
-                                versatility = 1148.4,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "haste",
-                                "mastery",
-                                "crit",
-                            },
+                            statsRaw = {},
+                            statPriority = {},
                         },
                         [63] = {
                             meta = {
@@ -13794,1198 +17553,47 @@ _G.PvPIdiotData = {
                         },
                         [64] = {
                             meta = {
-                                sampleSize = 50,
-                                maxRating = 2402,
-                                minRating = 1932,
-                                avgRating = 2063,
+                                sampleSize = 0,
+                                maxRating = 0,
+                                minRating = 0,
+                                avgRating = 0,
                                 classSlug = "mage",
                                 specSlug = "frost",
                                 className = "Mage",
                                 specName = "Frost",
-                                sourceUpdatedAt = "2026-08-31T10:00:52.19983Z",
-                                dataAvailable = true,
+                                sourceUpdatedAt = "",
+                                dataAvailable = false,
+                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
                             },
-                            builds = {
-                                {
-                                    talentString = "CAEAche08tHz49KSVf7iKFnyuNmtlZWmZmZDzMxMMzMzMzsYmZGzYmZZmmZ2mFAwMzMLLzMtBAALAAAgNA2WGzMzALzDYMzYBAAgZWAmhxAMYA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CAEAche08tHz49KSVf7iKFnyuNmtlZWmZmZziZmYGmZmZmZWMzMjZMzsMTzMbzCAYmZmllZm2AAgFAAAwGAbLjZmBsMPgxMjFAAAmZBYGGDwgBA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CAEAche08tHz49KSVf7iKFnyuNmtlZWmZmZbYmJmhZmZmZmFzMzYGzMLz0Mz2sAAmZmZZZmpNAAYBAAAsBw2yYmZALzDYMzYBAAgZWAmhxAMYA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
+                            builds = {},
                             talents = {
-                                class = {
-                                    {
-                                        id = 85143,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85147,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85156,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85158,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85160,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85162,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85176,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85177,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85178,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85179,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 120889,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85184,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85192,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138965,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138967,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138968,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138969,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138970,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 130651,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138979,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85150,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 141352,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85164,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85190,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 120890,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 130892,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 141350,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 138963,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 85145,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 85185,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 138977,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 85168,
-                                        count = 25,
-                                        usage = 0.5,
-                                    },
-                                    {
-                                        id = 141354,
-                                        count = 20,
-                                        usage = 0.4,
-                                    },
-                                    {
-                                        id = 138971,
-                                        count = 17,
-                                        usage = 0.34,
-                                    },
-                                    {
-                                        id = 85171,
-                                        count = 13,
-                                        usage = 0.26,
-                                    },
-                                    {
-                                        id = 141239,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 85166,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 142170,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 138962,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 141353,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 141351,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 85186,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 85251,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140955,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 140956,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139308,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139183,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139186,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139187,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139190,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 138960,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85219,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141797,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85223,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85230,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85244,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85245,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85246,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 85247,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 139178,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85217,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85237,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 85240,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 107434,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 139180,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 139188,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 139193,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 85229,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 85253,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 141600,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 85248,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 139179,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 85250,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 85254,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 139192,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 141559,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 139306,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 141602,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 141643,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 122273,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122274,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122276,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122277,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122278,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122279,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122275,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 140674,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 140673,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 133074,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122269,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122270,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122271,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 140675,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 140676,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 140677,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 140678,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122247,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122248,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122249,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122250,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122251,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122252,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122253,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122254,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122256,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122257,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 122255,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 139212,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 140701,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
+                                class = {},
+                                spec = {},
+                                hero = {},
                             },
-                            pvpTalents = {
-                                {
-                                    id = 5622,
-                                    count = 45,
-                                    usage = 0.9,
-                                },
-                                {
-                                    id = 5708,
-                                    count = 43,
-                                    usage = 0.86,
-                                },
-                                {
-                                    id = 5581,
-                                    count = 30,
-                                    usage = 0.6,
-                                },
-                                {
-                                    id = 5497,
-                                    count = 19,
-                                    usage = 0.38,
-                                },
-                                {
-                                    id = 5390,
-                                    count = 11,
-                                    usage = 0.22,
-                                },
-                                {
-                                    id = 632,
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
+                            pvpTalents = {},
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270524,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271564,
-                                        count = 17,
-                                        usage = 0.34,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270620,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270354,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270525,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 270534,
-                                        count = 45,
-                                        usage = 0.9,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270532,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240952,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270533,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 271562,
-                                        count = 44,
-                                        usage = 0.88,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270521,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270623,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 270540,
-                                        count = 23,
-                                        usage = 0.46,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239678,
-                                        count = 21,
-                                        usage = 0.42,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270539,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270347,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270349,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 270531,
-                                        count = 30,
-                                        usage = 0.6,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271567,
-                                        count = 9,
-                                        usage = 0.18,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239685,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270351,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270613,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 239677,
-                                        count = 32,
-                                        usage = 0.64,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270516,
-                                        count = 13,
-                                        usage = 0.26,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270358,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270517,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 270527,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271565,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270617,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270618,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270353,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 270519,
-                                        count = 36,
-                                        usage = 0.72,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239682,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270625,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270518,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270357,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270523,
-                                        count = 36,
-                                        usage = 0.72,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271563,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270355,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239681,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270522,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 239684,
-                                        count = 32,
-                                        usage = 0.64,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270528,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270352,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270529,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 270537,
-                                        count = 44,
-                                        usage = 0.88,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240951,
-                                        count = 40,
-                                        usage = 0.8,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 12,
-                                        usage = 0.24,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270536,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270575,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270556,
-                                        count = 32,
-                                        usage = 0.64,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270558,
-                                        count = 31,
-                                        usage = 0.62,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 17,
-                                        usage = 0.34,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280097,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270559,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 270450,
-                                        count = 49,
-                                        usage = 0.98,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270455,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        itemID = 270446,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
+                                HEAD = {},
+                                NECK = {},
+                                SHOULDER = {},
+                                BACK = {},
+                                CHEST = {},
+                                WRIST = {},
+                                HANDS = {},
+                                WAIST = {},
+                                LEGS = {},
+                                FEET = {},
+                                FINGER = {},
+                                TRINKET = {},
+                                MAIN_HAND = {},
+                                OFF_HAND = {},
                             },
-                            gems = {
-                                {
-                                    itemID = 241143,
-                                    count = 49,
-                                    usage = 0.98,
-                                },
-                                {
-                                    itemID = 240916,
-                                    count = 36,
-                                    usage = 0.72,
-                                },
-                                {
-                                    itemID = 240883,
-                                    count = 5,
-                                    usage = 0.1,
-                                },
-                                {
-                                    itemID = 240894,
-                                    count = 5,
-                                    usage = 0.1,
-                                },
-                                {
-                                    itemID = 240900,
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
-                            enchants = {
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 25,
-                                        usage = 0.5,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7989,
-                                        count = 6,
-                                        usage = 0.12,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7989,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7988,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7988,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 35,
-                                        usage = 0.7,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8000,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8000,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 7987,
-                                        count = 36,
-                                        usage = 0.72,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8013,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8013,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 7935,
-                                        count = 39,
-                                        usage = 0.78,
-                                        source = {
-                                            type = "item",
-                                            id = 240133,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7939,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "item",
-                                            id = 240157,
-                                        },
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        enchantID = 8027,
-                                        count = 34,
-                                        usage = 0.68,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8023,
-                                        count = 5,
-                                        usage = 0.1,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8023,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8021,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8021,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 38,
-                                        usage = 0.76,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8041,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8041,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 40,
-                                        usage = 0.8,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7993,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7993,
-                                        },
-                                    },
-                                },
-                            },
+                            gems = {},
+                            enchants = {},
                             stats = {},
-                            statsRaw = {
-                                haste = 957.36,
-                                crit = 15.66,
-                                mastery = 57.36,
-                                versatility = 1253.32,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "haste",
-                                "mastery",
-                                "crit",
-                            },
+                            statsRaw = {},
+                            statPriority = {},
                         },
                         [268] = {
                             meta = {
@@ -17689,1289 +20297,47 @@ _G.PvPIdiotData = {
                         },
                         [65] = {
                             meta = {
-                                sampleSize = 50,
-                                maxRating = 2485,
-                                minRating = 2153,
-                                avgRating = 2285,
+                                sampleSize = 0,
+                                maxRating = 0,
+                                minRating = 0,
+                                avgRating = 0,
                                 classSlug = "paladin",
                                 specSlug = "holy",
                                 className = "Paladin",
                                 specName = "Holy",
-                                sourceUpdatedAt = "2026-08-31T10:00:54.605224Z",
-                                dataAvailable = true,
+                                sourceUpdatedAt = "",
+                                dataAvailable = false,
+                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
                             },
-                            builds = {
-                                {
-                                    talentString = "CEEAzbn3egSOtoSwvPw1U1vTLAAAgZBAGAAwyYmZMzyMjFjZMsM2mZWGTTMLzYmZYYLAYAYBsZWmxMLzyMzs1AAmZW2WsNzwCAjNzMmZMDGAAzMGDoB",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CEEAzbn3egSOtoSwvPw1U1vTLAAAALAwAAYwywMjZWmZmlBjhF2mZWMTTMLzwMDjHYLDADAbgNz2MzMLzyMzs1AAmZW2WsMzwCLgxmZYmhZYAAMzYMgGA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CEEAzbn3egSOtoSwvPw1U1vTLAAAALAwMAADWGzYMzyMzsYYMsM2mZWYaiZZGmZYYLDADAbgNz2MzMLz2Mzs0AAmZW2WsMGWYDM2MzYmhBDgBMzgBjGA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
+                            builds = {},
                             talents = {
-                                class = {
-                                    {
-                                        id = 133053,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107588,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107589,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133062,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107592,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141260,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107597,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133070,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107600,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107602,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133066,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107607,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107608,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107617,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 120041,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107630,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133116,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 133058,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 133065,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 107482,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 119297,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 133054,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 107601,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 107523,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 133067,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 120685,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 133061,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 120477,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 107470,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 138267,
-                                        count = 37,
-                                        usage = 0.74,
-                                    },
-                                    {
-                                        id = 136239,
-                                        count = 35,
-                                        usage = 0.7,
-                                    },
-                                    {
-                                        id = 107609,
-                                        count = 35,
-                                        usage = 0.7,
-                                    },
-                                    {
-                                        id = 133069,
-                                        count = 31,
-                                        usage = 0.62,
-                                    },
-                                    {
-                                        id = 133048,
-                                        count = 24,
-                                        usage = 0.48,
-                                    },
-                                    {
-                                        id = 141366,
-                                        count = 21,
-                                        usage = 0.42,
-                                    },
-                                    {
-                                        id = 133063,
-                                        count = 21,
-                                        usage = 0.42,
-                                    },
-                                    {
-                                        id = 141258,
-                                        count = 19,
-                                        usage = 0.38,
-                                    },
-                                    {
-                                        id = 120884,
-                                        count = 15,
-                                        usage = 0.3,
-                                    },
-                                    {
-                                        id = 133071,
-                                        count = 14,
-                                        usage = 0.28,
-                                    },
-                                    {
-                                        id = 138266,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 107627,
-                                        count = 10,
-                                        usage = 0.2,
-                                    },
-                                    {
-                                        id = 120478,
-                                        count = 9,
-                                        usage = 0.18,
-                                    },
-                                    {
-                                        id = 107606,
-                                        count = 9,
-                                        usage = 0.18,
-                                    },
-                                    {
-                                        id = 107469,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 133055,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                    {
-                                        id = 107629,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 141276,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 107611,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 107538,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107539,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107542,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107549,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107550,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107553,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107554,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107555,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107558,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 121388,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107567,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 120886,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107580,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107582,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107583,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141782,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 107569,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 107586,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 138265,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 107552,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 107562,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 138287,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 120887,
-                                        count = 44,
-                                        usage = 0.88,
-                                    },
-                                    {
-                                        id = 107585,
-                                        count = 43,
-                                        usage = 0.86,
-                                    },
-                                    {
-                                        id = 107579,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 107575,
-                                        count = 40,
-                                        usage = 0.8,
-                                    },
-                                    {
-                                        id = 107556,
-                                        count = 36,
-                                        usage = 0.72,
-                                    },
-                                    {
-                                        id = 141347,
-                                        count = 31,
-                                        usage = 0.62,
-                                    },
-                                    {
-                                        id = 107564,
-                                        count = 30,
-                                        usage = 0.6,
-                                    },
-                                    {
-                                        id = 107573,
-                                        count = 28,
-                                        usage = 0.56,
-                                    },
-                                    {
-                                        id = 107561,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 107545,
-                                        count = 26,
-                                        usage = 0.52,
-                                    },
-                                    {
-                                        id = 138193,
-                                        count = 24,
-                                        usage = 0.48,
-                                    },
-                                    {
-                                        id = 107544,
-                                        count = 22,
-                                        usage = 0.44,
-                                    },
-                                    {
-                                        id = 120885,
-                                        count = 22,
-                                        usage = 0.44,
-                                    },
-                                    {
-                                        id = 107574,
-                                        count = 22,
-                                        usage = 0.44,
-                                    },
-                                    {
-                                        id = 107541,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 107584,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 131398,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 107578,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 107581,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 107551,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 107570,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 107563,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 107546,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 122885,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122886,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122887,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122889,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122890,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122893,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122897,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122898,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 140755,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 140756,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122899,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 141558,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 140757,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122689,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122695,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122703,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122704,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 140762,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122708,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122678,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122681,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122680,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 140761,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 140763,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122714,
-                                        count = 23,
-                                        usage = 0.46,
-                                    },
-                                    {
-                                        id = 122895,
-                                        count = 22,
-                                        usage = 0.44,
-                                    },
-                                    {
-                                        id = 122789,
-                                        count = 17,
-                                        usage = 0.34,
-                                    },
-                                    {
-                                        id = 122682,
-                                        count = 17,
-                                        usage = 0.34,
-                                    },
-                                    {
-                                        id = 122707,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 122790,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 122896,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                },
+                                class = {},
+                                spec = {},
+                                hero = {},
                             },
-                            pvpTalents = {
-                                {
-                                    id = 640,
-                                    count = 47,
-                                    usage = 0.94,
-                                },
-                                {
-                                    id = 5692,
-                                    count = 36,
-                                    usage = 0.72,
-                                },
-                                {
-                                    id = 87,
-                                    count = 25,
-                                    usage = 0.5,
-                                },
-                                {
-                                    id = 642,
-                                    count = 19,
-                                    usage = 0.38,
-                                },
-                                {
-                                    id = 5583,
-                                    count = 11,
-                                    usage = 0.22,
-                                },
-                                {
-                                    id = 5618,
-                                    count = 7,
-                                    usage = 0.14,
-                                },
-                                {
-                                    id = 5663,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                                {
-                                    id = 86,
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
+                            pvpTalents = {},
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270477,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244738,
-                                        count = 17,
-                                        usage = 0.34,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271465,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237904,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270476,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 240952,
-                                        count = 34,
-                                        usage = 0.68,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270532,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270534,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 237906,
-                                        count = 34,
-                                        usage = 0.68,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271463,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270800,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270472,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270473,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 270539,
-                                        count = 31,
-                                        usage = 0.62,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270538,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239678,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270540,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270349,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 271468,
-                                        count = 43,
-                                        usage = 0.86,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270482,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270789,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 270469,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244742,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237908,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270468,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 271466,
-                                        count = 43,
-                                        usage = 0.86,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270478,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 237907,
-                                        count = 23,
-                                        usage = 0.46,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270471,
-                                        count = 21,
-                                        usage = 0.42,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270801,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270470,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270474,
-                                        count = 41,
-                                        usage = 0.82,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237905,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271464,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270475,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237833,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 244766,
-                                        count = 22,
-                                        usage = 0.44,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270481,
-                                        count = 12,
-                                        usage = 0.24,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237902,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270480,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270791,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 240951,
-                                        count = 81,
-                                        usage = 1.62,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 14,
-                                        usage = 0.28,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270537,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270556,
-                                        count = 34,
-                                        usage = 0.68,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270558,
-                                        count = 31,
-                                        usage = 0.62,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280097,
-                                        count = 14,
-                                        usage = 0.28,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270603,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 270460,
-                                        count = 49,
-                                        usage = 0.98,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270390,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        itemID = 270445,
-                                        count = 36,
-                                        usage = 0.72,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237912,
-                                        count = 14,
-                                        usage = 0.28,
-                                        bonusList = {},
-                                    },
-                                },
+                                HEAD = {},
+                                NECK = {},
+                                SHOULDER = {},
+                                BACK = {},
+                                CHEST = {},
+                                WRIST = {},
+                                HANDS = {},
+                                WAIST = {},
+                                LEGS = {},
+                                FEET = {},
+                                FINGER = {},
+                                TRINKET = {},
+                                MAIN_HAND = {},
+                                OFF_HAND = {},
                             },
-                            gems = {
-                                {
-                                    itemID = 240902,
-                                    count = 28,
-                                    usage = 0.56,
-                                },
-                                {
-                                    itemID = 240918,
-                                    count = 28,
-                                    usage = 0.56,
-                                },
-                                {
-                                    itemID = 241143,
-                                    count = 23,
-                                    usage = 0.46,
-                                },
-                                {
-                                    itemID = 241144,
-                                    count = 19,
-                                    usage = 0.38,
-                                },
-                                {
-                                    itemID = 240969,
-                                    count = 6,
-                                    usage = 0.12,
-                                },
-                            },
-                            enchants = {
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 26,
-                                        usage = 0.52,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7961,
-                                        count = 11,
-                                        usage = 0.22,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7961,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7959,
-                                        count = 5,
-                                        usage = 0.1,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7959,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 33,
-                                        usage = 0.66,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8031,
-                                        count = 7,
-                                        usage = 0.14,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8031,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8030,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8030,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 8013,
-                                        count = 45,
-                                        usage = 0.9,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8013,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7987,
-                                        count = 4,
-                                        usage = 0.08,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 7937,
-                                        count = 46,
-                                        usage = 0.92,
-                                        source = {
-                                            type = "item",
-                                            id = 240155,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7935,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "item",
-                                            id = 240133,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7939,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "item",
-                                            id = 240157,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 37,
-                                        usage = 0.74,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7993,
-                                        count = 6,
-                                        usage = 0.12,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7993,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7992,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7992,
-                                        },
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        enchantID = 8027,
-                                        count = 20,
-                                        usage = 0.4,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7969,
-                                        count = 20,
-                                        usage = 0.4,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7969,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8023,
-                                        count = 5,
-                                        usage = 0.1,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8023,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 41,
-                                        usage = 0.82,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8041,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8041,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8038,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8038,
-                                        },
-                                    },
-                                },
-                            },
+                            gems = {},
+                            enchants = {},
                             stats = {},
-                            statsRaw = {
-                                haste = 203.9,
-                                crit = 13.14,
-                                mastery = 854.98,
-                                versatility = 1231.06,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "mastery",
-                                "haste",
-                                "crit",
-                            },
+                            statsRaw = {},
+                            statPriority = {},
                         },
                         [66] = {
                             meta = {
@@ -21452,47 +22818,1185 @@ _G.PvPIdiotData = {
                         },
                         [257] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 50,
+                                maxRating = 2690,
+                                minRating = 2334,
+                                avgRating = 2433,
                                 classSlug = "priest",
                                 specSlug = "holy",
                                 className = "Priest",
                                 specName = "Holy",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:00:57.435841Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "CEQAR03Gt7xPmcDNOjs2Zlb3yCDAAAAAAwMzMmtZmxMzYYGMbzMzMAAAAmZmlBGjxyMzMDLLGzUAMzyMLzMZWmZ2GgZmBLmZAQzYGGDGbLDmZmB+AA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "CEQAR03Gt7xPmcDNOjs2Zlb3yCDAAAAAAwMzMmlZmZmZAzwMbzMzMAAAAmZmlBGjxyMzYYZxYmCgZ2MbjJz2MzyAMzMYxMDAaGzYGDGAzMzAfA",
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                                {
+                                    talentString = "CEQAR03Gt7xPmcDNOjs2Zlb3yCDAAAAAAwMzMmlZmZMzYYGMbzMzMAAAAmZmFYGjxyMzMjZZxYmCgZ2wQYMbDwYgFzMAoZYYMYAMzMD8BA",
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 108823,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140958,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108838,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108839,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108845,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 139056,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 139057,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108852,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108856,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108858,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108872,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108873,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108874,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108875,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 139617,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108682,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108824,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120895,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 120896,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108869,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 139627,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108850,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108867,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 140912,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 108841,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 108865,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 139614,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 108826,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 119742,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 108851,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 108828,
+                                        count = 34,
+                                        usage = 0.68,
+                                    },
+                                    {
+                                        id = 108857,
+                                        count = 34,
+                                        usage = 0.68,
+                                    },
+                                    {
+                                        id = 108854,
+                                        count = 30,
+                                        usage = 0.6,
+                                    },
+                                    {
+                                        id = 108830,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 139613,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 108836,
+                                        count = 18,
+                                        usage = 0.36,
+                                    },
+                                    {
+                                        id = 108860,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 108840,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 139620,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 108842,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 139616,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 108831,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 108864,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 108876,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 139612,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 139628,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 119593,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 133138,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141758,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108748,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108750,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108753,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108755,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108756,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108759,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108760,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108771,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108779,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108780,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108781,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108784,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 108785,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 133122,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108745,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108746,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108776,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 108743,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108754,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108770,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108782,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 108744,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 108758,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 108767,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 108738,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 108681,
+                                        count = 38,
+                                        usage = 0.76,
+                                    },
+                                    {
+                                        id = 108761,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 108752,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 133123,
+                                        count = 24,
+                                        usage = 0.48,
+                                    },
+                                    {
+                                        id = 108757,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 108775,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 108680,
+                                        count = 16,
+                                        usage = 0.32,
+                                    },
+                                    {
+                                        id = 133140,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 108749,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 133416,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 108778,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 133415,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122304,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122306,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122313,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122315,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122288,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122289,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140794,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122294,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122298,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140795,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140796,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122302,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 124231,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 130900,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 122305,
+                                        count = 24,
+                                        usage = 0.48,
+                                    },
+                                    {
+                                        id = 122290,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 124,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 5569,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 101,
+                                    count = 22,
+                                    usage = 0.44,
+                                },
+                                {
+                                    id = 108,
+                                    count = 20,
+                                    usage = 0.4,
+                                },
+                                {
+                                    id = 5479,
+                                    count = 8,
+                                    usage = 0.16,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
-                                OFF_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 270524,
+                                        count = 21,
+                                        usage = 0.42,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239680,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244735,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271555,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270636,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 240952,
+                                        count = 30,
+                                        usage = 0.6,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270534,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270532,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240950,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270587,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271553,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270521,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270520,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239683,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270640,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 270540,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270539,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239678,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270595,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 271558,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270531,
+                                        count = 21,
+                                        usage = 0.42,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239685,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 270517,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239677,
+                                        count = 14,
+                                        usage = 0.28,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270516,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244739,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270358,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 271556,
+                                        count = 19,
+                                        usage = 0.38,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270526,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270527,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270634,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239679,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 239682,
+                                        count = 28,
+                                        usage = 0.56,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270519,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270518,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 193691,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270523,
+                                        count = 25,
+                                        usage = 0.5,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271554,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239681,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 127606,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270355,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270528,
+                                        count = 26,
+                                        usage = 0.52,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 239684,
+                                        count = 19,
+                                        usage = 0.38,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244763,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 156200,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 72,
+                                        usage = 1.44,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240949,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 162544,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270556,
+                                        count = 46,
+                                        usage = 0.92,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270558,
+                                        count = 46,
+                                        usage = 0.92,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270450,
+                                        count = 30,
+                                        usage = 0.6,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270460,
+                                        count = 10,
+                                        usage = 0.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 268365,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251123,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        itemID = 270446,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 245870,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241143,
+                                    count = 46,
+                                    usage = 0.92,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 19,
+                                    usage = 0.38,
+                                },
+                                {
+                                    itemID = 240894,
+                                    count = 19,
+                                    usage = 0.38,
+                                },
+                                {
+                                    itemID = 240918,
+                                    count = 7,
+                                    usage = 0.14,
+                                },
+                                {
+                                    itemID = 240916,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 35,
+                                        usage = 0.7,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 5,
+                                        usage = 0.1,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7988,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7988,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 37,
+                                        usage = 0.74,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7971,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7971,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 8013,
+                                        count = 43,
+                                        usage = 0.86,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8013,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7987,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8012,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8012,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 7937,
+                                        count = 46,
+                                        usage = 0.92,
+                                        source = {
+                                            type = "item",
+                                            id = 240155,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 36,
+                                        usage = 0.72,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8018,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8018,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 8027,
+                                        count = 17,
+                                        usage = 0.34,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7969,
+                                        count = 16,
+                                        usage = 0.32,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8025,
+                                        count = 16,
+                                        usage = 0.32,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8025,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 40,
+                                        usage = 0.8,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8689,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8689,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 649.46,
+                                crit = 20.06,
+                                mastery = 495.9,
+                                versatility = 1123.58,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "haste",
+                                "mastery",
+                                "crit",
+                            },
                         },
                         [258] = {
                             meta = {
@@ -23834,2545 +26338,14 @@ _G.PvPIdiotData = {
                         },
                         [260] = {
                             meta = {
-                                sampleSize = 50,
-                                maxRating = 2132,
-                                minRating = 1438,
-                                avgRating = 1639,
-                                classSlug = "rogue",
-                                specSlug = "outlaw",
-                                className = "Rogue",
-                                specName = "Outlaw",
-                                sourceUpdatedAt = "2026-08-31T10:01:00.444743Z",
-                                dataAvailable = true,
-                            },
-                            builds = {
-                                {
-                                    talentString = "CQQA5HmDzx68KWyrW/8Y781L7DgZAGzwMbzMzMzYMLbmZmZbabGz2MAAAAAALLzMDmZMziZmxAAAAYGGYwsNLmZmRzMbMbssNtwmZAmZmZGYA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CQQA5HmDzx68KWyrW/8Y781L7DgZAzYGmZbmZmZGjZZzDMzMbTbzY2mBAAAAAYZZMDmZMziZmxAAAAYGGYwsNLmZmRzMbMbssNtwmZAmZmZmBD",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    talentString = "CQQA5HmDzx68KWyrW/8Y781L7DgZAGDmZbmZmZGjZZxMzMbTbzY2mBAAAAAYZZmZGmZmZWMzMGAAAAzAYwsNLmZmRzMbMbssNtwiZAmZmZGYA",
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
-                            talents = {
-                                class = {
-                                    {
-                                        id = 117637,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117638,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117641,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117648,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117649,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117647,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117651,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117653,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117526,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117527,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117655,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117657,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117656,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117659,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117662,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122157,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117577,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141644,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117580,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117588,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117590,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 130447,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 122156,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117640,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 117636,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 122164,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 122163,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 122155,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 130446,
-                                        count = 29,
-                                        usage = 0.58,
-                                    },
-                                    {
-                                        id = 117581,
-                                        count = 29,
-                                        usage = 0.58,
-                                    },
-                                    {
-                                        id = 117584,
-                                        count = 29,
-                                        usage = 0.58,
-                                    },
-                                    {
-                                        id = 117639,
-                                        count = 28,
-                                        usage = 0.56,
-                                    },
-                                    {
-                                        id = 117531,
-                                        count = 20,
-                                        usage = 0.4,
-                                    },
-                                    {
-                                        id = 141645,
-                                        count = 17,
-                                        usage = 0.34,
-                                    },
-                                    {
-                                        id = 117530,
-                                        count = 14,
-                                        usage = 0.28,
-                                    },
-                                    {
-                                        id = 117528,
-                                        count = 13,
-                                        usage = 0.26,
-                                    },
-                                    {
-                                        id = 117579,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 117635,
-                                        count = 10,
-                                        usage = 0.2,
-                                    },
-                                    {
-                                        id = 117645,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 117644,
-                                        count = 7,
-                                        usage = 0.14,
-                                    },
-                                    {
-                                        id = 117585,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 117643,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 141646,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117660,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 122752,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 141834,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117652,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117536,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117539,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117550,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117552,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117553,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117554,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117558,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117560,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117562,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117571,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117572,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117576,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117545,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117573,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 140487,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117568,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 117544,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 117547,
-                                        count = 47,
-                                        usage = 0.94,
-                                    },
-                                    {
-                                        id = 117557,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 140489,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 117540,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 117556,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 117563,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 117570,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 140488,
-                                        count = 32,
-                                        usage = 0.64,
-                                    },
-                                    {
-                                        id = 117535,
-                                        count = 30,
-                                        usage = 0.6,
-                                    },
-                                    {
-                                        id = 117565,
-                                        count = 17,
-                                        usage = 0.34,
-                                    },
-                                    {
-                                        id = 140486,
-                                        count = 9,
-                                        usage = 0.18,
-                                    },
-                                    {
-                                        id = 117650,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122160,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 117542,
-                                        count = 6,
-                                        usage = 0.12,
-                                    },
-                                    {
-                                        id = 117574,
-                                        count = 5,
-                                        usage = 0.1,
-                                    },
-                                    {
-                                        id = 117532,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117567,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117538,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 117543,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 122720,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122724,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122727,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 140776,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 125033,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122730,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 140778,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 140777,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122737,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122742,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122746,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122749,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 122750,
-                                        count = 41,
-                                        usage = 0.82,
-                                    },
-                                    {
-                                        id = 122725,
-                                        count = 40,
-                                        usage = 0.8,
-                                    },
-                                    {
-                                        id = 122748,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122729,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122728,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122731,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 140780,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 129964,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122734,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 140781,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 140779,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122736,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122738,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 129971,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 129972,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 122716,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 125032,
-                                        count = 2,
-                                        usage = 0.04,
-                                    },
-                                    {
-                                        id = 125030,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                            },
-                            pvpTalents = {
-                                {
-                                    id = 3483,
-                                    count = 47,
-                                    usage = 0.94,
-                                },
-                                {
-                                    id = 145,
-                                    count = 36,
-                                    usage = 0.72,
-                                },
-                                {
-                                    id = 5699,
-                                    count = 35,
-                                    usage = 0.7,
-                                },
-                                {
-                                    id = 3421,
-                                    count = 16,
-                                    usage = 0.32,
-                                },
-                                {
-                                    id = 1208,
-                                    count = 9,
-                                    usage = 0.18,
-                                },
-                                {
-                                    id = 3619,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                                {
-                                    id = 853,
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    id = 139,
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
-                            pvpTalentCombos = {},
-                            gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270508,
-                                        count = 30,
-                                        usage = 0.6,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244736,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271510,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244555,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 193751,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 270534,
-                                        count = 39,
-                                        usage = 0.78,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240952,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270533,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270532,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 271508,
-                                        count = 41,
-                                        usage = 0.82,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270505,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270719,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270364,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 239678,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270540,
-                                        count = 19,
-                                        usage = 0.38,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270596,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270350,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270347,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 271513,
-                                        count = 25,
-                                        usage = 0.5,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270515,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270709,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270514,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244554,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 244560,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270501,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244740,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270500,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 270510,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244559,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271511,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270714,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270511,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 270502,
-                                        count = 29,
-                                        usage = 0.58,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244557,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270503,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270507,
-                                        count = 34,
-                                        usage = 0.68,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271509,
-                                        count = 11,
-                                        usage = 0.22,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270363,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270717,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244558,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 270512,
-                                        count = 33,
-                                        usage = 0.66,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244764,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270513,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244553,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270360,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 240951,
-                                        count = 46,
-                                        usage = 0.92,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270537,
-                                        count = 35,
-                                        usage = 0.7,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270536,
-                                        count = 15,
-                                        usage = 0.3,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270575,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270558,
-                                        count = 30,
-                                        usage = 0.6,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270556,
-                                        count = 30,
-                                        usage = 0.6,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280097,
-                                        count = 18,
-                                        usage = 0.36,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 18,
-                                        usage = 0.36,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270557,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 270467,
-                                        count = 43,
-                                        usage = 0.86,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237909,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270458,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270542,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        itemID = 270467,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270465,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237910,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 237909,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270386,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                            },
-                            gems = {
-                                {
-                                    itemID = 241144,
-                                    count = 41,
-                                    usage = 0.82,
-                                },
-                                {
-                                    itemID = 240916,
-                                    count = 20,
-                                    usage = 0.4,
-                                },
-                                {
-                                    itemID = 240894,
-                                    count = 8,
-                                    usage = 0.16,
-                                },
-                                {
-                                    itemID = 240914,
-                                    count = 5,
-                                    usage = 0.1,
-                                },
-                                {
-                                    itemID = 240910,
-                                    count = 4,
-                                    usage = 0.08,
-                                },
-                            },
-                            enchants = {
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 19,
-                                        usage = 0.38,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7989,
-                                        count = 7,
-                                        usage = 0.14,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7989,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8017,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8017,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 32,
-                                        usage = 0.64,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7971,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7971,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8001,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8001,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 7987,
-                                        count = 36,
-                                        usage = 0.72,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7985,
-                                        count = 5,
-                                        usage = 0.1,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7985,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 8159,
-                                        count = 30,
-                                        usage = 0.6,
-                                        source = {
-                                            type = "item",
-                                            id = 244641,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8163,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "item",
-                                            id = 244643,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8160,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "item",
-                                            id = 244644,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 25,
-                                        usage = 0.5,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7963,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7963,
-                                        },
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        enchantID = 8027,
-                                        count = 20,
-                                        usage = 0.4,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8025,
-                                        count = 8,
-                                        usage = 0.16,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8025,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7967,
-                                        count = 7,
-                                        usage = 0.14,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7967,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 31,
-                                        usage = 0.62,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8689,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8689,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8008,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8008,
-                                        },
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 31,
-                                        usage = 0.62,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8011,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8011,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8689,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8689,
-                                        },
-                                    },
-                                },
-                            },
-                            stats = {},
-                            statsRaw = {
-                                haste = 805.5,
-                                crit = 138.3,
-                                mastery = 48.48,
-                                versatility = 1237.08,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "haste",
-                                "crit",
-                                "mastery",
-                            },
-                        },
-                        [261] = {
-                            meta = {
-                                sampleSize = 50,
-                                maxRating = 2449,
-                                minRating = 1852,
-                                avgRating = 1996,
-                                classSlug = "rogue",
-                                specSlug = "subtlety",
-                                className = "Rogue",
-                                specName = "Subtlety",
-                                sourceUpdatedAt = "2026-08-31T10:01:01.607254Z",
-                                dataAvailable = true,
-                            },
-                            builds = {
-                                {
-                                    talentString = "CUQA5HmDzx68KWyrW/8Y781L7DgZ2mBAAAAAmtZmZZiZZbmxMjZgZmZmlxsNjZmllhBzMGwMGAAAAGmhNzyMmlZYsww2MbTL0yswMDzMzMYmZA",
-                                    count = 8,
-                                    usage = 0.16,
-                                },
-                                {
-                                    talentString = "CUQA5HmDzx68KWyrW/8Y781L7DgZ2mBAAAAAmtZmZZiZZbmxMjZgZmZmlxsNjZmllhBzMGwMGAAAAzghFzyMmlZYsww2MbTL0yswMDzMzMYmZA",
-                                    count = 5,
-                                    usage = 0.1,
-                                },
-                                {
-                                    talentString = "CUQA5HmDzx68KWyrW/8Y781L7DgZ2mBAAAAAmtZmZZiZZbmxMjZgZmZmlxsMmZmllhBzMGwMGAAAAGmhNzyMmlZYsww2MbTL0ysxMDzMzMYmZA",
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                            },
-                            talents = {
-                                class = {
-                                    {
-                                        id = 117636,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117638,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117641,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117648,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117649,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117647,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117651,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117526,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117528,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117657,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117530,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117659,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117531,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117662,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122157,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117577,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141644,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141645,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117580,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117588,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117590,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117637,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 130446,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117527,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117584,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117585,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117581,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 130447,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 117635,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 122155,
-                                        count = 39,
-                                        usage = 0.78,
-                                    },
-                                    {
-                                        id = 141646,
-                                        count = 37,
-                                        usage = 0.74,
-                                    },
-                                    {
-                                        id = 122163,
-                                        count = 31,
-                                        usage = 0.62,
-                                    },
-                                    {
-                                        id = 122156,
-                                        count = 25,
-                                        usage = 0.5,
-                                    },
-                                    {
-                                        id = 117640,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 117579,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 117639,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117643,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 117644,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 117645,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 117655,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 119744,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 122164,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                spec = {
-                                    {
-                                        id = 117633,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117634,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 141827,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 130451,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 122180,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117583,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117593,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117594,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117597,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117599,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117602,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117603,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117606,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117609,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117614,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117615,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117616,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117617,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117619,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117620,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117625,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117628,
-                                        count = 50,
-                                        usage = 1,
-                                    },
-                                    {
-                                        id = 117621,
-                                        count = 49,
-                                        usage = 0.98,
-                                    },
-                                    {
-                                        id = 117608,
-                                        count = 48,
-                                        usage = 0.96,
-                                    },
-                                    {
-                                        id = 122184,
-                                        count = 46,
-                                        usage = 0.92,
-                                    },
-                                    {
-                                        id = 117623,
-                                        count = 45,
-                                        usage = 0.9,
-                                    },
-                                    {
-                                        id = 117598,
-                                        count = 44,
-                                        usage = 0.88,
-                                    },
-                                    {
-                                        id = 117630,
-                                        count = 42,
-                                        usage = 0.84,
-                                    },
-                                    {
-                                        id = 117626,
-                                        count = 30,
-                                        usage = 0.6,
-                                    },
-                                    {
-                                        id = 117627,
-                                        count = 20,
-                                        usage = 0.4,
-                                    },
-                                    {
-                                        id = 117632,
-                                        count = 8,
-                                        usage = 0.16,
-                                    },
-                                    {
-                                        id = 117613,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 117612,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117624,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117596,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                    {
-                                        id = 117592,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 122181,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                    {
-                                        id = 141571,
-                                        count = 1,
-                                        usage = 0.02,
-                                    },
-                                },
-                                hero = {
-                                    {
-                                        id = 140773,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122726,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 140775,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 140774,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122732,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122741,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122751,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122744,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122745,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122717,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122719,
-                                        count = 38,
-                                        usage = 0.76,
-                                    },
-                                    {
-                                        id = 122718,
-                                        count = 35,
-                                        usage = 0.7,
-                                    },
-                                    {
-                                        id = 130860,
-                                        count = 34,
-                                        usage = 0.68,
-                                    },
-                                    {
-                                        id = 130861,
-                                        count = 27,
-                                        usage = 0.54,
-                                    },
-                                    {
-                                        id = 122720,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122724,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122725,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122727,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 140776,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 125033,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122730,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 140778,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 140777,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122737,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122742,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122746,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122749,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122750,
-                                        count = 12,
-                                        usage = 0.24,
-                                    },
-                                    {
-                                        id = 122715,
-                                        count = 11,
-                                        usage = 0.22,
-                                    },
-                                    {
-                                        id = 122740,
-                                        count = 4,
-                                        usage = 0.08,
-                                    },
-                                    {
-                                        id = 130862,
-                                        count = 3,
-                                        usage = 0.06,
-                                    },
-                                },
-                            },
-                            pvpTalents = {
-                                {
-                                    id = 1209,
-                                    count = 50,
-                                    usage = 1,
-                                },
-                                {
-                                    id = 5698,
-                                    count = 44,
-                                    usage = 0.88,
-                                },
-                                {
-                                    id = 5406,
-                                    count = 40,
-                                    usage = 0.8,
-                                },
-                                {
-                                    id = 5409,
-                                    count = 9,
-                                    usage = 0.18,
-                                },
-                                {
-                                    id = 5411,
-                                    count = 3,
-                                    usage = 0.06,
-                                },
-                                {
-                                    id = 3462,
-                                    count = 2,
-                                    usage = 0.04,
-                                },
-                                {
-                                    id = 856,
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                                {
-                                    id = 146,
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
-                            pvpTalentCombos = {},
-                            gear = {
-                                HEAD = {
-                                    {
-                                        itemID = 270509,
-                                        count = 32,
-                                        usage = 0.64,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271510,
-                                        count = 8,
-                                        usage = 0.16,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244736,
-                                        count = 4,
-                                        usage = 0.08,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244555,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270715,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                },
-                                NECK = {
-                                    {
-                                        itemID = 270532,
-                                        count = 27,
-                                        usage = 0.54,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 240952,
-                                        count = 23,
-                                        usage = 0.46,
-                                        bonusList = {},
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        itemID = 271508,
-                                        count = 37,
-                                        usage = 0.74,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244556,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270720,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270505,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                },
-                                BACK = {
-                                    {
-                                        itemID = 270539,
-                                        count = 22,
-                                        usage = 0.44,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 239678,
-                                        count = 18,
-                                        usage = 0.36,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270538,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270540,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270349,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        itemID = 244554,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270515,
-                                        count = 12,
-                                        usage = 0.24,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271513,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270359,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270514,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                WRIST = {
-                                    {
-                                        itemID = 244560,
-                                        count = 28,
-                                        usage = 0.56,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270500,
-                                        count = 19,
-                                        usage = 0.38,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244740,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270366,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                HANDS = {
-                                    {
-                                        itemID = 271511,
-                                        count = 28,
-                                        usage = 0.56,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270511,
-                                        count = 16,
-                                        usage = 0.32,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270713,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                },
-                                WAIST = {
-                                    {
-                                        itemID = 270503,
-                                        count = 29,
-                                        usage = 0.58,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244557,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270365,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        itemID = 270506,
-                                        count = 26,
-                                        usage = 0.52,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 271509,
-                                        count = 20,
-                                        usage = 0.4,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244558,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270718,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        itemID = 244553,
-                                        count = 34,
-                                        usage = 0.68,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 244764,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270512,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270513,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        itemID = 240951,
-                                        count = 72,
-                                        usage = 1.44,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270535,
-                                        count = 23,
-                                        usage = 0.46,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270537,
-                                        count = 3,
-                                        usage = 0.06,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270536,
-                                        count = 2,
-                                        usage = 0.04,
-                                        bonusList = {},
-                                    },
-                                },
-                                TRINKET = {
-                                    {
-                                        itemID = 270556,
-                                        count = 39,
-                                        usage = 0.78,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270559,
-                                        count = 33,
-                                        usage = 0.66,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 280118,
-                                        count = 10,
-                                        usage = 0.2,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270558,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270602,
-                                        count = 5,
-                                        usage = 0.1,
-                                        bonusList = {},
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        itemID = 237910,
-                                        count = 44,
-                                        usage = 0.88,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270465,
-                                        count = 6,
-                                        usage = 0.12,
-                                        bonusList = {},
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        itemID = 237910,
-                                        count = 42,
-                                        usage = 0.84,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270465,
-                                        count = 7,
-                                        usage = 0.14,
-                                        bonusList = {},
-                                    },
-                                    {
-                                        itemID = 270458,
-                                        count = 1,
-                                        usage = 0.02,
-                                        bonusList = {},
-                                    },
-                                },
-                            },
-                            gems = {
-                                {
-                                    itemID = 241144,
-                                    count = 43,
-                                    usage = 0.86,
-                                },
-                                {
-                                    itemID = 240902,
-                                    count = 43,
-                                    usage = 0.86,
-                                },
-                                {
-                                    itemID = 240918,
-                                    count = 6,
-                                    usage = 0.12,
-                                },
-                                {
-                                    itemID = 240894,
-                                    count = 3,
-                                    usage = 0.06,
-                                },
-                                {
-                                    itemID = 240916,
-                                    count = 1,
-                                    usage = 0.02,
-                                },
-                            },
-                            enchants = {
-                                HEAD = {
-                                    {
-                                        enchantID = 7991,
-                                        count = 30,
-                                        usage = 0.6,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7991,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7989,
-                                        count = 6,
-                                        usage = 0.12,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7989,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7990,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7990,
-                                        },
-                                    },
-                                },
-                                SHOULDER = {
-                                    {
-                                        enchantID = 7973,
-                                        count = 31,
-                                        usage = 0.62,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7973,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7971,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7971,
-                                        },
-                                    },
-                                },
-                                CHEST = {
-                                    {
-                                        enchantID = 7987,
-                                        count = 36,
-                                        usage = 0.72,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7987,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7985,
-                                        count = 5,
-                                        usage = 0.1,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7985,
-                                        },
-                                    },
-                                },
-                                LEGS = {
-                                    {
-                                        enchantID = 8159,
-                                        count = 44,
-                                        usage = 0.88,
-                                        source = {
-                                            type = "item",
-                                            id = 244641,
-                                        },
-                                    },
-                                },
-                                FEET = {
-                                    {
-                                        enchantID = 8019,
-                                        count = 39,
-                                        usage = 0.78,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8019,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7963,
-                                        count = 1,
-                                        usage = 0.02,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7963,
-                                        },
-                                    },
-                                },
-                                FINGER = {
-                                    {
-                                        enchantID = 7969,
-                                        count = 40,
-                                        usage = 0.8,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7969,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8027,
-                                        count = 6,
-                                        usage = 0.12,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8027,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 7965,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 7965,
-                                        },
-                                    },
-                                },
-                                MAIN_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 43,
-                                        usage = 0.86,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8041,
-                                        count = 3,
-                                        usage = 0.06,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8041,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8689,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8689,
-                                        },
-                                    },
-                                },
-                                OFF_HAND = {
-                                    {
-                                        enchantID = 8039,
-                                        count = 24,
-                                        usage = 0.48,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8039,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8041,
-                                        count = 20,
-                                        usage = 0.4,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8041,
-                                        },
-                                    },
-                                    {
-                                        enchantID = 8689,
-                                        count = 2,
-                                        usage = 0.04,
-                                        source = {
-                                            type = "enchant",
-                                            id = 8689,
-                                        },
-                                    },
-                                },
-                            },
-                            stats = {},
-                            statsRaw = {
-                                haste = 146.5,
-                                crit = 31.18,
-                                mastery = 944.1,
-                                versatility = 1107.4,
-                            },
-                            statPriority = {
-                                "versatility",
-                                "mastery",
-                                "haste",
-                                "crit",
-                            },
-                        },
-                        [262] = {
-                            meta = {
                                 sampleSize = 0,
                                 maxRating = 0,
                                 minRating = 0,
                                 avgRating = 0,
-                                classSlug = "shaman",
-                                specSlug = "elemental",
-                                className = "Shaman",
-                                specName = "Elemental",
+                                classSlug = "rogue",
+                                specSlug = "outlaw",
+                                className = "Rogue",
+                                specName = "Outlaw",
                                 sourceUpdatedAt = "",
                                 dataAvailable = false,
                                 unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
@@ -26406,6 +26379,1229 @@ _G.PvPIdiotData = {
                             stats = {},
                             statsRaw = {},
                             statPriority = {},
+                        },
+                        [261] = {
+                            meta = {
+                                sampleSize = 0,
+                                maxRating = 0,
+                                minRating = 0,
+                                avgRating = 0,
+                                classSlug = "rogue",
+                                specSlug = "subtlety",
+                                className = "Rogue",
+                                specName = "Subtlety",
+                                sourceUpdatedAt = "",
+                                dataAvailable = false,
+                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                            },
+                            builds = {},
+                            talents = {
+                                class = {},
+                                spec = {},
+                                hero = {},
+                            },
+                            pvpTalents = {},
+                            pvpTalentCombos = {},
+                            gear = {
+                                HEAD = {},
+                                NECK = {},
+                                SHOULDER = {},
+                                BACK = {},
+                                CHEST = {},
+                                WRIST = {},
+                                HANDS = {},
+                                WAIST = {},
+                                LEGS = {},
+                                FEET = {},
+                                FINGER = {},
+                                TRINKET = {},
+                                MAIN_HAND = {},
+                                OFF_HAND = {},
+                            },
+                            gems = {},
+                            enchants = {},
+                            stats = {},
+                            statsRaw = {},
+                            statPriority = {},
+                        },
+                        [262] = {
+                            meta = {
+                                sampleSize = 50,
+                                maxRating = 2573,
+                                minRating = 2034,
+                                avgRating = 2184,
+                                classSlug = "shaman",
+                                specSlug = "elemental",
+                                className = "Shaman",
+                                specName = "Elemental",
+                                sourceUpdatedAt = "2026-08-31T10:01:02.848556Z",
+                                dataAvailable = true,
+                            },
+                            builds = {
+                                {
+                                    talentString = "CYQALMl7AwW51MWzGneuHE3tPCAAAAzMLbzMGjZZZhxMMDAAAAsYmtNzMDbGWY2mZaoZWAgZbMGzstYaxMzYsYMzYmZb2MzyMYmZZAgZGAMzYYGfA",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    talentString = "CYQALMl7AwW51MWzGneuHE3tPCAAAAzMLbzMGjZZZhxMMDAAAAsYmNYADY2YCZWAgZbMzYmtFTLjZGjFjZGzMbzGzyMYmZZAgZGAMzYYGfA",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                                {
+                                    talentString = "CYQALMl7AwW51MWzGneuHE3tPCAAAAzMLbzMGjZZZhxMMDAAAAsYmtNzMDbGWY2mZaoZWAgZbMzYmtFTLjZGjFjZGzMbzGzyMYmZZAgZGAMzYYGfA",
+                                    count = 3,
+                                    usage = 0.06,
+                                },
+                            },
+                            talents = {
+                                class = {
+                                    {
+                                        id = 132111,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132113,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131861,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 131863,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132664,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132666,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132668,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132670,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140347,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132680,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132682,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132686,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132690,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132693,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132699,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132701,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132702,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132703,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132708,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132673,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132677,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132689,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132697,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132711,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 141358,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 140348,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132672,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132683,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132716,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132712,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 132713,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 132660,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 140346,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 132662,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 132715,
+                                        count = 39,
+                                        usage = 0.78,
+                                    },
+                                    {
+                                        id = 132667,
+                                        count = 37,
+                                        usage = 0.74,
+                                    },
+                                    {
+                                        id = 132719,
+                                        count = 32,
+                                        usage = 0.64,
+                                    },
+                                    {
+                                        id = 132684,
+                                        count = 28,
+                                        usage = 0.56,
+                                    },
+                                    {
+                                        id = 132685,
+                                        count = 13,
+                                        usage = 0.26,
+                                    },
+                                    {
+                                        id = 132663,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 132665,
+                                        count = 6,
+                                        usage = 0.12,
+                                    },
+                                    {
+                                        id = 132700,
+                                        count = 6,
+                                        usage = 0.12,
+                                    },
+                                    {
+                                        id = 132705,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 132714,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 132698,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 140473,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 141340,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 132717,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 132718,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 141357,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 132678,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 132691,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 132696,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 141334,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141737,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106810,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106816,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106817,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106819,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106820,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106824,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106829,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106837,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106843,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106846,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106850,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106851,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106852,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132723,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 132729,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 106821,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 106856,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132721,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132722,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 132730,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 141485,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 106811,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 106815,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132728,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 132731,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 106832,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 132724,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 106831,
+                                        count = 42,
+                                        usage = 0.84,
+                                    },
+                                    {
+                                        id = 132734,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 106814,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 106830,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 141486,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 106826,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 132726,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 132727,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 132725,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 132733,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 106823,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 106841,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 133031,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 122496,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122497,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122467,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122469,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122470,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140743,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140744,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 140745,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122503,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122478,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 128468,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122484,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 128470,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 122492,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                },
+                            },
+                            pvpTalents = {
+                                {
+                                    id = 5660,
+                                    count = 48,
+                                    usage = 0.96,
+                                },
+                                {
+                                    id = 3620,
+                                    count = 43,
+                                    usage = 0.86,
+                                },
+                                {
+                                    id = 5574,
+                                    count = 43,
+                                    usage = 0.86,
+                                },
+                                {
+                                    id = 727,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    id = 3488,
+                                    count = 5,
+                                    usage = 0.1,
+                                },
+                                {
+                                    id = 5724,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                                {
+                                    id = 3490,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
+                            pvpTalentCombos = {},
+                            gear = {
+                                HEAD = {
+                                    {
+                                        itemID = 270492,
+                                        count = 24,
+                                        usage = 0.48,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271483,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244737,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270764,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 270534,
+                                        count = 49,
+                                        usage = 0.98,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240952,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271481,
+                                        count = 42,
+                                        usage = 0.84,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270767,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270489,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 239678,
+                                        count = 41,
+                                        usage = 0.82,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270540,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 270498,
+                                        count = 28,
+                                        usage = 0.56,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244562,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271486,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270367,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270499,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 244568,
+                                        count = 35,
+                                        usage = 0.7,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244741,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270484,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 271484,
+                                        count = 25,
+                                        usage = 0.5,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270762,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270494,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270495,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 270487,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244565,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270769,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 171523,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270486,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270490,
+                                        count = 28,
+                                        usage = 0.56,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271482,
+                                        count = 21,
+                                        usage = 0.42,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270766,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270497,
+                                        count = 39,
+                                        usage = 0.78,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244765,
+                                        count = 8,
+                                        usage = 0.16,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244561,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270368,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 270537,
+                                        count = 48,
+                                        usage = 0.96,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240951,
+                                        count = 45,
+                                        usage = 0.9,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270558,
+                                        count = 34,
+                                        usage = 0.68,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270556,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249346,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270460,
+                                        count = 38,
+                                        usage = 0.76,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237911,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237914,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 277951,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270464,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        itemID = 270445,
+                                        count = 49,
+                                        usage = 0.98,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237912,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                            },
+                            gems = {
+                                {
+                                    itemID = 241144,
+                                    count = 42,
+                                    usage = 0.84,
+                                },
+                                {
+                                    itemID = 240916,
+                                    count = 37,
+                                    usage = 0.74,
+                                },
+                                {
+                                    itemID = 241143,
+                                    count = 7,
+                                    usage = 0.14,
+                                },
+                                {
+                                    itemID = 240894,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    itemID = 240892,
+                                    count = 4,
+                                    usage = 0.08,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 36,
+                                        usage = 0.72,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7961,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7961,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7959,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7959,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 7987,
+                                        count = 43,
+                                        usage = 0.86,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8013,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8013,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7985,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7985,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 7935,
+                                        count = 48,
+                                        usage = 0.96,
+                                        source = {
+                                            type = "item",
+                                            id = 240133,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7937,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 240155,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 35,
+                                        usage = 0.7,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 8027,
+                                        count = 26,
+                                        usage = 0.52,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7967,
+                                        count = 15,
+                                        usage = 0.3,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7967,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8025,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8025,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 44,
+                                        usage = 0.88,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7983,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7983,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8689,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8689,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 31,
+                                        usage = 0.62,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8031,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8031,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8001,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8001,
+                                        },
+                                    },
+                                },
+                            },
+                            stats = {},
+                            statsRaw = {
+                                haste = 868.68,
+                                crit = 10.02,
+                                mastery = 81.82,
+                                versatility = 1286.98,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "haste",
+                                "mastery",
+                                "crit",
+                            },
                         },
                         [263] = {
                             meta = {
@@ -31338,47 +32534,1346 @@ _G.PvPIdiotData = {
                         },
                         [72] = {
                             meta = {
-                                sampleSize = 0,
-                                maxRating = 0,
-                                minRating = 0,
-                                avgRating = 0,
+                                sampleSize = 50,
+                                maxRating = 2589,
+                                minRating = 2019,
+                                avgRating = 2210,
                                 classSlug = "warrior",
                                 specSlug = "fury",
                                 className = "Warrior",
                                 specName = "Fury",
-                                sourceUpdatedAt = "",
-                                dataAvailable = false,
-                                unavailableReason = "fetch-failed: HTTP Error 401: Unauthorized",
+                                sourceUpdatedAt = "2026-08-31T10:01:10.173264Z",
+                                dataAvailable = true,
                             },
-                            builds = {},
+                            builds = {
+                                {
+                                    talentString = "CgEASWsDSHNyPDXnbxuIhH3ZdDAAAAAAgGDjxMziZmZmZMzMzMzYmZmlZMmZmZzYmBAAiZW2GbsZZzMNmZGmMbMDbAmZxYBAmZwMDjxwYGGA",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "CgEASWsDSHNyPDXnbxuIhH3ZdDAAAAAAgGDzMjZWYmZGjxMzMzYmZmlhxMzMLmZmBAACDsBLLGNmBkZDzYBwMLGLAwMDAjxwYGGD",
+                                    count = 2,
+                                    usage = 0.04,
+                                },
+                                {
+                                    talentString = "CgEASWsDSHNyPDXnbxuIhH3ZdDAAAAAAgGYmZmZWMzMzYmxMzMzYmZmlhZmZmZzYmBAAiZW2GbsZZzMNmZGmMbMDbAmZxYBAmZwMDjxwYGGA",
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             talents = {
-                                class = {},
-                                spec = {},
-                                hero = {},
+                                class = {
+                                    {
+                                        id = 117253,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117254,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117258,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 138815,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117187,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117188,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117193,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141398,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117213,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 119650,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117222,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 123750,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117224,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117238,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117240,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117245,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 139027,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 117203,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 117252,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 117229,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 138816,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117214,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117190,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117216,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 139003,
+                                        count = 44,
+                                        usage = 0.88,
+                                    },
+                                    {
+                                        id = 138992,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 142232,
+                                        count = 38,
+                                        usage = 0.76,
+                                    },
+                                    {
+                                        id = 117195,
+                                        count = 36,
+                                        usage = 0.72,
+                                    },
+                                    {
+                                        id = 117210,
+                                        count = 35,
+                                        usage = 0.7,
+                                    },
+                                    {
+                                        id = 123753,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 117247,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 117211,
+                                        count = 30,
+                                        usage = 0.6,
+                                    },
+                                    {
+                                        id = 117221,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 117243,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 117250,
+                                        count = 10,
+                                        usage = 0.2,
+                                    },
+                                    {
+                                        id = 117219,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 139004,
+                                        count = 7,
+                                        usage = 0.14,
+                                    },
+                                    {
+                                        id = 141397,
+                                        count = 6,
+                                        usage = 0.12,
+                                    },
+                                    {
+                                        id = 138814,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 117246,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 117215,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 117220,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                spec = {
+                                    {
+                                        id = 121734,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 124039,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117264,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117266,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117268,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117270,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117273,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117277,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117280,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117282,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117286,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117305,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117306,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 141767,
+                                        count = 50,
+                                        usage = 1,
+                                    },
+                                    {
+                                        id = 117269,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 117271,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 117304,
+                                        count = 49,
+                                        usage = 0.98,
+                                    },
+                                    {
+                                        id = 117284,
+                                        count = 48,
+                                        usage = 0.96,
+                                    },
+                                    {
+                                        id = 117260,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117272,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117281,
+                                        count = 47,
+                                        usage = 0.94,
+                                    },
+                                    {
+                                        id = 117301,
+                                        count = 46,
+                                        usage = 0.92,
+                                    },
+                                    {
+                                        id = 141507,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 141653,
+                                        count = 43,
+                                        usage = 0.86,
+                                    },
+                                    {
+                                        id = 141224,
+                                        count = 41,
+                                        usage = 0.82,
+                                    },
+                                    {
+                                        id = 141222,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 141226,
+                                        count = 40,
+                                        usage = 0.8,
+                                    },
+                                    {
+                                        id = 117303,
+                                        count = 36,
+                                        usage = 0.72,
+                                    },
+                                    {
+                                        id = 117290,
+                                        count = 33,
+                                        usage = 0.66,
+                                    },
+                                    {
+                                        id = 117275,
+                                        count = 25,
+                                        usage = 0.5,
+                                    },
+                                    {
+                                        id = 117289,
+                                        count = 17,
+                                        usage = 0.34,
+                                    },
+                                    {
+                                        id = 117265,
+                                        count = 13,
+                                        usage = 0.26,
+                                    },
+                                    {
+                                        id = 141227,
+                                        count = 9,
+                                        usage = 0.18,
+                                    },
+                                    {
+                                        id = 141225,
+                                        count = 8,
+                                        usage = 0.16,
+                                    },
+                                    {
+                                        id = 117279,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 117276,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 141220,
+                                        count = 4,
+                                        usage = 0.08,
+                                    },
+                                    {
+                                        id = 117297,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 141223,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 124012,
+                                        count = 3,
+                                        usage = 0.06,
+                                    },
+                                    {
+                                        id = 141221,
+                                        count = 2,
+                                        usage = 0.04,
+                                    },
+                                    {
+                                        id = 142247,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
+                                hero = {
+                                    {
+                                        id = 140823,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122409,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 140824,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122412,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 140825,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122414,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122416,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122417,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 123734,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122425,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122394,
+                                        count = 31,
+                                        usage = 0.62,
+                                    },
+                                    {
+                                        id = 122406,
+                                        count = 30,
+                                        usage = 0.6,
+                                    },
+                                    {
+                                        id = 122407,
+                                        count = 26,
+                                        usage = 0.52,
+                                    },
+                                    {
+                                        id = 123735,
+                                        count = 24,
+                                        usage = 0.48,
+                                    },
+                                    {
+                                        id = 140829,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122429,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122410,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122418,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122419,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122423,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122422,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122393,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122395,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 122397,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 140830,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 140831,
+                                        count = 19,
+                                        usage = 0.38,
+                                    },
+                                    {
+                                        id = 128608,
+                                        count = 18,
+                                        usage = 0.36,
+                                    },
+                                    {
+                                        id = 128246,
+                                        count = 18,
+                                        usage = 0.36,
+                                    },
+                                    {
+                                        id = 122426,
+                                        count = 7,
+                                        usage = 0.14,
+                                    },
+                                    {
+                                        id = 123736,
+                                        count = 5,
+                                        usage = 0.1,
+                                    },
+                                    {
+                                        id = 122396,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 123733,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                    {
+                                        id = 122404,
+                                        count = 1,
+                                        usage = 0.02,
+                                    },
+                                },
                             },
-                            pvpTalents = {},
+                            pvpTalents = {
+                                {
+                                    id = 3735,
+                                    count = 50,
+                                    usage = 1,
+                                },
+                                {
+                                    id = 177,
+                                    count = 42,
+                                    usage = 0.84,
+                                },
+                                {
+                                    id = 3533,
+                                    count = 23,
+                                    usage = 0.46,
+                                },
+                                {
+                                    id = 5624,
+                                    count = 13,
+                                    usage = 0.26,
+                                },
+                                {
+                                    id = 5702,
+                                    count = 9,
+                                    usage = 0.18,
+                                },
+                                {
+                                    id = 179,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    id = 3528,
+                                    count = 6,
+                                    usage = 0.12,
+                                },
+                                {
+                                    id = 5548,
+                                    count = 1,
+                                    usage = 0.02,
+                                },
+                            },
                             pvpTalentCombos = {},
                             gear = {
-                                HEAD = {},
-                                NECK = {},
-                                SHOULDER = {},
-                                BACK = {},
-                                CHEST = {},
-                                WRIST = {},
-                                HANDS = {},
-                                WAIST = {},
-                                LEGS = {},
-                                FEET = {},
-                                FINGER = {},
-                                TRINKET = {},
-                                MAIN_HAND = {},
-                                OFF_HAND = {},
+                                HEAD = {
+                                    {
+                                        itemID = 270477,
+                                        count = 36,
+                                        usage = 0.72,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271456,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244738,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251229,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270378,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                NECK = {
+                                    {
+                                        itemID = 270532,
+                                        count = 21,
+                                        usage = 0.42,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270534,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 240952,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 273781,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        itemID = 271454,
+                                        count = 39,
+                                        usage = 0.78,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270816,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270472,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237906,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                BACK = {
+                                    {
+                                        itemID = 239678,
+                                        count = 34,
+                                        usage = 0.68,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270540,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270538,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270539,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 272225,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        itemID = 271459,
+                                        count = 31,
+                                        usage = 0.62,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270482,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270483,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249955,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WRIST = {
+                                    {
+                                        itemID = 237908,
+                                        count = 37,
+                                        usage = 0.74,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270469,
+                                        count = 7,
+                                        usage = 0.14,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244742,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270468,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                HANDS = {
+                                    {
+                                        itemID = 270478,
+                                        count = 18,
+                                        usage = 0.36,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270810,
+                                        count = 17,
+                                        usage = 0.34,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271457,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 249953,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251221,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                WAIST = {
+                                    {
+                                        itemID = 270471,
+                                        count = 22,
+                                        usage = 0.44,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237907,
+                                        count = 13,
+                                        usage = 0.26,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270470,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270381,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270818,
+                                        count = 2,
+                                        usage = 0.04,
+                                        bonusList = {},
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        itemID = 270475,
+                                        count = 20,
+                                        usage = 0.4,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270474,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 271455,
+                                        count = 11,
+                                        usage = 0.22,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270379,
+                                        count = 3,
+                                        usage = 0.06,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270814,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        itemID = 270481,
+                                        count = 40,
+                                        usage = 0.8,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 244766,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237902,
+                                        count = 4,
+                                        usage = 0.08,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 273777,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        itemID = 240951,
+                                        count = 60,
+                                        usage = 1.2,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270537,
+                                        count = 20,
+                                        usage = 0.4,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270535,
+                                        count = 16,
+                                        usage = 0.32,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 159459,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 279010,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                TRINKET = {
+                                    {
+                                        itemID = 270556,
+                                        count = 34,
+                                        usage = 0.68,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270558,
+                                        count = 29,
+                                        usage = 0.58,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280118,
+                                        count = 15,
+                                        usage = 0.3,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 280097,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270603,
+                                        count = 5,
+                                        usage = 0.1,
+                                        bonusList = {},
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        itemID = 270451,
+                                        count = 19,
+                                        usage = 0.38,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270552,
+                                        count = 12,
+                                        usage = 0.24,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237915,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270447,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237846,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        itemID = 270451,
+                                        count = 25,
+                                        usage = 0.5,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 237915,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270447,
+                                        count = 9,
+                                        usage = 0.18,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 270552,
+                                        count = 6,
+                                        usage = 0.12,
+                                        bonusList = {},
+                                    },
+                                    {
+                                        itemID = 251134,
+                                        count = 1,
+                                        usage = 0.02,
+                                        bonusList = {},
+                                    },
+                                },
                             },
-                            gems = {},
-                            enchants = {},
+                            gems = {
+                                {
+                                    itemID = 241144,
+                                    count = 45,
+                                    usage = 0.9,
+                                },
+                                {
+                                    itemID = 240902,
+                                    count = 15,
+                                    usage = 0.3,
+                                },
+                                {
+                                    itemID = 240918,
+                                    count = 15,
+                                    usage = 0.3,
+                                },
+                                {
+                                    itemID = 240900,
+                                    count = 12,
+                                    usage = 0.24,
+                                },
+                                {
+                                    itemID = 240916,
+                                    count = 9,
+                                    usage = 0.18,
+                                },
+                            },
+                            enchants = {
+                                HEAD = {
+                                    {
+                                        enchantID = 7991,
+                                        count = 31,
+                                        usage = 0.62,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7991,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7961,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7961,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7989,
+                                        count = 2,
+                                        usage = 0.04,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7989,
+                                        },
+                                    },
+                                },
+                                SHOULDER = {
+                                    {
+                                        enchantID = 7973,
+                                        count = 36,
+                                        usage = 0.72,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7973,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8031,
+                                        count = 8,
+                                        usage = 0.16,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8031,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7970,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7970,
+                                        },
+                                    },
+                                },
+                                CHEST = {
+                                    {
+                                        enchantID = 7987,
+                                        count = 34,
+                                        usage = 0.68,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7987,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7957,
+                                        count = 14,
+                                        usage = 0.28,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7957,
+                                        },
+                                    },
+                                },
+                                LEGS = {
+                                    {
+                                        enchantID = 8159,
+                                        count = 39,
+                                        usage = 0.78,
+                                        source = {
+                                            type = "item",
+                                            id = 244641,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8163,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "item",
+                                            id = 244643,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8158,
+                                        count = 1,
+                                        usage = 0.02,
+                                        source = {
+                                            type = "item",
+                                            id = 244640,
+                                        },
+                                    },
+                                },
+                                FEET = {
+                                    {
+                                        enchantID = 8019,
+                                        count = 32,
+                                        usage = 0.64,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8019,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7993,
+                                        count = 6,
+                                        usage = 0.12,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7993,
+                                        },
+                                    },
+                                },
+                                FINGER = {
+                                    {
+                                        enchantID = 7969,
+                                        count = 22,
+                                        usage = 0.44,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7969,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8027,
+                                        count = 21,
+                                        usage = 0.42,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8027,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 7965,
+                                        count = 4,
+                                        usage = 0.08,
+                                        source = {
+                                            type = "enchant",
+                                            id = 7965,
+                                        },
+                                    },
+                                },
+                                MAIN_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 31,
+                                        usage = 0.62,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 9,
+                                        usage = 0.18,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8689,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8689,
+                                        },
+                                    },
+                                },
+                                OFF_HAND = {
+                                    {
+                                        enchantID = 8039,
+                                        count = 30,
+                                        usage = 0.6,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8039,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8041,
+                                        count = 9,
+                                        usage = 0.18,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8041,
+                                        },
+                                    },
+                                    {
+                                        enchantID = 8689,
+                                        count = 3,
+                                        usage = 0.06,
+                                        source = {
+                                            type = "enchant",
+                                            id = 8689,
+                                        },
+                                    },
+                                },
+                            },
                             stats = {},
-                            statsRaw = {},
-                            statPriority = {},
+                            statsRaw = {
+                                haste = 551.46,
+                                crit = 21.8,
+                                mastery = 596.46,
+                                versatility = 1268.58,
+                            },
+                            statPriority = {
+                                "versatility",
+                                "mastery",
+                                "haste",
+                                "crit",
+                            },
                         },
                         [73] = {
                             meta = {
