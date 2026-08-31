@@ -39,12 +39,17 @@ function PvPIdiot:CreateBuildCard(parent, width, height)
 
     function card:SetBuild(build, index)
         self.build = build
-        self.rank:SetText("#" .. tostring(index or 1))
+        self.buildIndex = index or 1
+        self.rank:SetText("#" .. tostring(self.buildIndex))
         self.usage:SetText(PvPIdiot.Utils:FormatPercent(build and build.usage or 0, 1))
         self.count:SetText(PvPIdiot:L("COUNT") .. ": " .. tostring(build and build.count or 0))
         self.hero:SetText(PvPIdiot:L("HERO_ID") .. ": " .. tostring(build and build.heroTalentID or "-"))
-        self:SetScript("OnClick", function()
-            PvPIdiot:OpenBuildDetails(build, index)
+        self:SetScript("OnClick", function(self)
+            if PvPIdiot.OpenTalentBuild then
+                PvPIdiot:OpenTalentBuild(self.buildIndex)
+            else
+                PvPIdiot:OpenBuildDetails(build, self.buildIndex)
+            end
         end)
         self:SetScript("OnEnter", function(self)
             self:SetBackdropBorderColor(0.76, 0.51, 0.16, 1)
