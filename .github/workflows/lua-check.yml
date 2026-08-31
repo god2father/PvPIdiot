@@ -1,0 +1,30 @@
+name: Validate Lua
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.lua"
+      - "PvPIdiot.toc"
+      - ".github/workflows/lua-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.1 compiler
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lua5.1
+      - name: Check every Lua file
+        run: |
+          set -e
+          find . -type f -name '*.lua' -print0 | sort -z | while IFS= read -r -d '' file; do
+            echo "Checking $file"
+            luac5.1 -p "$file"
+          done
