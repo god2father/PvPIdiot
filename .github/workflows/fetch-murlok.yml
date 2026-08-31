@@ -27,13 +27,13 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch all 40 Solo Shuffle specs from Murlok
-        run: python tools/fetch_murlok.py --mode solo --output Data/MurlokData.lua --allow-partial --delay 0.8
+        run: python tools/fetch_murlok.py --mode solo --output PvPIdiot/Data/MurlokData.lua --allow-partial --delay 0.8
 
       - name: Add generated data to TOC
         run: |
           python - <<'PY'
           from pathlib import Path
-          p = Path("PvPIdiot.toc")
+          p = Path("PvPIdiot/PvPIdiot.toc")
           text = p.read_text(encoding="utf-8")
           line = "Data/MurlokData.lua\n"
           if line not in text:
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Data/MurlokData.lua PvPIdiot.toc
+          git add PvPIdiot/Data/MurlokData.lua PvPIdiot/PvPIdiot.toc
           if git diff --cached --quiet; then
             echo "No snapshot changes"
           else

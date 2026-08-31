@@ -73,23 +73,39 @@ function PvPIdiot:CreateGearPage(parent)
     selectedTitle:SetTextColor(0.95, 0.71, 0.25)
     page.selectedTitle = selectedTitle
 
+    local comparisonStatus = right:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    comparisonStatus:SetPoint("TOPLEFT", 14, -48)
+    comparisonStatus:SetPoint("TOPRIGHT", -14, -48)
+    comparisonStatus:SetJustifyH("LEFT")
+    comparisonStatus:SetTextColor(0.72, 0.74, 0.78)
+    page.comparisonStatus = comparisonStatus
+
     local yourLabel = right:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    yourLabel:SetPoint("TOPLEFT", 14, -50)
+    yourLabel:SetPoint("TOPLEFT", 14, -72)
     yourLabel:SetText(self:L("YOUR_GEAR"))
 
-    local yourItem = self:CreateItemButton(right, 500, 46)
-    yourItem:SetPoint("TOPLEFT", 14, -72)
-    yourItem:SetPoint("RIGHT", -14, 0)
+    local yourItem = self:CreateItemButton(right, 250, 46)
+    yourItem:SetPoint("TOPLEFT", 14, -94)
+    yourItem:SetPoint("TOPRIGHT", right, "TOP", -4, -94)
     page.yourItem = yourItem
 
+    local recommendedLabel = right:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    recommendedLabel:SetPoint("TOPLEFT", right, "TOP", 6, -72)
+    recommendedLabel:SetText(self:L("RECOMMENDED_GEAR"))
+
+    local recommendedItem = self:CreateItemButton(right, 250, 46)
+    recommendedItem:SetPoint("TOPLEFT", right, "TOP", 6, -94)
+    recommendedItem:SetPoint("TOPRIGHT", -14, -94)
+    page.recommendedItem = recommendedItem
+
     local metaLabel = right:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    metaLabel:SetPoint("TOPLEFT", 14, -135)
-    metaLabel:SetText("Top 5")
+    metaLabel:SetPoint("TOPLEFT", 14, -158)
+    metaLabel:SetText(self:L("ALTERNATIVE_GEAR"))
 
     page.metaRows = {}
     for i = 1, 5 do
         local row = self:CreateItemButton(right, 500, 48)
-        row:SetPoint("TOPLEFT", 14, -158 - (i - 1) * 54)
+        row:SetPoint("TOPLEFT", 14, -181 - (i - 1) * 54)
         row:SetPoint("RIGHT", -14, 0)
         page.metaRows[i] = row
     end
@@ -114,31 +130,45 @@ function PvPIdiot:CreateGearPage(parent)
             end
         end
 
-        local recommendations = PvPIdiot.DB:GetGearSlot(self.selectedSlot)
         local currentLink = GetInventoryItemLink and GetInventoryItemLink("player", selectedInfo.inventory)
         local currentID = GetItemIDFromLink(currentLink)
-        local badge = PvPIdiot:L("NOT_TOP3")
-        if currentID and recommendations[1] and currentID == recommendations[1].itemID then
-            badge = "✓ " .. PvPIdiot:L("META")
-        elseif currentID then
-            for i = 1, math.min(3, #recommendations) do
-                if currentID == recommendations[i].itemID then
-                    badge = "✓ " .. PvPIdiot:L("RECOMMENDED")
-                    break
-                end
-            end
-        end
+        local comparison = PvPIdiot.DB:GetGearComparison(self.selectedSlot, currentID)
+        local recommendations = comparison.recommendations
 
         if currentID then
-            self.yourItem:SetItem(currentID, 0, badge)
+            self.yourItem:SetItem(currentID, nil, PvPIdiot:L("CURRENT"))
             self.yourItem:Show()
         else
-            self.yourItem.itemID = nil
-            self.yourItem.icon:SetTexture(134400)
-            self.yourItem.name:SetText("-")
-            self.yourItem.usage:SetText("")
-            self.yourItem.badge:SetText(badge)
+            self.yourItem:SetEmpty(PvPIdiot:L("NO_EQUIPPED_ITEM"))
             self.yourItem:Show()
+        end
+
+        if comparison.recommendedItem then
+            self.recommendedItem:SetItem(
+                comparison.recommendedItem.itemID,
+                comparison.recommendedItem.usage,
+                "#1"
+            )
+        else
+            self.recommendedItem:SetEmpty(PvPIdiot:L("NO_GEAR_DATA"))
+        end
+        self.recommendedItem:Show()
+
+        if not currentID then
+            self.comparisonStatus:SetText(PvPIdiot:L("NO_EQUIPPED_ITEM"))
+            self.comparisonStatus:SetTextColor(0.72, 0.74, 0.78)
+        elseif comparison.rank == 1 then
+            self.comparisonStatus:SetText(PvPIdiot:L("GEAR_MATCH_TOP1"))
+            self.comparisonStatus:SetTextColor(0.35, 0.90, 0.45)
+        elseif comparison.rank and comparison.rank <= 3 then
+            self.comparisonStatus:SetText(string.format(PvPIdiot:L("GEAR_MATCH_TOP3"), comparison.rank))
+            self.comparisonStatus:SetTextColor(0.95, 0.71, 0.25)
+        elseif comparison.rank then
+            self.comparisonStatus:SetText(string.format(PvPIdiot:L("GEAR_MATCH_TOP5"), comparison.rank))
+            self.comparisonStatus:SetTextColor(0.95, 0.71, 0.25)
+        else
+            self.comparisonStatus:SetText(PvPIdiot:L("GEAR_NOT_RECOMMENDED"))
+            self.comparisonStatus:SetTextColor(1, 0.45, 0.32)
         end
 
         for i, row in ipairs(self.metaRows) do

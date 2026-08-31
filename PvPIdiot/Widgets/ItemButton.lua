@@ -49,7 +49,11 @@ function PvPIdiot:CreateItemButton(parent, width, height)
         self.itemID = itemID
         self.icon:SetTexture(PvPIdiot.Utils:SafeItemIcon(itemID))
         self.name:SetText(PvPIdiot.Utils:SafeItemName(itemID))
-        self.usage:SetText(PvPIdiot:L("USAGE") .. " " .. PvPIdiot.Utils:FormatPercent(usageValue or 0, 1))
+        if usageValue == nil then
+            self.usage:SetText("")
+        else
+            self.usage:SetText(PvPIdiot:L("USAGE") .. " " .. PvPIdiot.Utils:FormatPercent(usageValue, 1))
+        end
         self.badge:SetText(badgeText or "")
 
         if Item and Item.CreateFromItemID and itemID then
@@ -60,6 +64,14 @@ function PvPIdiot:CreateItemButton(parent, width, height)
                 self.name:SetText(PvPIdiot.Utils:SafeItemName(itemID))
             end)
         end
+    end
+
+    function button:SetEmpty(badgeText)
+        self.itemID = nil
+        self.icon:SetTexture(134400)
+        self.name:SetText("-")
+        self.usage:SetText("")
+        self.badge:SetText(badgeText or "")
     end
 
     return button

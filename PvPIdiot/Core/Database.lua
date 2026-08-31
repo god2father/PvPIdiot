@@ -98,6 +98,27 @@ function DB:GetGearSlot(slotKey)
     return data and data.gear and data.gear[slotKey] or {}
 end
 
+function DB:GetGearComparison(slotKey, equippedItemID)
+    local recommendations = self:GetGearSlot(slotKey)
+    local rank
+
+    if equippedItemID then
+        for index, item in ipairs(recommendations) do
+            if item.itemID == equippedItemID then
+                rank = index
+                break
+            end
+        end
+    end
+
+    return {
+        equippedItemID = equippedItemID,
+        recommendedItem = recommendations[1],
+        recommendations = recommendations,
+        rank = rank,
+    }
+end
+
 function DB:GetTopGear(limit)
     limit = limit or 3
     local data = self:GetCurrentSpecData()
