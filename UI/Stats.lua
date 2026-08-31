@@ -32,8 +32,17 @@ function PvPIdiot:CreateStatsPage(parent)
         local bar = self:CreateProgressBar(panel, 500, 22)
         bar:SetPoint("TOPLEFT", 150, -62 - (i - 1) * 52)
         bar:SetPoint("RIGHT", -24, 0)
-        page.rows[i] = { key = def.key, bar = bar }
+        page.rows[i] = { key = def.key, bar = bar, label = label }
     end
+
+    local unavailable = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    unavailable:SetPoint("CENTER", 0, -8)
+    unavailable:SetWidth(520)
+    unavailable:SetJustifyH("CENTER")
+    unavailable:SetText(self:L("STATS_UNAVAILABLE"))
+    unavailable:SetTextColor(0.68, 0.70, 0.76)
+    unavailable:Hide()
+    page.unavailable = unavailable
 
     local note = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     note:SetPoint("TOPLEFT", panel, "BOTTOMLEFT", 4, -12)
@@ -43,8 +52,12 @@ function PvPIdiot:CreateStatsPage(parent)
     function page:Refresh()
         local data = PvPIdiot.DB:GetCurrentSpecData()
         local stats = data and data.stats or {}
+        local hasStats = next(stats) ~= nil
+        self.unavailable:SetShown(not hasStats)
         for _, row in ipairs(self.rows) do
-            row.bar:SetPercent(stats[row.key] or 0)
+            row.label:SetShown(hasStats)
+            row.bar:SetShown(hasStats)
+            if hasStats then row.bar:SetPercent(stats[row.key] or 0) end
         end
     end
 
