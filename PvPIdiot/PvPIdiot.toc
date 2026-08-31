@@ -21,6 +21,7 @@ Widgets/ItemButton.lua
 Widgets/TalentButton.lua
 Widgets/BuildCard.lua
 Widgets/Dropdown.lua
+Widgets/ScrollFrame.lua
 
 UI/MainFrame.lua
 UI/Sidebar.lua

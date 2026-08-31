@@ -8,6 +8,14 @@ local TAB_DEFS = {
     { id = "stats", label = "STATS" },
 }
 
+local PAGE_MIN_HEIGHTS = {
+    overview = 560,
+    talents = 620,
+    gear = 560,
+    gems = 390,
+    stats = 340,
+}
+
 function PvPIdiot:CreateTabs(frame)
     local tabBar = CreateFrame("Frame", nil, frame)
     tabBar:SetPoint("TOPLEFT", 10, -62)
@@ -16,6 +24,7 @@ function PvPIdiot:CreateTabs(frame)
     self.ui.tabBar = tabBar
     self.ui.tabButtons = {}
     self.ui.pages = {}
+    self.ui.pageContainers = {}
 
     local previous
     for _, def in ipairs(TAB_DEFS) do
@@ -42,11 +51,17 @@ function PvPIdiot:CreateTabs(frame)
         previous = button
     end
 
-    self.ui.pages.overview = self:CreateOverviewPage(frame.content)
-    self.ui.pages.talents = self:CreateTalentsPage(frame.content)
-    self.ui.pages.gear = self:CreateGearPage(frame.content)
-    self.ui.pages.gems = self:CreateGemsEnchantsPage(frame.content)
-    self.ui.pages.stats = self:CreateStatsPage(frame.content)
+    local function CreateScrollablePage(id, createPage)
+        local container, content = self:CreateScrollableContainer(frame.content, PAGE_MIN_HEIGHTS[id])
+        self.ui.pageContainers[id] = container
+        self.ui.pages[id] = createPage(self, content)
+    end
+
+    CreateScrollablePage("overview", self.CreateOverviewPage)
+    CreateScrollablePage("talents", self.CreateTalentsPage)
+    CreateScrollablePage("gear", self.CreateGearPage)
+    CreateScrollablePage("gems", self.CreateGemsEnchantsPage)
+    CreateScrollablePage("stats", self.CreateStatsPage)
 
     local noData = frame.content:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
     noData:SetPoint("CENTER")
@@ -63,8 +78,8 @@ function PvPIdiot:ShowTab(tabID)
     local data = self.DB:GetCurrentSpecData()
     local hasData = data ~= nil and (not data.meta or data.meta.dataAvailable ~= false)
 
-    for id, page in pairs(self.ui.pages) do
-        page:SetShown(hasData and id == tabID)
+    for id, container in pairs(self.ui.pageContainers or {}) do
+        container:SetShown(hasData and id == tabID)
     end
     if self.ui.noDataText then self.ui.noDataText:SetShown(not hasData) end
 
