@@ -12,6 +12,7 @@ Core/Init.lua
 Core/Config.lua
 Core/Utils.lua
 
+Data/PvPItemCatalog.lua
 Data/MurlokData.lua
 Data/MockData.lua
 Core/Database.lua

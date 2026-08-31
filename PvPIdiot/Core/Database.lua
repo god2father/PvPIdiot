@@ -114,7 +114,17 @@ end
 
 function DB:GetGearSlot(slotKey)
     local data = self:GetCurrentSpecData()
-    return data and data.gear and data.gear[slotKey] or {}
+    local items = data and data.gear and data.gear[slotKey] or {}
+    local catalog = PvPIdiot.PvPItemCatalog
+    if type(catalog) ~= "table" then return {} end
+
+    local confirmed = {}
+    for _, item in ipairs(items) do
+        if catalog[item.itemID] then
+            table.insert(confirmed, item)
+        end
+    end
+    return confirmed
 end
 
 function DB:GetGearComparison(slotKey, equippedItemID)
@@ -144,7 +154,8 @@ function DB:GetTopGear(limit)
     if not data or not data.gear then return {} end
 
     local result = {}
-    for slot, items in pairs(data.gear) do
+    for slot in pairs(data.gear) do
+        local items = self:GetGearSlot(slot)
         if items and items[1] then
             table.insert(result, {
                 slot = slot,

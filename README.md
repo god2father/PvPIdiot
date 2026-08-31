@@ -11,7 +11,7 @@ World of Warcraft PvP talent and gear recommendation addon.
 - Arms Warrior mock dataset
 - Build Top 3
 - PvP talent recommendations
-- Gear recommendations and current gear comparison
+- PvP-only gear recommendations and current gear comparison
 - Gems and enchants
 - Secondary-stat distribution
 - `/pvpi` and `/pvpidiot`
@@ -50,6 +50,6 @@ v0.1 ships with mock data for UI and architecture validation. It is explicitly m
 
 ## Future data
 
-Data will be generated using Blizzard Battle.net API outside the game and converted into a static Lua data file. The addon itself will not access the internet.
+Data is generated outside the game and converted into static Lua files. The addon itself will not access the internet. Gear recommendations use a conservative public-client-data allow-list: only items explicitly identified as PvP equipment are shown; uncertain items are omitted rather than treated as PvP gear.
 
 Not affiliated with or endorsed by Blizzard Entertainment.

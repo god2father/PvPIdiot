@@ -174,7 +174,7 @@ def empty_spec(class_slug, spec_slug, class_name, spec_name, reason="no-data"):
     }
 
 
-def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_name, debug=False):
+def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_name, pvp_item_ids, debug=False):
     chars = pick(payload, "Characters", "characters", default=[]) or []
     updated_at = pick(payload, "UpdatedAt", "updatedAt", "updated_at", default=None)
     n = len(chars)
@@ -255,7 +255,7 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
             raw_slot = str(pick(item, "Slot", "slot", default="") or "").lower()
             slot = SLOT_MAP.get(raw_slot)
             item_id = to_int(pick(item, "ItemID", "itemID", "itemId", default=0))
-            if slot and item_id:
+            if slot and item_id and item_id in pvp_item_ids:
                 gear_counts[slot][item_id] += 1
                 gear_bonus[slot][item_id] = pick(item, "BonusList", "bonusList", "BonusIDs", default=[]) or []
 
@@ -268,16 +268,16 @@ def aggregate_spec(payload, class_slug, spec_slug, spec_id, class_name, spec_nam
                 if not isinstance(ench, dict) or not slot:
                     continue
                 enchant_id = to_int(pick(ench, "ID", "Id", "EnchantID", default=0))
-            source_item = to_int(pick(ench, "ItemID", "itemID", default=0))
-            source_name = pick(ench, "Name", "name", "SpellName", "spellName", default=None)
-            key = enchant_id or source_item
-            if key:
-                char_enchants[slot].add(key)
-                enchant_source[slot][key] = {
-                    "enchantID": enchant_id or key,
-                    "sourceItemID": source_item,
-                    "name": source_name,
-                }
+                source_item = to_int(pick(ench, "ItemID", "itemID", default=0))
+                source_name = pick(ench, "Name", "name", "SpellName", "spellName", default=None)
+                key = enchant_id or source_item
+                if key:
+                    char_enchants[slot].add(key)
+                    enchant_source[slot][key] = {
+                        "enchantID": enchant_id or key,
+                        "sourceItemID": source_item,
+                        "name": source_name,
+                    }
 
         for gem_id in char_gems:
             gem_players[gem_id] += 1
@@ -422,7 +422,17 @@ def main():
     parser.add_argument("--output", default="Data/MurlokData.lua")
     parser.add_argument("--allow-partial", action="store_true")
     parser.add_argument("--delay", type=float, default=0.8)
+    parser.add_argument("--pvp-catalog", default="tools/pvp_item_catalog.json")
     args = parser.parse_args()
+
+    try:
+        with open(args.pvp_catalog, encoding="utf-8") as handle:
+            catalog = json.load(handle)
+        pvp_item_ids = {to_int(item_id) for item_id in catalog.get("itemIDs", []) if to_int(item_id)}
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"Cannot load PvP item catalog {args.pvp_catalog}: {exc}")
+    if not pvp_item_ids:
+        raise SystemExit("PvP item catalog is empty; refusing to generate mixed PvE/PvP gear recommendations.")
 
     specs_data = {}
     spec_index = {}
@@ -447,6 +457,7 @@ def main():
             else:
                 data, updated = aggregate_spec(
                     payload, class_slug, spec_slug, spec_id, class_name, spec_name,
+                    pvp_item_ids,
                     debug=(class_slug == "warrior" and spec_slug == "arms"),
                 )
             specs_data[spec_id] = data
@@ -475,6 +486,8 @@ def main():
         "source": "murlok.io",
         "sourceMode": "solo",
         "sourceScope": "Top 50 across US/EU/KR/TW",
+        "gearPolicy": "confirmed-pvp-catalog",
+        "pvpCatalogBuild": catalog.get("build", ""),
         "updatedAt": max(timestamps) if timestamps else generated_at,
         "generatedAt": generated_at,
         "specIndex": spec_index,
