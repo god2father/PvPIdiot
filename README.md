@@ -22,11 +22,21 @@ The addon UI does not read the raw data table directly. All data access goes thr
 
 ## Install
 
-Copy the `PvPIdiot` folder to:
+Copy the `PvPIdiot/PvPIdiot` folder to:
 
 ```text
 World of Warcraft/_retail_/Interface/AddOns/
 ```
+
+The final layout must be:
+
+```text
+World of Warcraft/_retail_/Interface/AddOns/PvPIdiot/PvPIdiot.toc
+```
+
+Do not copy the GitHub download folder (for example `PvPIdiot-main`) directly
+into `AddOns`; WoW identifies an addon from the `.toc` file whose name matches
+its containing folder.
 
 Restart or reload the game, enable **PvP Idiot**, then run:
 
