@@ -95,8 +95,16 @@ function PvPIdiot:CreateOverviewPage(parent)
         local bar = self:CreateProgressBar(stats, 190, 13)
         bar:SetPoint("TOPLEFT", 105, -33 - (i - 1) * 28)
         bar:SetPoint("RIGHT", -10, 0)
-        stats.rows[i] = { key = def[1], bar = bar }
+        stats.rows[i] = { key = def[1], bar = bar, label = label }
     end
+    local statUnavailable = stats:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    statUnavailable:SetPoint("CENTER", 0, -5)
+    statUnavailable:SetWidth(300)
+    statUnavailable:SetJustifyH("CENTER")
+    statUnavailable:SetText(self:L("STATS_UNAVAILABLE"))
+    statUnavailable:SetTextColor(0.62, 0.65, 0.70)
+    statUnavailable:Hide()
+    stats.unavailable = statUnavailable
 
     gems.rows = {}
     for i = 1, 3 do
@@ -122,6 +130,7 @@ function PvPIdiot:CreateOverviewPage(parent)
         end
         for _, section in pairs(self.sections) do section:Show() end
 
+        local topGear = PvPIdiot.DB:GetTopGear(3)
         for i = 1, 3 do
             local buildData = data.builds and data.builds[i]
             self.sections.build.cards[i]:SetShown(buildData ~= nil)
@@ -131,9 +140,9 @@ function PvPIdiot:CreateOverviewPage(parent)
             self.sections.pvp.rows[i]:SetShown(talent ~= nil)
             if talent then self.sections.pvp.rows[i]:SetTalent(talent, "pvp") end
 
-            local topGear = PvPIdiot.DB:GetTopGear(3)[i]
-            self.sections.gear.rows[i]:SetShown(topGear ~= nil)
-            if topGear then self.sections.gear.rows[i]:SetItem(topGear.itemID, topGear.usage, topGear.slot) end
+            local gearInfo = topGear[i]
+            self.sections.gear.rows[i]:SetShown(gearInfo ~= nil)
+            if gearInfo then self.sections.gear.rows[i]:SetItem(gearInfo.itemID, gearInfo.usage, gearInfo.slot) end
 
             local gem = data.gems and data.gems[i]
             self.sections.gems.rows[i]:SetShown(gem ~= nil)
@@ -141,8 +150,12 @@ function PvPIdiot:CreateOverviewPage(parent)
         end
 
         local statData = data.stats or {}
+        local hasStats = next(statData) ~= nil
+        self.sections.stats.unavailable:SetShown(not hasStats)
         for _, row in ipairs(self.sections.stats.rows) do
-            row.bar:SetPercent(statData[row.key] or 0)
+            row.label:SetShown(hasStats)
+            row.bar:SetShown(hasStats)
+            if hasStats then row.bar:SetPercent(statData[row.key] or 0) end
         end
 
         local flattened = {}
