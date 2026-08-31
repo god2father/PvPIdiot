@@ -1,0 +1,51 @@
+name: Fetch Murlok PvP snapshot
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tools/fetch_murlok.py"
+      - ".github/workflows/fetch-murlok.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch all 40 Solo Shuffle specs from Murlok
+        run: python tools/fetch_murlok.py --mode solo --output Data/MurlokData.lua
+
+      - name: Add generated data to TOC
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("PvPIdiot.toc")
+          text = p.read_text(encoding="utf-8")
+          line = "Data/MurlokData.lua\n"
+          if line not in text:
+              text = text.replace("Data/MockData.lua\n", line + "Data/MockData.lua\n")
+              p.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Data/MurlokData.lua PvPIdiot.toc
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+          else
+            git commit -m "data: add Murlok all-spec Solo Shuffle snapshot [skip ci]"
+            git push
+          fi
