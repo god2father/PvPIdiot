@@ -1,5 +1,5 @@
 -- Generated from Wago DB2 ItemSparse. Do not edit manually.
--- Client build: 12.1.0.69497; expansion: 11; generated: 2026-08-31T13:41:38Z.
+-- Client build: 12.1.0.69497; expansion: 11; generated: 2026-08-31T13:42:52Z.
 PvPIdiot.PvPItemCatalog = {
     [237901] = true,
     [237902] = true,
