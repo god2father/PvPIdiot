@@ -277,3 +277,17 @@ function PvPIdiot:OpenTalentRecommendations(kind)
     if self.config then self.config.selectedTalentKind = page.selectedTalentTab end
     self:ShowTab("talents")
 end
+
+function PvPIdiot:OpenTalentBuild(index, kind)
+    if not self.ui or not self.ui.pages or not self.ui.pages.talents then return end
+    local page = self.ui.pages.talents
+    page.selectedBuildIndex = tonumber(index) or 1
+    if kind and page.buttons and page.buttons[kind] then
+        page.selectedTalentTab = kind
+    end
+    if self.config then
+        self.config.selectedBuildIndex = page.selectedBuildIndex
+        self.config.selectedTalentKind = page.selectedTalentTab
+    end
+    self:ShowTab("talents")
+end
