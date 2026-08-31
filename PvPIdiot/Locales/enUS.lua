@@ -31,6 +31,7 @@ PvPIdiot.locale.enUS = {
     GEMS_TOP3 = "Gems Top 3",
     ENCHANTS_TOP3 = "Enchants Top 3",
     IMPORT = "Import",
+    VIEW_TALENTS = "Click to view talents",
     USAGE = "Usage",
     COUNT = "Sample",
     VIEW_MORE = "View More",

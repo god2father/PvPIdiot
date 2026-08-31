@@ -31,6 +31,7 @@ PvPIdiot.locale.zhCN = {
     GEMS_TOP3 = "宝石 Top 3",
     ENCHANTS_TOP3 = "附魔 Top 3",
     IMPORT = "导入",
+    VIEW_TALENTS = "点击查看天赋",
     USAGE = "使用率",
     COUNT = "样本",
     VIEW_MORE = "查看更多",
