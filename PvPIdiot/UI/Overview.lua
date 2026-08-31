@@ -35,7 +35,7 @@ function PvPIdiot:CreateOverviewPage(parent)
     local gear = Section(page, self:L("GEAR_TOP3"))
     gear:SetPoint("TOPLEFT", build, "BOTTOMLEFT", 0, -8)
     gear:SetPoint("TOPRIGHT", build, "BOTTOMRIGHT", 0, -8)
-    gear:SetHeight(158)
+    gear:SetHeight(188)
 
     local stats = Section(page, self:L("STATS"))
     stats:SetPoint("TOPLEFT", pvp, "BOTTOMLEFT", 0, -8)
